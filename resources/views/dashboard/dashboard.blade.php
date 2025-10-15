@@ -9996,7 +9996,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10055,7 +10061,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10082,7 +10095,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10110,7 +10129,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10137,7 +10162,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Inclination-for-subjects-naturally')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10164,7 +10195,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10191,7 +10228,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                       >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10219,7 +10262,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10246,7 +10295,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10279,7 +10334,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 15 && $age <= 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10339,7 +10400,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10366,7 +10433,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10394,7 +10467,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10421,7 +10500,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/careers-suitable')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/careers-suitable')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10448,7 +10533,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10475,7 +10566,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10503,7 +10600,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10530,7 +10633,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10875,7 +10984,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
