@@ -10787,7 +10787,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         <a 
                         
                                 @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
-                                   href="">
+                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
