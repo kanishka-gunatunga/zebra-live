@@ -60,12 +60,12 @@ Route::match(['get', 'post'],'/test-attempt', [MainController::class, 'testAttem
 Route::match(['get', 'post'],'/supar-future-club', [MainController::class, 'suparFutureClub'])->middleware('authCustomer')->middleware('AuthQuestionAnswered');
 Route::match(['get', 'post'],'/profile', [UserController::class, 'profile'])->middleware('authCustomer')->middleware('AuthQuestionAnswered');
 Route::match(['get', 'post'],'/profile-settings', [UserController::class, 'profile_settings'])->middleware('authCustomer')->middleware('AuthQuestionAnswered');
-Route::match(['get', 'post'],'/events', [MainController::class, 'events'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:basic,pro');
+Route::match(['get', 'post'],'/events', [MainController::class, 'events'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
 
 Route::match(['get', 'post'],'/test-attempt-2', [MainController::class, 'testAttempt_2'])->middleware('authCustomer')->middleware('AuthQuestionAnswered');
 
 
-Route::match(['get', 'post'],'/parent-community', [MainController::class, 'parentCommunity'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:basic,pro');
+Route::match(['get', 'post'],'/parent-community', [MainController::class, 'parentCommunity'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
 
 
 Route::match(['get', 'post'],'/view-tip/{id}', [MainController::class, 'tipInner'])->middleware('authCustomer')->middleware('AuthQuestionAnswered');
@@ -74,9 +74,9 @@ Route::match(['get', 'post'],'/view-internship/{id}', [MainController::class, 'i
 Route::match(['get', 'post'],'/view-scholarship/{id}', [MainController::class, 'scholarshipInner'])->middleware('authCustomer')->middleware('AuthQuestionAnswered');
 Route::match(['get', 'post'],'/super-futer-inner', [MainController::class, 'superFutureInner'])->middleware('authCustomer')->middleware('AuthQuestionAnswered');
 Route::match(['get', 'post'],'/search-buddy', [MainController::class, 'searchBuddy'])->middleware('authCustomer')->middleware('AuthQuestionAnswered');
-Route::match(['get', 'post'],'/jobs', [MainController::class, 'jobs'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:basic,pro');
-Route::match(['get', 'post'],'/jobs-inner', [MainController::class, 'jobsInner'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:basic,pro');
-Route::match(['get', 'post'],'/consultation-booking-step-2', [MainController::class, 'consultStepTwo'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:basic,pro');
+Route::match(['get', 'post'],'/jobs', [MainController::class, 'jobs'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
+Route::match(['get', 'post'],'/jobs-inner', [MainController::class, 'jobsInner'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
+Route::match(['get', 'post'],'/consultation-booking-step-2', [MainController::class, 'consultStepTwo'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
 
 Route::match(['get', 'post'],'/about-us', [MainController::class, 'aboutus']);
 Route::match(['get', 'post'],'/blogs', [MainController::class, 'blogs']);
@@ -91,7 +91,7 @@ Route::match(['get', 'post'],'/hussain-ghadiyali', [MainController::class, 'huss
 Route::match(['get', 'post'],'/partnered-consultant', [MainController::class, 'partneredconsultant']);
 
 
-Route::match(['get', 'post'],'/basic-report-template', [MainController::class, 'basic_report_template'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:basic,pro');
+Route::match(['get', 'post'],'/basic-report-template', [MainController::class, 'basic_report_template'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
 
 
 
@@ -112,10 +112,10 @@ Route::match(['get', 'post'],'/save-dimensional-answers', [QuestionsController::
 Route::match(['get', 'post'],'/enter-access-code', [UserController::class, 'enter_access_code'])->middleware('authCustomer')->middleware('AuthQuestionAnswered');
 
 
-Route::match(['get', 'post'],'/comparison-request', [ComparisonController::class, 'comparison_request'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:basic,pro');
-Route::match(['get', 'post'],'/accept-comparison-request/{id}', [ComparisonController::class, 'accept_comparison_request'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:basic,pro');
-Route::match(['get', 'post'],'/reject-comparison-request/{id}', [ComparisonController::class, 'reject_comparison_request'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:basic,pro');
-Route::match(['get', 'post'],'/compare-results/{type}/{id}', [ComparisonController::class, 'compare_results'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:basic,pro');
+Route::match(['get', 'post'],'/comparison-request', [ComparisonController::class, 'comparison_request'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
+Route::match(['get', 'post'],'/accept-comparison-request/{id}', [ComparisonController::class, 'accept_comparison_request'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
+Route::match(['get', 'post'],'/reject-comparison-request/{id}', [ComparisonController::class, 'reject_comparison_request'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
+Route::match(['get', 'post'],'/compare-results/{type}/{id}', [ComparisonController::class, 'compare_results'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
 
 
 Route::get('/new-dashboard', [MainController::class, 'newDashboard']);
@@ -154,17 +154,17 @@ Route::get('/intro-extro', function () {
 });
 
 
-Route::match(['get', 'post'],'/skill-test/{question}', [SkillTestController::class, 'skill_test'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:basic,pro');
+Route::match(['get', 'post'],'/skill-test/{question}', [SkillTestController::class, 'skill_test'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
 Route::match(['get', 'post'],'/save-skill-test-answers', [SkillTestController::class, 'save_skill_test_answers'])->middleware('authCustomer')->middleware('AuthQuestionAnswered');
 
 
-Route::match(['get', 'post'],'/introvert-extrovert-question/{question}', [IntrovertExtrovertQuestionController::class, 'introvert_extrovert_question'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:basic,pro');
+Route::match(['get', 'post'],'/introvert-extrovert-question/{question}', [IntrovertExtrovertQuestionController::class, 'introvert_extrovert_question'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
 Route::match(['get', 'post'],'/save-introvert-extrovert-answers', [IntrovertExtrovertQuestionController::class, 'save_introvert_extrovert_answers'])->middleware('authCustomer')->middleware('AuthQuestionAnswered');
 
 
-Route::match(['get', 'post'],'/careers', [MainController::class, 'careers'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:basic,pro');
+Route::match(['get', 'post'],'/careers', [MainController::class, 'careers'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
 
-Route::match(['get', 'post'],'/careers-inner/{id}', [MainController::class, 'careers_inner'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:basic,pro');
+Route::match(['get', 'post'],'/careers-inner/{id}', [MainController::class, 'careers_inner'])->middleware('authCustomer')->middleware('AuthQuestionAnswered')->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
 Route::match(['get', 'post'],'/billing', [MainController::class, 'billing'])->middleware('authCustomer')->middleware('AuthQuestionAnswered');
 
 
@@ -172,10 +172,10 @@ Route::match(['get', 'post'],'/billing', [MainController::class, 'billing'])->mi
 Route::match(['get', 'post'], '/reset-questions', [QuestionsController::class, 'reset_questions']);
 
 
-Route::match(['get', 'post'], '/introvert-or-extrovert', [MainController::class, 'introvert_or_extrovert'])->middleware('validatePackage:basic,pro');
-Route::match(['get', 'post'], '/skill-assestment', [MainController::class, 'skill_assestment'])->middleware('validatePackage:basic,pro');
+Route::match(['get', 'post'], '/introvert-or-extrovert', [MainController::class, 'introvert_or_extrovert'])->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
+Route::match(['get', 'post'], '/skill-assestment', [MainController::class, 'skill_assestment'])->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
 
-Route::match(['get', 'post'], '/report/{type}', [MainController::class, 'report'])->middleware('validatePackage:basic,pro');
+Route::match(['get', 'post'], '/report/{type}', [MainController::class, 'report'])->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
 
 Route::get('/dashboard-new', function () {
     return view('dashboard.dashboard-new');
@@ -183,7 +183,7 @@ Route::get('/dashboard-new', function () {
 
 
 
-Route::match(['get', 'post'], '/download-report', [MainController::class, 'download_report'])->middleware('validatePackage:basic,pro');
+Route::match(['get', 'post'], '/download-report', [MainController::class, 'download_report'])->middleware('validatePackage:"decodemybrain-guided-friend-and-family-connect","myneurosense-the-smart-scan"');
 
 Route::post('careers/import', [MainController::class, 'importCareers']);
 

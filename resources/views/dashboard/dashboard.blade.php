@@ -20759,7 +20759,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                 {{-- section 10 --}}
                 <div class="row px-0"  style="margin-bottom: 0px"> 
-                    <div class="d-flex  flex-column flex-md-row mb-5 px-0">
+                    <!-- <div class="d-flex  flex-column flex-md-row mb-5 px-0">
                         <div class="p-0">
                             <img src="{{ asset('assets/images/dashboard-new/consultation-booking.png') }}" alt="" class=" img-fluid booking-img">
                         </div>
@@ -20800,39 +20800,45 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </div>
 
-                    </div>
+                    </div> -->
 
+                    @if(($user_package == 'myneurosense-the-smart-scan') && session('sso_link'))
+                        <div class="d-flex flex-column flex-md-row mb-5 px-0">
+                            <div class="p-0">
+                                <img src="{{ asset('assets/images/dashboard-new/parent-community.png') }}" 
+                                    alt="One to One Booking" 
+                                    class="img-fluid booking-img">
+                            </div>
 
-                    <div class="d-flex flex-column flex-md-row mb-5  px-0">
-                        <div class="p-0">
-                            <img src="{{ asset('assets/images/dashboard-new/parent-community.png') }}" alt="" class=" img-fluid booking-img">
-                        </div>
-
-                        <div class="col-12 col-md-8 col-lg-8 col-xl-7 d-flex align-items-center  ps-md-3">
-                            <div class="booking">
-                                <h5 style="font-weight: 600"  class="mt-3 mt-md-0">Consultation Booking</h5>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo harum eaque dolore vel praesentium officiis quia dolor quibusdam, odit sapiente maiores consequatur sed, nam ab consequuntur. Voluptatum a eum consequuntur.</p>
-                                <button class="yellow-send-btn">Book now</button>
+                            <div class="col-12 col-md-8 col-lg-8 col-xl-7 d-flex align-items-center ps-md-3">
+                                <div class="booking">
+                                    <h5 class="mt-3 mt-md-0" style="font-weight: 600">One to One Booking</h5>
+                                    <p>30 Minutes</p>
+                                    <a href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" target="_blank">
+                                        <button class="yellow-send-btn">Book now</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
-                    </div>
+                        <div class="d-flex flex-column flex-md-row mb-5 px-0">
+                            <div class="p-0">
+                                <img src="{{ asset('assets/images/dashboard-new/become-affiliate.png') }}" 
+                                    alt="Group Booking" 
+                                    class="img-fluid booking-img">
+                            </div>
 
-
-                    <div class="d-flex  flex-column flex-md-row mb-5 px-0">
-                        <div class="p-0">
-                            <img src="{{ asset('assets/images/dashboard-new/become-affiliate.png') }}" alt="" class=" img-fluid booking-img">
-                        </div>
-
-                        <div class="col-12 col-md-8 col-lg-8 col-xl-7 d-flex align-items-center  ps-md-3">
-                            <div class="booking">
-                                <h5  style="font-weight: 600"  class="mt-3 mt-md-0">Consultation Booking</h5>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo harum eaque dolore vel praesentium officiis quia dolor quibusdam, odit sapiente maiores consequatur sed, nam ab consequuntur. Voluptatum a eum consequuntur.</p>
-                                <button class="yellow-send-btn">Book now</button>
+                            <div class="col-12 col-md-8 col-lg-8 col-xl-7 d-flex align-items-center ps-md-3">
+                                <div class="booking">
+                                    <h5 class="mt-3 mt-md-0" style="font-weight: 600">Group Booking</h5>
+                                    <p>5 Hours</p>
+                                    <a href="{{ session('sso_link') }}&path=https://decodemybrain.com/group-booking/" target="_blank">
+                                        <button class="yellow-send-btn">Book now</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-
-                    </div>
+                    @endif
 
 
 

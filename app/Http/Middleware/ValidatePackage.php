@@ -25,37 +25,47 @@ class ValidatePackage
 
         // 🔹 Case 1: No package found locally → check from external API
         if (!$user_package) {
-            $url = 'https://projects.genaitech.dev/zebrabrain-wordpress-api/wp-json/yith-subscription/v1/list/' . $userId;
+            // $url = 'https://projects.genaitech.dev/zebrabrain-wordpress-api/wp-json/yith-subscription/v1/list/' . $userId;
 
-            $ch = curl_init();
-            curl_setopt_array($ch, [
-                CURLOPT_URL => $url,
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_TIMEOUT => 10,
-            ]);
+            // $ch = curl_init();
+            // curl_setopt_array($ch, [
+            //     CURLOPT_URL => $url,
+            //     CURLOPT_RETURNTRANSFER => true,
+            //     CURLOPT_TIMEOUT => 10,
+            // ]);
 
-            $response = curl_exec($ch);
-            curl_close($ch);
+            // $response = curl_exec($ch);
+            // curl_close($ch);
 
-            $data = json_decode($response, true);
+            // $data = json_decode($response, true);
 
-            if (isset($data['code']) && $data['code'] === 'No active subscriptions') {
-                return redirect('/billing')->with('fail', 'Please upgrade your package.');
-            }
+            // if (isset($data['code']) && $data['code'] === 'No active subscriptions') {
+            //     return redirect('/billing')->with('fail', 'Please upgrade your package.');
+            // }
 
-            if (!is_array($data) || empty($data)) {
-                return redirect('/billing')->with('fail', 'Unexpected response from subscription server. Please try again later.');
-            }
+            // if (!is_array($data) || empty($data)) {
+            //     return redirect('/billing')->with('fail', 'Unexpected response from subscription server. Please try again later.');
+            // }
 
-            // You can extract actual package info from $data if available
-            // For now, assume API validated successfully
+            // // You can extract actual package info from $data if available
+            // // For now, assume API validated successfully
+            $wp_user = WPUsers::where('user_id', $userId)->first();
+            $wp_user->package = 'decodemybrain-deep-dive';
+            $wp_user->update();
             return $next($request);
         }
 
         // 🔹 Case 2: Validate package against allowed list
-        if (in_array(strtolower($user_package), array_map('strtolower', $allowedPackages))) {
+       $normalizedAllowed = array_map(function ($p) {
+            return strtolower(trim($p, " \t\n\r\0\x0B\"'"));
+        }, $allowedPackages);
+
+        $normalizedUserPackage = strtolower(trim($user_package));
+
+        if (in_array($normalizedUserPackage, $normalizedAllowed)) {
             return $next($request);
         }
+
 
         return redirect('/billing')->with('fail', 'Please upgrade your package.');
     }

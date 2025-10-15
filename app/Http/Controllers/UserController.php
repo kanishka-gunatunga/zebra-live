@@ -164,6 +164,7 @@ public function sign_in(Request $request)
         $payload = [
             'username' => $request->user_name,
             'password' => $request->password,
+            'ttl' => 86400,
         ];
 
         $response = $this->performCurlRequest('https://decodemybrain.com/wp-json/custom/v1/login', true, $payload);
@@ -172,6 +173,12 @@ public function sign_in(Request $request)
 
             $user_id = $response['user_id'];
             session(['user_id' => $user_id]);
+
+            if (isset($response['sso_link'])) {
+                $ssoLink = $response['sso_link'];
+
+                session(['sso_link' => $ssoLink]);
+            }
             
             
             $url = 'https://decodemybrain.com/wp-json/custom/v1/user?user_id='.$user_id.'';
@@ -195,6 +202,7 @@ public function sign_in(Request $request)
                             $wp_user->display_name = session('user_details')['display_name'];
                             $wp_user->date_of_birth = session('user_details')['date_of_birth'];
                             $wp_user->age = $age;
+                            $wp_user->package = 'decodemybrain-deep-dive';
                             $wp_user->save();
                             
                         }
@@ -380,6 +388,7 @@ public function sign_up(Request $request) {
             $wp_user->display_name = $request->first_name . ' ' . $request->last_name;
             $wp_user->date_of_birth = $request->dob;
             $wp_user->age = $age;
+            $wp_user->package = 'decodemybrain-deep-dive';
             $wp_user->save();
             
             

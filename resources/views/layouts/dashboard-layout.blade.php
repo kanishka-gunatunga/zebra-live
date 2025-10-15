@@ -324,7 +324,7 @@ header{
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}" aria-current="page" href="{{url('dashboard')}}">Dashboard</a>
                     </li>
-                    <?php if($user_package == 'basic' || $user_package == 'pro'){ ?>
+                    <?php if($user_package == 'DecodeMyBrain Guided Friend & Family Connect' || $user_package == 'MyNeuroSense - The Smart Scan'){ ?>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('careers') ? 'active' : '' }}" aria-current="page" href="{{url('careers')}}">Careers</a>
                     </li>
@@ -332,7 +332,7 @@ header{
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('profile') ? 'active' : '' }}" aria-current="page" href="{{url('profile')}}">Profile</a>
                     </li>
-                    <?php if($user_package == 'basic' || $user_package == 'pro'){ ?>
+                    <?php if($user_package == 'DecodeMyBrain Guided Friend & Family Connect' || $user_package == 'MyNeuroSense - The Smart Scan'){ ?>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('skill-assestment') ? 'active' : '' }}" aria-current="page" href="{{url('skill-assestment')}}">Skill Assestment</a>
                     </li>
@@ -346,7 +346,7 @@ header{
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('billing') ? 'active' : '' }}" aria-current="page" href="{{url('billing')}}">Billing</a>
                     </li>
-                    <?php if($user_package == 'basic' || $user_package == 'pro'){ ?>
+                    <?php if($user_package == 'DecodeMyBrain Guided Friend & Family Connect' || $user_package == 'MyNeuroSense - The Smart Scan'){ ?>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('parent-community') ? 'active' : '' }}" aria-current="page" href="https://mylimitlessbrain.com/contact/">Parent Community</a>
                     </li>
@@ -439,7 +439,7 @@ header{
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}" aria-current="page" href="{{url('dashboard')}}">Dashboard</a>
                     </li>
-                    <?php if($user_package == 'basic' || $user_package == 'pro'){ ?>
+                    <?php if($user_package == 'DecodeMyBrain Guided Friend & Family Connect' || $user_package == 'MyNeuroSense - The Smart Scan'){ ?>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('careers') ? 'active' : '' }}" aria-current="page" href="{{url('careers')}}">Careers</a>
                     </li>
@@ -447,7 +447,7 @@ header{
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('profile') ? 'active' : '' }}" aria-current="page" href="{{url('profile')}}">Profile</a>
                     </li>
-                    <?php if($user_package == 'basic' || $user_package == 'pro'){ ?>
+                    <?php if($user_package == 'DecodeMyBrain Guided Friend & Family Connect' || $user_package == 'MyNeuroSense - The Smart Scan'){ ?>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('skill-assestment') ? 'active' : '' }}" aria-current="page" href="{{url('skill-assestment')}}">Skill Assestment</a>
                     </li>
@@ -461,7 +461,7 @@ header{
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('billing') ? 'active' : '' }}" aria-current="page" href="{{url('billing')}}">Billing</a>
                     </li>
-                    <?php if($user_package == 'basic' || $user_package == 'pro'){ ?>
+                    <?php if($user_package == 'DecodeMyBrain Guided Friend & Family Connect' || $user_package == 'MyNeuroSense - The Smart Scan'){ ?>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('parent-community') ? 'active' : '' }}" aria-current="page" href="{{url('parent-community')}}">Parent Community</a>
                     </li>
