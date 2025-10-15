@@ -24,7 +24,7 @@ use Session;
 use App\Models\User;
 use App\Models\WPUsers;
 use App\Models\Questions;
-use App\Models\QuestionAnswerMain;
+use App\Models\QuestionAnswerMain; 
 use App\Models\QuestionAnswers;
 use App\Models\CustomerDetails;
 use App\Models\BrainScores;
@@ -61,27 +61,45 @@ class ComparisonController extends Controller
     }
     if($request->isMethod('post')){
         
+        $wp_user =  WPUsers::where('user_id', session('user_id'))->first();
+        $user_package = $wp_user->package ?? null;
+
     $this->validate($request, [
             'email'   => 'required',
            ]);
 
-        $existingRequest = ComparisonRequests::where('user_id', session('user_id'))
+           $acceptedRequestCount = ComparisonRequests::where('user_id', session('user_id'))
+        ->where('status', 'accepted')
+        ->count();
+
+        $maxRequests = 0;
+    if ($user_package == 'decodemybrain-guided-friend-and-family-connect') {
+        $maxRequests = 1;
+    } elseif ($user_package == 'myneurosense-the-smart-scan') {
+        $maxRequests = 2;
+    }
+
+     if ($acceptedRequestCount >= $maxRequests) {
+        return back()->with('fail', 'You have reached the maximum number of accepted comparison requests for your package.');
+    }
+
+       $existingRequest = ComparisonRequests::where('user_id', session('user_id'))
         ->where('to_email', $request->email)
         ->whereIn('status', ['pending', 'approved', 'accepted'])
         ->first();
 
-            if (!$existingRequest) {
-                $comparison = new ComparisonRequests();
-                $comparison->user_id = session('user_id');
-                $comparison->to_email = $request->email;
-                $comparison->requested_date = date('Y-m-d');
-                $comparison->status = 'pending';
-                $comparison->save();
-        
-                return back()->with('success', 'Request successfully sent');
-            } else {
-                return back()->with('fail', 'A request has already been sent or approved for this email.');
-            }
+    if (!$existingRequest) {
+        $comparison = new ComparisonRequests();
+        $comparison->user_id = session('user_id');
+        $comparison->to_email = $request->email;
+        $comparison->requested_date = date('Y-m-d');
+        $comparison->status = 'pending';
+        $comparison->save();
+
+        return back()->with('success', 'Request successfully sent');
+    } else {
+        return back()->with('fail', 'A request has already been sent or approved for this email.');
+    }
 
     }
 
