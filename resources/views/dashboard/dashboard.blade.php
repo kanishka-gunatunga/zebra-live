@@ -509,7 +509,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div 
                     class="card position-relative header-tab-card" 
                     style="background-color: #9AE4E3; cursor: pointer;"
-                    @if($user_package == 'basic' || $user_package == 'pro')
+                    @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                         onclick="window.location.href='{{ url('/comparison-request') }}'"
                     @else
                         onclick="showUpgradePopup()"
@@ -527,7 +527,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </div>
 
                         {{-- Lock icon for users without valid package --}}
-                        @if($user_package != 'basic' && $user_package != 'pro')
+                        @if($user_package != 'decodemybrain-guided-friend-and-family-connect' && $user_package != 'myneurosense-the-smart-scan')
                             <div class="position-absolute lock-icon" style="top: 10px; right: 10px;">
                                 <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="Locked" class="img-fluid">
                             </div>
@@ -541,7 +541,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div 
                     class="card position-relative header-tab-card" 
                     style="background-color: #F1935D; cursor: pointer;"
-                    @if($user_package == 'basic' || $user_package == 'pro')
+                    @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                         onclick="window.location.href='#learn-more-about-you'"
                     @else
                         onclick="showUpgradePopup()"
@@ -560,7 +560,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </div>
 
                         {{-- Lock icon for restricted users --}}
-                        @if($user_package != 'basic' && $user_package != 'pro')
+                        @if($user_package != 'decodemybrain-guided-friend-and-family-connect' && $user_package != 'myneurosense-the-smart-scan')
                             <div class="position-absolute lock-icon" style="top: 10px; right: 10px;">
                                 <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="Locked" class="img-fluid">
                             </div>
@@ -574,7 +574,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div 
                     class="card position-relative header-tab-card" 
                     style="background-color: #85D6A5; cursor: pointer;"
-                    @if($user_package == 'basic' || $user_package == 'pro')
+                    @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                         onclick="window.location.href='{{ url('/careers') }}'"
                     @else
                         onclick="showUpgradePopup()"
@@ -591,7 +591,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </div>
 
                         {{-- Lock icon for restricted users --}}
-                        @if($user_package != 'basic' && $user_package != 'pro')
+                        @if($user_package != 'decodemybrain-guided-friend-and-family-connect' && $user_package != 'myneurosense-the-smart-scan')
                             <div class="position-absolute lock-icon" style="top: 10px; right: 10px;">
                                 <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="Locked" class="img-fluid">
                             </div>
@@ -613,7 +613,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div 
                         class="card position-relative header-tab-card" 
                         style="cursor: pointer; background-color: #fff;" 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             onclick="window.location.href='{{ url('skill-assestment') }}'"
                         @else
                             onclick="showUpgradePopup()"
@@ -643,7 +643,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div 
                         class="card position-relative header-tab-card" 
                         style="cursor: pointer; background-color: #fff;"
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             onclick="window.location.href='{{ url('introvert-or-extrovert') }}'"
                         @else
                             onclick="showUpgradePopup()"
@@ -749,7 +749,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                 </h3>
                             </div>
                         </div>
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                         <div class=" d-flex  justify-content-center justify-content-lg-start mt-2">
                             <a href="{{url('download-report')}}"><button class="download-report-btn">Download Report </button></a>
                         </div>
@@ -810,7 +810,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             You thoroughly research, calculate, and evaluate every situation, weighing the pros and cons carefully. Constantly questioning and probing for clarity is second nature to you. This makes you excellent at problem-solving and strategizing.
                             Your strength lies in your logical, objective approach, and you often cut through complexity by sticking to the facts. While others may get lost in emotions or subjective views, you focus on what can be proven and understood through reason. People rely on you for your candid insights, no-nonsense attitude, and the ability to deliver grounded solutions.
                         </p> --}}
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                         <div class="row d-lg-flex d-block justify-content-lg-between">
                             <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-lg-start px-0">
                                 <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 ">
@@ -889,7 +889,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" 
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 data-bs-toggle="modal" data-bs-target="#ModalOne"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -904,7 +904,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>
                                     @endif
                                 </div>
@@ -912,7 +912,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" 
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalTwo"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -927,7 +927,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>
                                     @endif
                                 </div>
@@ -935,7 +935,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" 
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalThree"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -950,7 +950,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                   @if($user_package !== 'basic' && $user_package !== 'pro')
+                                   @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>
                                     @endif
                                 </div>
@@ -958,7 +958,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-green" 
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFour"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -973,7 +973,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>
                                     @endif
                                 </div>
@@ -981,7 +981,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange"  
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -997,7 +997,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>
                                     @endif
                                 </div>
@@ -1005,7 +1005,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalSix"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -1020,7 +1020,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -1452,7 +1452,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalOne"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -1469,7 +1469,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                   @if($user_package !== 'basic' && $user_package !== 'pro')
+                                   @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -1477,7 +1477,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalTwo"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -1493,7 +1493,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                   @if($user_package !== 'basic' && $user_package !== 'pro')
+                                   @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -1501,7 +1501,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-blue" 
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalThree"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -1517,7 +1517,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -1525,7 +1525,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-green" 
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFour"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -1541,7 +1541,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -1550,7 +1550,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                 <div class="report-opertunities-card bg-orange" 
 
 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -1565,7 +1565,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -1574,7 +1574,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                 <div class="report-opertunities-card bg-yellow" 
 
 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalSix"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -1589,7 +1589,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -2006,7 +2006,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalOne"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -2021,7 +2021,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -2029,7 +2029,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalTwo"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -2044,7 +2044,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -2052,7 +2052,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-blue" 
 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalThree"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -2067,7 +2067,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -2075,7 +2075,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-green" 
 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFour"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -2090,7 +2090,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -2098,7 +2098,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -2113,7 +2113,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -2121,7 +2121,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalSix"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -2136,7 +2136,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -2606,7 +2606,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalOne"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -2621,7 +2621,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                   @if($user_package !== 'basic' && $user_package !== 'pro')
+                                   @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -2630,7 +2630,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                 <div class="report-opertunities-card bg-yellow"
                                 
 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalTwo"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -2645,7 +2645,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -2653,7 +2653,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-blue" 
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalThree"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -2668,7 +2668,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -2676,7 +2676,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-green" 
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFour"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -2691,7 +2691,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -2699,7 +2699,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -2714,7 +2714,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -2722,7 +2722,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalSix"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -2737,7 +2737,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -3209,7 +3209,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalOne"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -3224,7 +3224,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -3233,7 +3233,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                 <div class="report-opertunities-card bg-yellow" 
                                 
 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalTwo"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -3248,7 +3248,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -3256,7 +3256,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-blue" d
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalThree"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -3271,7 +3271,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -3279,7 +3279,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-green" 
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFour"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -3294,7 +3294,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -3302,7 +3302,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
                                 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -3317,14 +3317,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalSix"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -3339,7 +3339,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -3798,7 +3798,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalOne"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -3813,14 +3813,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalTwo"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -3835,14 +3835,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-blue" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalThree"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -3857,14 +3857,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-green" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFour"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -3879,14 +3879,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -3901,14 +3901,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalSix"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -3923,7 +3923,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -4395,7 +4395,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalOne"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -4410,14 +4410,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalTwo"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -4432,14 +4432,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-blue" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalThree"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -4454,14 +4454,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-green" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFour"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -4476,14 +4476,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -4498,14 +4498,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                   @if($user_package !== 'basic' && $user_package !== 'pro')
+                                   @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalSix"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -4520,7 +4520,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -5003,7 +5003,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalOne"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -5018,14 +5018,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalTwo"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -5040,14 +5040,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                   @if($user_package !== 'basic' && $user_package !== 'pro')
+                                   @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-blue"
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalThree"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -5062,14 +5062,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-green" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFour"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -5084,14 +5084,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -5106,14 +5106,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalSix"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -5128,7 +5128,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -5631,7 +5631,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalOne"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -5646,14 +5646,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalTwo"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -5668,14 +5668,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                   @if($user_package !== 'basic' && $user_package !== 'pro')
+                                   @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-blue" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalThree"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -5690,14 +5690,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-green" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFour"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -5712,14 +5712,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -5734,14 +5734,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalSix"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -5756,7 +5756,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -6260,7 +6260,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalOne"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -6275,14 +6275,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalTwo"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -6297,14 +6297,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-blue" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalThree"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -6319,14 +6319,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-green" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFour"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -6341,14 +6341,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -6363,14 +6363,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalSix"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -6385,7 +6385,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -6869,7 +6869,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalOne"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -6884,14 +6884,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalTwo"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -6906,14 +6906,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-blue" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalThree"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -6928,14 +6928,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-green" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFour"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -6950,14 +6950,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -6972,14 +6972,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalSix"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -6994,7 +6994,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -7459,7 +7459,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalOne"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -7474,14 +7474,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalTwo"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -7496,14 +7496,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-blue" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalThree"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -7518,14 +7518,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-green"
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFour"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -7540,14 +7540,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -7562,14 +7562,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalSix"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -7584,7 +7584,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -8046,7 +8046,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange"
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalOne"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -8061,14 +8061,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow"
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalTwo"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -8083,14 +8083,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-blue" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalThree"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -8105,14 +8105,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-green" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFour"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -8127,14 +8127,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -8149,14 +8149,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalSix"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -8171,7 +8171,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -8659,7 +8659,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalOne"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -8674,14 +8674,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalTwo"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -8696,14 +8696,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-blue"
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalThree"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -8718,14 +8718,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-green" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFour"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -8740,14 +8740,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -8762,14 +8762,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalSix"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -8784,7 +8784,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -9256,7 +9256,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2" >
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalOne"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -9271,14 +9271,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalTwo"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -9293,14 +9293,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-blue" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalThree"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -9315,14 +9315,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-green"
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFour"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -9337,14 +9337,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -9359,14 +9359,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-yellow" 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                     data-bs-toggle="modal" data-bs-target="#ModalSix"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -9381,7 +9381,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                    @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                         <i class="fa-solid fa-lock lock-icon"></i>    
                                     @endif
                                 </div>
@@ -9798,47 +9798,57 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
             {{-- section 6 --}}
             <div class="row align-items-center" >
-                <h6 class="dashbaord-section-title px-0" style="margin-bottom: 24px !important">Your Brain Dominance and Thinking Preferences </h6>
-                   <p>Please select areas to know about more</p>
-                <div class="d-flex flex-wrap mb-3">
-                    <div class="d-flex align-items-center pie-chart-top-nav mx-3 my-2">
-                        <span class="letter-circle me-2" style="background-color: #f6c94c;">A</span>
-                        <span class="text">Analytical</span>
-                    </div>
-           
-                    <div class="d-flex align-items-center pie-chart-top-nav mx-3 my-2">
-                        <span class="letter-circle me-2" style="background-color: #f1935d;">R</span>
-                        <span class="text">Realist</span>
-                    </div>
-                    <div class="d-flex align-items-center pie-chart-top-nav mx-3 my-2">
-                        <span class="letter-circle me-2" style="background-color: #9ae4e3;">C</span>
-                        <span class="text">Creative</span>
-                    </div>
-                    <div class="d-flex align-items-center pie-chart-top-nav mx-3 my-2">
-                        <span class="letter-circle me-2" style="background-color: #84d6a5;">S</span>
-                        <span class="text">Strategic</span>
-                    </div>
-                     <div class="d-flex align-items-center pie-chart-top-nav mx-3 my-2">
-                        <span class="letter-circle me-2" style="background-color: #9ae4e3;">P1</span>
-                        <span class="text">Practical</span>
-                    </div>
-                     <div class="d-flex align-items-center pie-chart-top-nav mx-3 my-2">
-                        <span class="letter-circle me-2" style="background-color: #84d6a5;">P2</span>
-                        <span class="text">Protective</span>
-                    </div>
-                </div>
+                
+                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
+    <h6 class="dashbaord-section-title px-0" style="margin-bottom: 24px !important">Your Brain Dominance and Thinking Preferences </h6>
+    <p>Please select areas to know about more</p>
+    <div class="d-flex flex-wrap mb-3">
+        <div class="d-flex align-items-center pie-chart-top-nav mx-3 my-2">
+            <span class="letter-circle me-2" style="background-color: #f6c94c;">A</span>
+            <span class="text">Analytical</span>
+        </div>
+        <div class="d-flex align-items-center pie-chart-top-nav mx-3 my-2">
+            <span class="letter-circle me-2" style="background-color: #f1935d;">R</span>
+            <span class="text">Realist</span>
+        </div>
+        <div class="d-flex align-items-center pie-chart-top-nav mx-3 my-2">
+            <span class="letter-circle me-2" style="background-color: #9ae4e3;">C</span>
+            <span class="text">Creative</span>
+        </div>
+        <div class="d-flex align-items-center pie-chart-top-nav mx-3 my-2">
+            <span class="letter-circle me-2" style="background-color: #84d6a5;">S</span>
+            <span class="text">Strategic</span>
+        </div>
+        <div class="d-flex align-items-center pie-chart-top-nav mx-3 my-2">
+            <span class="letter-circle me-2" style="background-color: #9ae4e3;">P1</span>
+            <span class="text">Practical</span>
+        </div>
+        <div class="d-flex align-items-center pie-chart-top-nav mx-3 my-2">
+            <span class="letter-circle me-2" style="background-color: #84d6a5;">P2</span>
+            <span class="text">Protective</span>
+        </div>
+    </div>
 
-                <div class="col-12 col-lg-4 px-0 mt-4">
-                  
+    <div class="col-12 col-lg-4 px-0 mt-4">
+        <canvas id="radarChart"></canvas>
+    </div>
 
-                    <canvas id="radarChart" ></canvas>
+    <div class="col-12 col-lg-8 d-flex flex-column mt-4 px-0" id="contentBox">
+        <h2 id="contentTitle"></h2>
+        <p id="contentText"></p>
+        <!-- <a href="{{url('download-report')}}"><button class="download-report-btn mt-4">Download Report </button></a> -->
+    </div>
+@else
+    <div class="locked-section text-center p-4" style="border: 1px solid #ccc; border-radius: 8px;">
+        <p class="mb-2">This section is locked for your current package.</p>
+        <span class="lock-icon" style="font-size: 24px;">🔒</span>
+        <p class="mt-2">Upgrade your package to access this content.</p>
+        <a href="{{ url('upgrade-package') }}" class="btn btn-primary mt-2">Upgrade Now</a>
+    </div>
+@endif
 
-                </div>
-                <div class="col-12 col-lg-8 d-flex flex-column mt-4 px-0" id="contentBox">
-                    <h2 id="contentTitle"></h2>
-                    <p id="contentText"></p>
-                    <!-- <a href="{{url('download-report')}}"><button class="download-report-btn mt-4">Download Report </button> </a>  -->
-                </div>
+
+                
 
                 {{-- section 7 --}}
                 <div class="mb-0 px-0" style="margin-top: 48px !important;">
@@ -9997,7 +10007,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10029,7 +10039,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10050,7 +10060,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10063,7 +10073,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10084,7 +10094,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10096,7 +10106,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10117,7 +10127,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10130,7 +10140,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10151,7 +10161,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10163,7 +10173,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Inclination-for-subjects-naturally')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10184,7 +10194,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10196,7 +10206,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10217,7 +10227,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10229,7 +10239,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10250,7 +10260,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10263,7 +10273,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10284,7 +10294,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10296,7 +10306,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10317,7 +10327,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10335,7 +10345,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10356,7 +10366,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10368,7 +10378,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10389,7 +10399,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10401,7 +10411,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10422,7 +10432,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10434,7 +10444,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10455,7 +10465,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10468,7 +10478,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10489,7 +10499,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10501,7 +10511,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/careers-suitable')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10522,7 +10532,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10534,7 +10544,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10555,7 +10565,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10567,7 +10577,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10588,7 +10598,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10601,7 +10611,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10622,7 +10632,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10634,7 +10644,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10655,7 +10665,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10673,7 +10683,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                    href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10695,7 +10705,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10707,7 +10717,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10728,7 +10738,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10741,7 +10751,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                    href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10763,7 +10773,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10775,7 +10785,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                    href="">
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10798,7 +10808,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10811,7 +10821,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                    href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10832,7 +10842,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10844,7 +10854,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10866,7 +10876,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10878,7 +10888,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href="{{url('report/job-and-work')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10900,7 +10910,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10912,7 +10922,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10936,7 +10946,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10949,7 +10959,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -10973,7 +10983,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -10985,7 +10995,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11006,7 +11016,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11027,7 +11037,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                    href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11052,7 +11062,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11064,7 +11074,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11085,7 +11095,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11097,7 +11107,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                    href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11119,7 +11129,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11130,7 +11140,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                    href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11151,7 +11161,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11164,7 +11174,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                    href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11185,7 +11195,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11197,7 +11207,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                    href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11218,7 +11228,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11230,7 +11240,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11251,7 +11261,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11263,7 +11273,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11284,7 +11294,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11297,7 +11307,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                                @if($user_package == 'basic' || $user_package == 'pro')
+                                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11318,7 +11328,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11330,7 +11340,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11351,7 +11361,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11367,7 +11377,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11388,7 +11398,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11400,7 +11410,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11421,7 +11431,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11433,7 +11443,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11454,7 +11464,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11465,7 +11475,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11486,7 +11496,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11499,7 +11509,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11520,7 +11530,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11532,7 +11542,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/careers-suitable')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11553,7 +11563,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11565,7 +11575,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11586,7 +11596,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11598,7 +11608,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11619,7 +11629,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11632,7 +11642,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11653,7 +11663,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11665,7 +11675,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11686,7 +11696,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11703,7 +11713,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11724,7 +11734,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11736,7 +11746,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11757,7 +11767,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11769,7 +11779,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11790,7 +11800,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11801,7 +11811,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11822,7 +11832,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11835,7 +11845,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11857,7 +11867,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11869,7 +11879,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11890,7 +11900,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11902,7 +11912,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/job-and-work')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11923,7 +11933,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11935,7 +11945,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11956,7 +11966,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -11969,7 +11979,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -11990,7 +12000,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12003,7 +12013,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12024,7 +12034,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12048,7 +12058,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12069,7 +12079,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12081,7 +12091,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12102,7 +12112,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12114,7 +12124,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12135,7 +12145,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12146,7 +12156,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12167,7 +12177,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12180,7 +12190,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12201,7 +12211,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12213,7 +12223,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12234,7 +12244,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12246,7 +12256,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12267,7 +12277,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12279,7 +12289,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12300,7 +12310,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12313,7 +12323,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12334,7 +12344,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12345,7 +12355,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12366,7 +12376,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12383,7 +12393,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12404,7 +12414,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12416,7 +12426,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12437,7 +12447,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12449,7 +12459,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12470,7 +12480,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12481,7 +12491,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12502,7 +12512,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12516,7 +12526,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12537,7 +12547,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12549,7 +12559,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/careers-suitable')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12570,7 +12580,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12582,7 +12592,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12603,7 +12613,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12616,7 +12626,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12637,7 +12647,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12651,7 +12661,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12672,7 +12682,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12684,7 +12694,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12705,7 +12715,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12722,7 +12732,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12743,7 +12753,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12755,7 +12765,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12776,7 +12786,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12788,7 +12798,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12809,7 +12819,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12820,7 +12830,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12841,7 +12851,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12854,7 +12864,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12875,7 +12885,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12887,7 +12897,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12908,7 +12918,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12920,7 +12930,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href="{{url('report/job-and-work')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12941,7 +12951,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12953,7 +12963,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -12974,7 +12984,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -12987,7 +12997,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13008,7 +13018,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13020,7 +13030,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13041,7 +13051,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13061,7 +13071,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13082,7 +13092,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13094,7 +13104,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13115,7 +13125,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13127,7 +13137,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13148,7 +13158,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13159,7 +13169,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13180,7 +13190,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13193,7 +13203,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13214,7 +13224,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13226,7 +13236,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13247,7 +13257,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13259,7 +13269,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13280,7 +13290,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13292,7 +13302,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13313,7 +13323,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13326,7 +13336,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13347,7 +13357,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13358,7 +13368,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13379,7 +13389,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13396,7 +13406,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13417,7 +13427,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13429,7 +13439,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13450,7 +13460,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13462,7 +13472,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13483,7 +13493,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13494,7 +13504,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13515,7 +13525,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13528,7 +13538,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13549,7 +13559,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13561,7 +13571,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/careers-suitable')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13582,7 +13592,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13594,7 +13604,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13615,7 +13625,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13627,7 +13637,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13648,7 +13658,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13661,7 +13671,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13682,7 +13692,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13694,7 +13704,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13715,7 +13725,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13732,7 +13742,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13753,7 +13763,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13765,7 +13775,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13786,7 +13796,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13798,7 +13808,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13819,7 +13829,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13830,7 +13840,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13851,7 +13861,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13864,7 +13874,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13885,7 +13895,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13897,7 +13907,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13918,7 +13928,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13930,7 +13940,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/job-and-work')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13951,7 +13961,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13963,7 +13973,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -13984,7 +13994,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -13997,7 +14007,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14018,7 +14028,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14029,7 +14039,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14050,7 +14060,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14071,7 +14081,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14092,7 +14102,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14104,7 +14114,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14125,7 +14135,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14137,7 +14147,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14158,7 +14168,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14169,7 +14179,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14190,7 +14200,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14203,7 +14213,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14224,7 +14234,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14236,7 +14246,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14257,7 +14267,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14269,7 +14279,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14290,7 +14300,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14302,7 +14312,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14323,7 +14333,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14336,7 +14346,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14357,7 +14367,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14370,7 +14380,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14391,7 +14401,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14407,7 +14417,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14428,7 +14438,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14440,7 +14450,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14461,7 +14471,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14473,7 +14483,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14494,7 +14504,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14505,7 +14515,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14526,7 +14536,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14539,7 +14549,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14560,7 +14570,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14572,7 +14582,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/careers-suitable')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14593,7 +14603,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14605,7 +14615,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14626,7 +14636,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14638,7 +14648,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14659,7 +14669,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14672,7 +14682,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14693,7 +14703,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14705,7 +14715,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14726,7 +14736,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14744,7 +14754,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14765,7 +14775,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14778,7 +14788,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14799,7 +14809,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14811,7 +14821,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14832,7 +14842,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14844,7 +14854,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/job-and-work')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14865,7 +14875,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14877,7 +14887,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14898,7 +14908,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14911,7 +14921,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14932,7 +14942,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14944,7 +14954,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -14965,7 +14975,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -14987,7 +14997,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15008,7 +15018,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15020,7 +15030,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15041,7 +15051,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15053,7 +15063,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15074,7 +15084,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15085,7 +15095,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15106,7 +15116,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15119,7 +15129,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15140,7 +15150,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15152,7 +15162,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15173,7 +15183,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15185,7 +15195,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15206,7 +15216,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15218,7 +15228,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15239,7 +15249,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15252,7 +15262,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15273,7 +15283,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15285,7 +15295,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15306,7 +15316,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15323,7 +15333,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15344,7 +15354,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15356,7 +15366,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15377,7 +15387,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15389,7 +15399,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15410,7 +15420,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15421,7 +15431,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15442,7 +15452,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15455,7 +15465,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15476,7 +15486,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15488,7 +15498,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/careers-suitable')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15509,7 +15519,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15521,7 +15531,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15542,7 +15552,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15554,7 +15564,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15575,7 +15585,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15588,7 +15598,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15609,7 +15619,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15621,7 +15631,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15642,7 +15652,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15659,7 +15669,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15680,7 +15690,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15692,7 +15702,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15713,7 +15723,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15725,7 +15735,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15746,7 +15756,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15757,7 +15767,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15778,7 +15788,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15791,7 +15801,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15812,7 +15822,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15824,7 +15834,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15845,7 +15855,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15857,7 +15867,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/job-and-work')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15878,7 +15888,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15890,7 +15900,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15911,7 +15921,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15924,7 +15934,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15945,7 +15955,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15958,7 +15968,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -15979,7 +15989,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -15999,7 +16009,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16020,7 +16030,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16032,7 +16042,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16053,7 +16063,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16065,7 +16075,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16086,7 +16096,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16097,7 +16107,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16118,7 +16128,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16131,7 +16141,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16152,7 +16162,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16164,7 +16174,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16185,7 +16195,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16197,7 +16207,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16218,7 +16228,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16230,7 +16240,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16251,7 +16261,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16264,7 +16274,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16285,7 +16295,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16297,7 +16307,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16318,7 +16328,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16334,7 +16344,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16355,7 +16365,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16367,7 +16377,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16388,7 +16398,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16400,7 +16410,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16421,7 +16431,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16432,7 +16442,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16453,7 +16463,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16466,7 +16476,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16487,7 +16497,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16499,7 +16509,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/careers-suitable')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16520,7 +16530,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16532,7 +16542,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16553,7 +16563,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16565,7 +16575,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16586,7 +16596,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16599,7 +16609,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16620,7 +16630,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16632,7 +16642,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16653,7 +16663,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16670,7 +16680,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16691,7 +16701,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16703,7 +16713,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16724,7 +16734,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16736,7 +16746,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16757,7 +16767,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16768,7 +16778,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16789,7 +16799,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16802,7 +16812,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16823,7 +16833,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16836,7 +16846,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16857,7 +16867,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16869,7 +16879,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/job-and-work')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16890,7 +16900,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16902,7 +16912,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16923,7 +16933,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16936,7 +16946,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16957,7 +16967,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -16969,7 +16979,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -16990,7 +17000,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17011,7 +17021,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17032,7 +17042,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17044,7 +17054,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17065,7 +17075,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17078,7 +17088,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17099,7 +17109,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17110,7 +17120,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17131,7 +17141,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17144,7 +17154,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17165,7 +17175,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17177,7 +17187,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17198,7 +17208,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17210,7 +17220,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17231,7 +17241,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17243,7 +17253,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17264,7 +17274,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17277,7 +17287,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17298,7 +17308,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17311,7 +17321,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17332,7 +17342,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17348,7 +17358,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17369,7 +17379,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17381,7 +17391,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17402,7 +17412,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17414,7 +17424,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17435,7 +17445,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17446,7 +17456,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17467,7 +17477,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17480,7 +17490,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17501,7 +17511,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17513,7 +17523,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/careers-suitable')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17534,7 +17544,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17546,7 +17556,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17567,7 +17577,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17579,7 +17589,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17600,7 +17610,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17613,7 +17623,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17634,7 +17644,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17646,7 +17656,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17667,7 +17677,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17684,7 +17694,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17705,7 +17715,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17717,7 +17727,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17738,7 +17748,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17750,7 +17760,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17771,7 +17781,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17782,7 +17792,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17803,7 +17813,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17816,7 +17826,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17837,7 +17847,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17849,7 +17859,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17870,7 +17880,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17882,7 +17892,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/job-and-work')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17903,7 +17913,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17915,7 +17925,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17936,7 +17946,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17949,7 +17959,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -17970,7 +17980,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -17982,7 +17992,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18003,7 +18013,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18023,7 +18033,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18044,7 +18054,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18056,7 +18066,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18077,7 +18087,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18089,7 +18099,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18110,7 +18120,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18121,7 +18131,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18142,7 +18152,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18155,7 +18165,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18176,7 +18186,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18188,7 +18198,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18209,7 +18219,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18221,7 +18231,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18242,7 +18252,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18254,7 +18264,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18275,7 +18285,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18288,7 +18298,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18309,7 +18319,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18320,7 +18330,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18341,7 +18351,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18358,7 +18368,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18379,7 +18389,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18391,7 +18401,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18412,7 +18422,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18424,7 +18434,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18445,7 +18455,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18456,7 +18466,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18477,7 +18487,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18490,7 +18500,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18511,7 +18521,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18523,7 +18533,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/careers-suitable')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18544,7 +18554,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18556,7 +18566,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18577,7 +18587,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18589,7 +18599,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18610,7 +18620,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18623,7 +18633,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18644,7 +18654,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18656,7 +18666,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18677,7 +18687,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18694,7 +18704,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18715,7 +18725,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18727,7 +18737,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18748,7 +18758,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18760,7 +18770,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18781,7 +18791,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18792,7 +18802,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18813,7 +18823,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18826,7 +18836,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18847,7 +18857,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18859,7 +18869,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18880,7 +18890,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18892,7 +18902,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/job-and-work')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18913,7 +18923,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18925,7 +18935,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18946,7 +18956,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18959,7 +18969,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -18980,7 +18990,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -18992,7 +19002,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19013,7 +19023,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19034,7 +19044,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19055,7 +19065,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19067,7 +19077,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19088,7 +19098,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19100,7 +19110,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19121,7 +19131,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19132,7 +19142,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19153,7 +19163,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19166,7 +19176,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19187,7 +19197,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19199,7 +19209,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19220,7 +19230,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19232,7 +19242,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19253,7 +19263,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19265,7 +19275,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19286,7 +19296,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19299,7 +19309,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19320,7 +19330,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19332,7 +19342,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19353,7 +19363,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19370,7 +19380,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19391,7 +19401,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19403,7 +19413,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19424,7 +19434,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19436,7 +19446,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19457,7 +19467,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19468,7 +19478,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19489,7 +19499,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19502,7 +19512,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19523,7 +19533,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19535,7 +19545,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/careers-suitable')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19556,7 +19566,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19568,7 +19578,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19589,7 +19599,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19601,7 +19611,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19622,7 +19632,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19635,7 +19645,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19656,7 +19666,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19668,7 +19678,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19689,7 +19699,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19706,7 +19716,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{ url('/report/advanced-brain-report') }}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19727,7 +19737,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19739,7 +19749,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19760,7 +19770,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19772,7 +19782,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19793,7 +19803,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19804,7 +19814,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19825,7 +19835,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19838,7 +19848,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19859,7 +19869,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19871,7 +19881,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19892,7 +19902,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19904,7 +19914,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/job-and-work')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19925,7 +19935,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19937,7 +19947,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19958,7 +19968,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -19971,7 +19981,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -19992,7 +20002,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20004,7 +20014,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20025,7 +20035,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20047,7 +20057,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20068,7 +20078,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20080,7 +20090,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20101,7 +20111,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20113,7 +20123,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20134,7 +20144,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20145,7 +20155,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20166,7 +20176,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20179,7 +20189,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20200,7 +20210,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20212,7 +20222,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20233,7 +20243,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20245,7 +20255,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20266,7 +20276,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20278,7 +20288,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20299,7 +20309,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20312,7 +20322,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20333,7 +20343,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20345,7 +20355,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20366,7 +20376,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20383,7 +20393,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20404,7 +20414,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20416,7 +20426,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20437,7 +20447,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20449,7 +20459,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20470,7 +20480,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20481,7 +20491,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20502,7 +20512,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20515,7 +20525,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20536,7 +20546,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20548,7 +20558,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/careers-suitable')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20569,7 +20579,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20581,7 +20591,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20602,7 +20612,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20614,7 +20624,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20635,7 +20645,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20648,7 +20658,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20669,7 +20679,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20681,7 +20691,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20702,7 +20712,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20719,7 +20729,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20740,7 +20750,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20752,7 +20762,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20773,7 +20783,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20785,7 +20795,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20806,7 +20816,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20817,7 +20827,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20838,7 +20848,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20851,7 +20861,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20872,7 +20882,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20884,7 +20894,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20905,7 +20915,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20917,7 +20927,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/job-and-work')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20938,7 +20948,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20950,7 +20960,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -20971,7 +20981,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -20984,7 +20994,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21005,7 +21015,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21018,7 +21028,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21039,7 +21049,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21059,7 +21069,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21080,7 +21090,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21092,7 +21102,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21113,7 +21123,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21125,7 +21135,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                               href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21146,7 +21156,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21157,7 +21167,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21178,7 +21188,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21191,7 +21201,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21212,7 +21222,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21224,7 +21234,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21245,7 +21255,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21257,7 +21267,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21278,7 +21288,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21290,7 +21300,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21311,7 +21321,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21324,7 +21334,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21345,7 +21355,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21358,7 +21368,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21379,7 +21389,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21395,7 +21405,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21416,7 +21426,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21428,7 +21438,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21449,7 +21459,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21461,7 +21471,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21482,7 +21492,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21493,7 +21503,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21514,7 +21524,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21527,7 +21537,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21548,7 +21558,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21560,7 +21570,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/careers-suitable')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21581,7 +21591,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21593,7 +21603,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21614,7 +21624,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21626,7 +21636,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21647,7 +21657,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21660,7 +21670,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21681,7 +21691,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21693,7 +21703,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21714,7 +21724,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21731,7 +21741,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21752,7 +21762,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21764,7 +21774,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21785,7 +21795,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21797,7 +21807,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21818,7 +21828,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21829,7 +21839,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21850,7 +21860,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21863,7 +21873,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21884,7 +21894,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21896,7 +21906,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21917,7 +21927,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21929,7 +21939,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/job-and-work')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21950,7 +21960,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21962,7 +21972,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -21983,7 +21993,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -21996,7 +22006,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22017,7 +22027,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22030,7 +22040,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22051,7 +22061,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22072,7 +22082,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22093,7 +22103,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22105,7 +22115,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22126,7 +22136,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22138,7 +22148,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22159,7 +22169,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22170,7 +22180,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22191,7 +22201,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22204,7 +22214,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22225,7 +22235,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22237,7 +22247,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22258,7 +22268,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22270,7 +22280,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22291,7 +22301,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22303,7 +22313,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22324,7 +22334,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22337,7 +22347,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22358,7 +22368,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22371,7 +22381,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22392,7 +22402,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22408,7 +22418,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22429,7 +22439,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22441,7 +22451,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22462,7 +22472,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22474,7 +22484,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22495,7 +22505,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22506,7 +22516,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22527,7 +22537,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22540,7 +22550,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22561,7 +22571,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22573,7 +22583,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/careers-suitable')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22594,7 +22604,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22606,7 +22616,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22627,7 +22637,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22639,7 +22649,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                              href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22660,7 +22670,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22673,7 +22683,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22694,7 +22704,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22706,7 +22716,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22727,7 +22737,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22744,7 +22754,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                            href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22765,7 +22775,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22777,7 +22787,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22798,7 +22808,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22810,7 +22820,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22831,7 +22841,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22842,7 +22852,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22863,7 +22873,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22876,7 +22886,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22897,7 +22907,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22909,7 +22919,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22930,7 +22940,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22942,7 +22952,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             href="{{url('report/job-and-work')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22963,7 +22973,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -22975,7 +22985,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -22996,7 +23006,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23009,7 +23019,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23030,7 +23040,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23043,7 +23053,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23064,7 +23074,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23087,7 +23097,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23108,7 +23118,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23120,7 +23130,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23141,7 +23151,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23153,7 +23163,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23174,7 +23184,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23185,7 +23195,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23206,7 +23216,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23219,7 +23229,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23240,7 +23250,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23252,7 +23262,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23273,7 +23283,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23285,7 +23295,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23306,7 +23316,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23318,7 +23328,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23339,7 +23349,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23352,7 +23362,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                             href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23373,7 +23383,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23386,7 +23396,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                            href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23407,7 +23417,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23423,7 +23433,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                            href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23444,7 +23454,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23456,7 +23466,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23477,7 +23487,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23489,7 +23499,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                            href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23510,7 +23520,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23521,7 +23531,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                            href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23542,7 +23552,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23555,7 +23565,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                            href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23576,7 +23586,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23588,7 +23598,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                            href="{{url('report/careers-suitable')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23609,7 +23619,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23621,7 +23631,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                            href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23642,7 +23652,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23654,7 +23664,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                            href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23675,7 +23685,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23688,7 +23698,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                            href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23709,7 +23719,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23721,7 +23731,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                            href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23742,7 +23752,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23759,7 +23769,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                           href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23780,7 +23790,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23792,7 +23802,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23813,7 +23823,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23825,7 +23835,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23846,7 +23856,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23857,7 +23867,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23878,7 +23888,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23891,7 +23901,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23912,7 +23922,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23924,7 +23934,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23945,7 +23955,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23957,7 +23967,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/job-and-work')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -23978,7 +23988,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -23990,7 +24000,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24011,7 +24021,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24024,7 +24034,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24045,7 +24055,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24058,7 +24068,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24079,7 +24089,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24101,7 +24111,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24122,7 +24132,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24134,7 +24144,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24155,7 +24165,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24167,7 +24177,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24188,7 +24198,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24199,7 +24209,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24220,7 +24230,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24233,7 +24243,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24254,7 +24264,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24266,7 +24276,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24287,7 +24297,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24299,7 +24309,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24320,7 +24330,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24332,7 +24342,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24353,7 +24363,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24366,7 +24376,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24387,7 +24397,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24400,7 +24410,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24421,7 +24431,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24437,7 +24447,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24458,7 +24468,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24470,7 +24480,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24491,7 +24501,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24503,7 +24513,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24524,7 +24534,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24535,7 +24545,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24556,7 +24566,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24569,7 +24579,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24590,7 +24600,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24602,7 +24612,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                         @if($user_package == 'basic' || $user_package == 'pro')
+                         @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/careers-suitable')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24623,7 +24633,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24635,7 +24645,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/subjects-preferred-for-matching-career-options')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24656,7 +24666,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24668,7 +24678,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/extracurricular-activities')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24689,7 +24699,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24702,7 +24712,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24723,7 +24733,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24735,7 +24745,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24756,7 +24766,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24773,7 +24783,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Advanced-Brain-Report')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24794,7 +24804,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24806,7 +24816,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24827,7 +24837,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24839,7 +24849,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24860,7 +24870,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24871,7 +24881,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24892,7 +24902,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24905,7 +24915,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/communication-and-behaviour')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24926,7 +24936,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24938,7 +24948,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/diet-and-nutrition')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24959,7 +24969,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -24971,7 +24981,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                  href="{{url('report/job-and-work')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -24992,7 +25002,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -25004,7 +25014,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/relationship-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -25025,7 +25035,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -25038,7 +25048,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                   href=""
                                 @else
                                     onclick="showUpgradePopup()"
@@ -25059,7 +25069,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -25072,7 +25082,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
-                        @if($user_package == 'basic' || $user_package == 'pro')
+                        @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
                                 href="{{url('report/Flow-and-grow-basics')}}"
                                 @else
                                     onclick="showUpgradePopup()"
@@ -25093,7 +25103,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        @if($user_package !== 'decodemybrain-guided-friend-and-family-connect' && $user_package !== 'myneurosense-the-smart-scan')
                                             <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                         @endif
                                     </div>
@@ -25730,7 +25740,7 @@ setTimeout(() => {
 
         videoThumbs.forEach(thumb => {
             thumb.addEventListener('click', () => {
-                if (userPackage === 'basic' || userPackage === 'pro') {
+                if (userPackage === 'decodemybrain-guided-friend-and-family-connect' || userPackage === 'myneurosense-the-smart-scan') {
                     // show the video modal
                     const videoSrc = thumb.dataset.video;
                     modalVideo.querySelector('source').src = videoSrc;
