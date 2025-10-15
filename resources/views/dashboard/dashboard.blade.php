@@ -834,7 +834,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
                 
                     <div class="row" >
-                        <div class="col-md-3 video-thumb mb-3" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
+                        
+                        <div class="col-md-3 video-thumb mb-3" style="cursor: pointer;" 
+                        data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
                             <img src="{{ asset('assets/images/teaching.png') }}" style="width: 100%;object-fit: cover;">
                             <div class="d-flex justify-content-between align-items-center mt-3">
                                 <h5 class="brain-growth-card-bottom-text">Video One</h5>
@@ -885,7 +887,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalOne">
+                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" 
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                data-bs-toggle="modal" data-bs-target="#ModalOne"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/1.png') }}" class="w-100">
@@ -895,11 +904,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalTwo">
+                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" 
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalTwo"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/22.png') }}" class="w-100">
@@ -909,11 +927,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" data-bs-target="#ModalThree">
+                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" 
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalThree"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/3.png') }}" class="w-100">
@@ -923,11 +950,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                   @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-green" data-bs-toggle="modal" data-bs-target="#ModalFour">
+                                <div class="report-opertunities-card bg-green" 
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFour"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/4.png') }}" class="w-100">
@@ -937,11 +973,21 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalFive">
+                                <div class="report-opertunities-card bg-orange"  
+                                
+                                @if($user_package !== 'basic' || $user_package !== 'pro')
+                                   data-bs-toggle="modal" data-bs-target="#ModalFive"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/5.png') }}" class="w-100">
@@ -951,11 +997,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalSix">
+                                <div class="report-opertunities-card bg-yellow" 
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalSix"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/6.png') }}" class="w-100">
@@ -965,7 +1020,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -1394,7 +1451,15 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalOne">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalOne"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                
+                                
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/1.png') }}" class="w-100">
@@ -1404,11 +1469,21 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                   @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalTwo">
+                                <div class="report-opertunities-card bg-yellow" 
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalTwo"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/22.png') }}" class="w-100">
@@ -1418,11 +1493,21 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                   @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" data-bs-target="#ModalThree">
+                                <div class="report-opertunities-card bg-blue" 
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalThree"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/3.png') }}" class="w-100">
@@ -1432,11 +1517,21 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-green" data-bs-toggle="modal" data-bs-target="#ModalFour">
+                                <div class="report-opertunities-card bg-green" 
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFour"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/4.png') }}" class="w-100">
@@ -1446,11 +1541,21 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalFive">
+                                <div class="report-opertunities-card bg-orange" 
+
+
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/5.png') }}" class="w-100">
@@ -1460,11 +1565,21 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalSix">
+                                <div class="report-opertunities-card bg-yellow" 
+
+
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalSix"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/6.png') }}" class="w-100">
@@ -1474,7 +1589,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -1887,7 +2004,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalOne">
+                                <div class="report-opertunities-card bg-orange" 
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalOne"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/1.png') }}" class="w-100">
@@ -1897,11 +2021,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalTwo">
+                                <div class="report-opertunities-card bg-yellow" 
+
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalTwo"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/22.png') }}" class="w-100">
@@ -1911,11 +2044,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" data-bs-target="#ModalThree">
+                                <div class="report-opertunities-card bg-blue" 
+
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalThree"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/3.png') }}" class="w-100">
@@ -1925,11 +2067,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-green" data-bs-toggle="modal" data-bs-target="#ModalFour">
+                                <div class="report-opertunities-card bg-green" 
+
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFour"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/4.png') }}" class="w-100">
@@ -1939,11 +2090,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalFive">
+                                <div class="report-opertunities-card bg-orange" 
+
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/5.png') }}" class="w-100">
@@ -1953,11 +2113,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalSix">
+                                <div class="report-opertunities-card bg-yellow" 
+
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalSix"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/6.png') }}" class="w-100">
@@ -1967,7 +2136,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -2433,7 +2604,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalOne">
+                                <div class="report-opertunities-card bg-orange" 
+
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalOne"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/1.png') }}" class="w-100">
@@ -2443,11 +2621,21 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                   @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalTwo">
+                                <div class="report-opertunities-card bg-yellow"
+                                
+
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalTwo"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/22.png') }}" class="w-100">
@@ -2457,11 +2645,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" data-bs-target="#ModalThree">
+                                <div class="report-opertunities-card bg-blue" 
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalThree"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/3.png') }}" class="w-100">
@@ -2471,11 +2668,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-green" data-bs-toggle="modal" data-bs-target="#ModalFour">
+                                <div class="report-opertunities-card bg-green" 
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFour"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/4.png') }}" class="w-100">
@@ -2485,11 +2691,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalFive">
+                                <div class="report-opertunities-card bg-orange" 
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/5.png') }}" class="w-100">
@@ -2499,11 +2714,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalSix">
+                                <div class="report-opertunities-card bg-yellow" 
+
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalSix"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/6.png') }}" class="w-100">
@@ -2513,7 +2737,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -2981,7 +3207,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalOne">
+                                <div class="report-opertunities-card bg-orange" 
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalOne"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/1.png') }}" class="w-100">
@@ -2991,11 +3224,21 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalTwo">
+                                <div class="report-opertunities-card bg-yellow" 
+                                
+
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalTwo"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/22.png') }}" class="w-100">
@@ -3005,11 +3248,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" data-bs-target="#ModalThree">
+                                <div class="report-opertunities-card bg-blue" d
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalThree"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/3.png') }}" class="w-100">
@@ -3019,11 +3271,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-green" data-bs-toggle="modal" data-bs-target="#ModalFour">
+                                <div class="report-opertunities-card bg-green" 
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFour"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/4.png') }}" class="w-100">
@@ -3033,11 +3294,20 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalFive">
+                                <div class="report-opertunities-card bg-orange" 
+                                
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/5.png') }}" class="w-100">
@@ -3047,11 +3317,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalSix">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalSix"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/6.png') }}" class="w-100">
@@ -3061,7 +3339,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -3517,7 +3797,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalOne">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalOne"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/1.png') }}" class="w-100">
@@ -3527,11 +3813,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalTwo">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalTwo"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/22.png') }}" class="w-100">
@@ -3541,11 +3835,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" data-bs-target="#ModalThree">
+                                <div class="report-opertunities-card bg-blue" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalThree"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/3.png') }}" class="w-100">
@@ -3555,11 +3857,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-green" data-bs-toggle="modal" data-bs-target="#ModalFour">
+                                <div class="report-opertunities-card bg-green" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFour"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/4.png') }}" class="w-100">
@@ -3569,11 +3879,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalFive">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/5.png') }}" class="w-100">
@@ -3583,11 +3901,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalSix">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalSix"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/6.png') }}" class="w-100">
@@ -3597,7 +3923,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -4066,7 +4394,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalOne">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalOne"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/1.png') }}" class="w-100">
@@ -4076,11 +4410,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalTwo">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalTwo"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/22.png') }}" class="w-100">
@@ -4090,11 +4432,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" data-bs-target="#ModalThree">
+                                <div class="report-opertunities-card bg-blue" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalThree"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/3.png') }}" class="w-100">
@@ -4104,11 +4454,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-green" data-bs-toggle="modal" data-bs-target="#ModalFour">
+                                <div class="report-opertunities-card bg-green" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFour"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/4.png') }}" class="w-100">
@@ -4118,11 +4476,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalFive">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/5.png') }}" class="w-100">
@@ -4132,11 +4498,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                   @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalSix">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalSix"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/6.png') }}" class="w-100">
@@ -4146,7 +4520,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -4626,7 +5002,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalOne">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalOne"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/1.png') }}" class="w-100">
@@ -4636,11 +5018,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalTwo">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalTwo"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/22.png') }}" class="w-100">
@@ -4650,11 +5040,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                   @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" data-bs-target="#ModalThree">
+                                <div class="report-opertunities-card bg-blue"
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalThree"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/3.png') }}" class="w-100">
@@ -4664,11 +5062,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-green" data-bs-toggle="modal" data-bs-target="#ModalFour">
+                                <div class="report-opertunities-card bg-green" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFour"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/4.png') }}" class="w-100">
@@ -4678,11 +5084,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalFive">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/5.png') }}" class="w-100">
@@ -4692,11 +5106,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalSix">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalSix"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/6.png') }}" class="w-100">
@@ -4706,7 +5128,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -5206,7 +5630,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalOne">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalOne"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/1.png') }}" class="w-100">
@@ -5216,11 +5646,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalTwo">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalTwo"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/22.png') }}" class="w-100">
@@ -5230,11 +5668,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                   @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" data-bs-target="#ModalThree">
+                                <div class="report-opertunities-card bg-blue" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalThree"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/3.png') }}" class="w-100">
@@ -5244,11 +5690,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-green" data-bs-toggle="modal" data-bs-target="#ModalFour">
+                                <div class="report-opertunities-card bg-green" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFour"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/4.png') }}" class="w-100">
@@ -5258,11 +5712,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalFive">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/5.png') }}" class="w-100">
@@ -5272,11 +5734,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalSix">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalSix"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/6.png') }}" class="w-100">
@@ -5286,7 +5756,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -5787,7 +6259,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalOne">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalOne"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/1.png') }}" class="w-100">
@@ -5797,11 +6275,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalTwo">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalTwo"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/22.png') }}" class="w-100">
@@ -5811,11 +6297,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" data-bs-target="#ModalThree">
+                                <div class="report-opertunities-card bg-blue" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalThree"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/3.png') }}" class="w-100">
@@ -5825,11 +6319,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-green" data-bs-toggle="modal" data-bs-target="#ModalFour">
+                                <div class="report-opertunities-card bg-green" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFour"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/4.png') }}" class="w-100">
@@ -5839,11 +6341,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalFive">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/5.png') }}" class="w-100">
@@ -5853,11 +6363,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalSix">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalSix"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/6.png') }}" class="w-100">
@@ -5867,7 +6385,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -6348,7 +6868,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalOne">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalOne"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/1.png') }}" class="w-100">
@@ -6358,11 +6884,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalTwo">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalTwo"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/22.png') }}" class="w-100">
@@ -6372,11 +6906,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" data-bs-target="#ModalThree">
+                                <div class="report-opertunities-card bg-blue" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalThree"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/3.png') }}" class="w-100">
@@ -6386,11 +6928,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-green" data-bs-toggle="modal" data-bs-target="#ModalFour">
+                                <div class="report-opertunities-card bg-green" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFour"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/4.png') }}" class="w-100">
@@ -6400,11 +6950,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalFive">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/5.png') }}" class="w-100">
@@ -6414,11 +6972,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalSix">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalSix"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/6.png') }}" class="w-100">
@@ -6428,7 +6994,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -6890,7 +7458,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalOne">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalOne"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/1.png') }}" class="w-100">
@@ -6900,11 +7474,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalTwo">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalTwo"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/22.png') }}" class="w-100">
@@ -6914,11 +7496,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" data-bs-target="#ModalThree">
+                                <div class="report-opertunities-card bg-blue" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalThree"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/3.png') }}" class="w-100">
@@ -6928,11 +7518,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-green" data-bs-toggle="modal" data-bs-target="#ModalFour">
+                                <div class="report-opertunities-card bg-green"
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFour"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/4.png') }}" class="w-100">
@@ -6942,11 +7540,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalFive">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/5.png') }}" class="w-100">
@@ -6956,11 +7562,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalSix">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalSix"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/6.png') }}" class="w-100">
@@ -6970,7 +7584,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -7429,7 +8045,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalOne">
+                                <div class="report-opertunities-card bg-orange"
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalOne"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/1.png') }}" class="w-100">
@@ -7439,11 +8061,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalTwo">
+                                <div class="report-opertunities-card bg-yellow"
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalTwo"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/22.png') }}" class="w-100">
@@ -7453,11 +8083,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" data-bs-target="#ModalThree">
+                                <div class="report-opertunities-card bg-blue" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalThree"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/3.png') }}" class="w-100">
@@ -7467,11 +8105,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-green" data-bs-toggle="modal" data-bs-target="#ModalFour">
+                                <div class="report-opertunities-card bg-green" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFour"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/4.png') }}" class="w-100">
@@ -7481,11 +8127,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalFive">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/5.png') }}" class="w-100">
@@ -7495,11 +8149,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalSix">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalSix"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/6.png') }}" class="w-100">
@@ -7509,7 +8171,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -7994,7 +8658,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalOne">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalOne"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/1.png') }}" class="w-100">
@@ -8004,11 +8674,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalTwo">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalTwo"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/22.png') }}" class="w-100">
@@ -8018,11 +8696,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" data-bs-target="#ModalThree">
+                                <div class="report-opertunities-card bg-blue"
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalThree"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/3.png') }}" class="w-100">
@@ -8032,11 +8718,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-green" data-bs-toggle="modal" data-bs-target="#ModalFour">
+                                <div class="report-opertunities-card bg-green" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFour"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/4.png') }}" class="w-100">
@@ -8046,11 +8740,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalFive">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/5.png') }}" class="w-100">
@@ -8060,11 +8762,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalSix">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalSix"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/6.png') }}" class="w-100">
@@ -8074,7 +8784,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -8543,7 +9255,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="row align-items-center" style="margin-top: 24px !important">
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2" >
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalOne">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalOne"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/1.png') }}" class="w-100">
@@ -8553,11 +9271,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalTwo">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalTwo"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/22.png') }}" class="w-100">
@@ -8567,11 +9293,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-blue" data-bs-toggle="modal" data-bs-target="#ModalThree">
+                                <div class="report-opertunities-card bg-blue" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalThree"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/3.png') }}" class="w-100">
@@ -8581,11 +9315,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-green" data-bs-toggle="modal" data-bs-target="#ModalFour">
+                                <div class="report-opertunities-card bg-green"
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFour"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/4.png') }}" class="w-100">
@@ -8595,11 +9337,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-orange" data-bs-toggle="modal" data-bs-target="#ModalFive">
+                                <div class="report-opertunities-card bg-orange" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/5.png') }}" class="w-100">
@@ -8609,11 +9359,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
-                                <div class="report-opertunities-card bg-yellow" data-bs-toggle="modal" data-bs-target="#ModalSix">
+                                <div class="report-opertunities-card bg-yellow" 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                    data-bs-toggle="modal" data-bs-target="#ModalSix"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                >
                                     <div class="row align-items-center">
                                         <div class="col-4">
                                             <img src="{{ asset('assets/images/6.png') }}" class="w-100">
@@ -8623,7 +9381,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                             <h2 class="short-description mt-2">Short Discription</h2>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-lock lock-icon"></i>
+                                    @if($user_package !== 'basic' && $user_package !== 'pro')
+                                        <i class="fa-solid fa-lock lock-icon"></i>    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -9228,7 +9988,11 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                 {{-- section 8 profile id 1 --}}
-                <?php if ($brain_profile_id == 1): ?>
+                <?php if ($brain_profile_id == 1): 
+               
+                ?>
+
+                
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -9248,6 +10012,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
+                                        
                                         <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
                                     </div>
                                 </div>
@@ -9257,7 +10022,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -9273,7 +10044,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9298,7 +10071,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9323,7 +10098,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9349,7 +10126,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9374,7 +10153,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9399,7 +10180,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9424,7 +10207,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9450,7 +10235,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9475,7 +10262,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9506,7 +10295,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9515,7 +10306,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -9531,7 +10328,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9556,7 +10355,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9581,7 +10382,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9607,7 +10410,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9632,7 +10437,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9657,7 +10464,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9682,7 +10491,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9708,7 +10519,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9733,7 +10546,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9747,7 +10562,15 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age > 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                   href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                                
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -9763,7 +10586,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9772,7 +10597,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -9788,7 +10619,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9797,7 +10630,15 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                   href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -9813,7 +10654,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9821,7 +10664,16 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                   href="">
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        
+                        >
+                        
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -9837,7 +10689,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9847,7 +10701,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                   href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -9863,7 +10723,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9872,7 +10734,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -9888,7 +10757,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9897,7 +10768,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/job-and-work')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href="{{url('report/job-and-work')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -9913,7 +10791,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9922,7 +10802,16 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        
+                        
+                        
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -9938,7 +10827,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9948,7 +10839,16 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        
+                        
+                        
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -9964,7 +10864,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -9989,7 +10891,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10007,7 +10911,17 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                   href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        
+                        
+                        
+                        
+                       >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10023,7 +10937,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10032,7 +10948,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10048,7 +10970,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10057,7 +10981,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                   href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10073,7 +11004,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10081,7 +11014,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                   href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10097,7 +11036,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10107,7 +11048,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                   href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10123,7 +11070,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10132,7 +11081,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                   href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10148,7 +11103,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10157,7 +11114,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10173,7 +11136,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10182,7 +11147,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10198,7 +11169,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10208,7 +11181,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                                @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10224,7 +11203,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10233,7 +11214,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10249,7 +11236,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10262,7 +11251,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 15 && $age <= 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10278,7 +11273,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10287,7 +11284,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10303,7 +11306,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10312,7 +11317,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10328,7 +11339,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10336,7 +11349,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10352,7 +11371,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10362,7 +11383,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10378,7 +11405,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10387,7 +11416,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/careers-suitable')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/careers-suitable')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10403,7 +11438,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10412,7 +11449,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10428,7 +11471,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10437,7 +11482,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10453,7 +11504,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10463,7 +11516,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10479,7 +11538,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10488,7 +11549,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10504,7 +11571,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10518,7 +11587,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age > 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10534,7 +11609,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10543,7 +11620,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10559,7 +11642,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10568,7 +11653,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10584,7 +11675,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10592,7 +11685,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10608,7 +11707,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10618,7 +11719,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10634,7 +11742,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10643,7 +11753,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10659,7 +11775,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10668,7 +11786,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/job-and-work')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/job-and-work')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10684,7 +11808,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10693,7 +11819,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10709,7 +11841,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10719,7 +11853,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10735,7 +11875,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10745,7 +11887,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10761,7 +11909,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10782,7 +11932,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10798,7 +11954,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10807,7 +11965,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10823,7 +11987,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10832,7 +11998,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10848,7 +12020,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10856,7 +12030,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10872,7 +12052,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10882,7 +12064,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10898,7 +12086,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10907,7 +12097,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                       >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10923,7 +12119,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10932,7 +12130,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10948,7 +12152,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10957,7 +12163,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10973,7 +12185,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10983,7 +12197,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -10999,15 +12219,23 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
                         </a>
 
                     </div>
-<div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11023,7 +12251,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11037,7 +12267,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 15 && $age <= 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11053,7 +12289,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11062,7 +12300,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11078,7 +12322,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11087,7 +12333,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11103,7 +12355,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11111,7 +12365,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11127,7 +12387,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11137,7 +12399,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11153,7 +12422,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11162,7 +12433,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/careers-suitable')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/careers-suitable')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11178,7 +12455,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11187,7 +12466,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11203,7 +12488,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11212,7 +12499,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11228,7 +12522,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11238,7 +12534,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11254,7 +12557,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11263,7 +12568,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11279,7 +12590,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11293,7 +12606,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age > 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11309,7 +12628,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11318,7 +12639,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11334,7 +12661,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11343,7 +12672,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                       >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11359,7 +12694,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11367,7 +12704,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11383,7 +12726,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11393,7 +12738,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11409,7 +12760,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11418,7 +12771,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11434,7 +12793,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11443,7 +12804,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/job-and-work')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href="{{url('report/job-and-work')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11459,7 +12826,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11468,7 +12837,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11484,7 +12859,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11494,7 +12871,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11510,7 +12893,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11518,8 +12903,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-<div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11535,7 +12926,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11552,7 +12945,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11568,7 +12967,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11577,7 +12978,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11593,7 +13000,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11602,7 +13011,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11618,7 +13033,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11626,7 +13043,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11642,7 +13065,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11652,7 +13077,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11668,7 +13099,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11677,7 +13110,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11693,7 +13132,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11702,7 +13143,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11718,7 +13165,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11727,7 +13176,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11743,7 +13198,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11753,7 +13210,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11769,15 +13232,23 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
                         </a>
 
                     </div>
-<div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11793,7 +13264,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11807,7 +13280,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 15 && $age <= 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11823,7 +13302,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11832,7 +13313,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11848,7 +13335,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11857,7 +13346,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11873,7 +13368,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11881,7 +13378,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11897,7 +13400,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11907,7 +13412,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11923,7 +13434,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11932,7 +13445,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/careers-suitable')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/careers-suitable')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11948,7 +13467,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11957,7 +13478,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11973,7 +13500,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -11982,7 +13511,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -11998,7 +13533,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12008,7 +13545,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12024,7 +13567,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12033,7 +13578,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12049,7 +13600,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12063,7 +13616,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age > 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12079,7 +13638,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12088,7 +13649,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12104,7 +13671,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12113,7 +13682,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12129,7 +13704,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12137,7 +13714,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12153,7 +13736,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12163,7 +13748,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12179,7 +13770,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12188,7 +13781,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12204,7 +13803,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12213,7 +13814,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/job-and-work')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/job-and-work')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12229,7 +13836,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12238,7 +13847,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12254,7 +13869,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12264,7 +13881,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12280,15 +13903,23 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
                         </a>
 
                     </div>
-<div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12304,7 +13935,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12322,7 +13955,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12338,7 +13977,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12347,7 +13988,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12363,7 +14010,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12372,7 +14021,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12388,7 +14043,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12396,7 +14053,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12412,7 +14075,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12422,7 +14087,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12438,7 +14109,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12447,7 +14120,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12463,7 +14142,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12472,7 +14153,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12488,7 +14175,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12497,7 +14186,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12513,7 +14208,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12523,7 +14220,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12539,7 +14242,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12549,7 +14254,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12565,7 +14276,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12578,7 +14291,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 15 && $age <= 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12594,7 +14313,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12603,7 +14324,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12619,7 +14346,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12628,7 +14357,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12644,7 +14379,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12652,7 +14389,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12668,7 +14411,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12678,7 +14423,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12694,7 +14445,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12703,7 +14456,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/careers-suitable')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/careers-suitable')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12719,7 +14478,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12728,7 +14489,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12744,7 +14511,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12753,7 +14522,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12769,7 +14544,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12779,7 +14556,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12795,7 +14578,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12804,7 +14589,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12820,7 +14611,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12835,7 +14628,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <div class="row mb-4">
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12851,7 +14650,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12861,7 +14662,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12877,7 +14684,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12886,7 +14695,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12902,7 +14717,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12911,7 +14728,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/job-and-work')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/job-and-work')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12927,7 +14750,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12936,7 +14761,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12952,7 +14783,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12962,7 +14795,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -12978,7 +14817,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -12986,8 +14827,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-<div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13003,7 +14850,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13022,7 +14871,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13038,7 +14893,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13047,7 +14904,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13063,7 +14926,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13072,7 +14937,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13088,7 +14959,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13096,7 +14969,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13112,7 +14991,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13122,7 +15003,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13138,7 +15025,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13147,7 +15036,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13163,7 +15058,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13172,7 +15069,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13188,7 +15091,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13197,7 +15102,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13213,7 +15124,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13223,7 +15136,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13239,7 +15158,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13247,8 +15168,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-<div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13264,7 +15191,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13278,7 +15207,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 15 && $age <= 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13294,7 +15229,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13303,7 +15240,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13319,7 +15262,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13328,7 +15273,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13344,7 +15295,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13352,7 +15305,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13368,7 +15327,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13378,7 +15339,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13394,7 +15361,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13403,7 +15372,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/careers-suitable')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/careers-suitable')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13419,7 +15394,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13428,7 +15405,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13444,7 +15427,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13453,7 +15438,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13469,7 +15460,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13479,7 +15472,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13495,7 +15494,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13504,7 +15505,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13520,7 +15527,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13534,7 +15543,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age > 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13550,7 +15565,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13559,7 +15576,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13575,7 +15598,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13584,7 +15609,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13600,7 +15631,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13608,7 +15641,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13624,7 +15663,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13634,7 +15675,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13650,7 +15697,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13659,7 +15708,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13675,7 +15730,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13684,7 +15741,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/job-and-work')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/job-and-work')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13700,7 +15763,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13709,7 +15774,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13725,7 +15796,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13735,7 +15808,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13751,7 +15830,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13760,8 +15841,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-<div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13777,7 +15864,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13794,7 +15883,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13810,7 +15905,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13819,7 +15916,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13835,7 +15938,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13844,7 +15949,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13860,7 +15971,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13868,7 +15981,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13884,7 +16003,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13894,7 +16015,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13910,7 +16037,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13919,7 +16048,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13935,7 +16070,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13944,7 +16081,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13960,7 +16103,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13969,7 +16114,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -13985,7 +16136,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -13995,7 +16148,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14011,7 +16170,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14019,8 +16180,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-<div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14036,7 +16203,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14049,7 +16218,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 15 && $age <= 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14065,7 +16240,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14074,7 +16251,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14090,7 +16273,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14099,7 +16284,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14115,7 +16306,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14123,7 +16316,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14139,7 +16338,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14149,7 +16350,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14165,7 +16372,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14174,7 +16383,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/careers-suitable')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/careers-suitable')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14190,7 +16405,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14199,7 +16416,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14215,7 +16438,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14224,7 +16449,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14240,7 +16471,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14250,7 +16483,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14266,7 +16505,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14275,7 +16516,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14291,7 +16538,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14305,7 +16554,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age > 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14321,7 +16576,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14330,7 +16587,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14346,7 +16609,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14355,7 +16620,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14371,7 +16642,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14379,7 +16652,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14395,7 +16674,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14405,7 +16686,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                       >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14421,7 +16708,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14430,7 +16719,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14446,7 +16742,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14455,7 +16753,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/job-and-work')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/job-and-work')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14471,7 +16775,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14480,7 +16786,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14496,7 +16808,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14506,7 +16820,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14522,7 +16842,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14530,8 +16852,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-<div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14547,7 +16875,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14565,7 +16895,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14581,7 +16917,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14590,7 +16928,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14606,7 +16950,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14615,7 +16961,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14631,7 +16984,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14639,7 +16994,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14655,7 +17016,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14665,7 +17028,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14681,7 +17050,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14690,7 +17061,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14706,7 +17083,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14715,7 +17094,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14731,7 +17116,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14740,7 +17127,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14756,7 +17149,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14766,7 +17161,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14782,7 +17183,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14791,8 +17194,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-<div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14808,7 +17217,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14821,7 +17232,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 15 && $age <= 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14837,7 +17254,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14846,7 +17265,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14862,7 +17287,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14871,7 +17298,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14887,7 +17320,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14895,7 +17330,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14911,7 +17352,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14921,7 +17364,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14937,7 +17386,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14946,7 +17397,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/careers-suitable')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/careers-suitable')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14962,7 +17419,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14971,7 +17430,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -14987,7 +17452,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -14996,7 +17463,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15012,7 +17485,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15022,7 +17497,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15038,7 +17519,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15047,7 +17530,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15063,7 +17552,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15077,7 +17568,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age > 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15093,7 +17590,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15102,7 +17601,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15118,7 +17623,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15127,7 +17634,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15143,7 +17656,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15151,7 +17666,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15167,7 +17688,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15177,7 +17700,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15193,7 +17722,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15202,7 +17733,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15218,7 +17755,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15227,7 +17766,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/job-and-work')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/job-and-work')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15243,7 +17788,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15252,7 +17799,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15268,7 +17821,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15278,7 +17833,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15294,7 +17855,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15303,7 +17866,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15319,7 +17888,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15336,7 +17907,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15352,7 +17929,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15361,7 +17940,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15377,7 +17962,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15386,7 +17973,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15402,7 +17995,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15410,7 +18005,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15426,7 +18027,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15436,7 +18039,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15452,7 +18061,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15461,7 +18072,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15477,7 +18094,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15486,7 +18105,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15502,7 +18127,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15511,7 +18138,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15527,7 +18160,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15537,7 +18172,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15553,7 +18194,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15561,7 +18204,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15577,7 +18226,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15591,7 +18242,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 15 && $age <= 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15607,7 +18264,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15616,7 +18275,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15632,7 +18297,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15641,7 +18308,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15657,7 +18330,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15665,7 +18340,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15681,7 +18362,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15691,7 +18374,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15707,7 +18396,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15716,7 +18407,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/careers-suitable')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/careers-suitable')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15732,7 +18429,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15741,7 +18440,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15757,7 +18462,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15766,7 +18473,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15782,7 +18495,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15792,7 +18507,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15808,7 +18529,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15817,7 +18540,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                       >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15833,7 +18562,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15847,7 +18578,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age > 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15863,7 +18600,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15872,7 +18611,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15888,7 +18633,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15897,7 +18644,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15913,7 +18666,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15921,7 +18676,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15937,7 +18698,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15947,7 +18710,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15963,7 +18732,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15972,7 +18743,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -15988,7 +18765,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -15997,7 +18776,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/job-and-work')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/job-and-work')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16013,7 +18798,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16022,7 +18809,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16038,7 +18831,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16048,7 +18843,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16064,7 +18865,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16072,8 +18875,14 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-<div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16089,7 +18898,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16107,7 +18918,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16123,7 +18940,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16132,7 +18951,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16148,7 +18973,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16157,7 +18984,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16173,7 +19006,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16181,7 +19016,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16197,7 +19038,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16207,7 +19050,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16223,7 +19072,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16232,7 +19083,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16248,7 +19105,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16257,7 +19116,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16273,7 +19138,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16282,7 +19149,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16298,7 +19171,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16308,7 +19183,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16324,7 +19205,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16333,7 +19216,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16349,7 +19238,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16363,7 +19254,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 15 && $age <= 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16379,7 +19276,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16388,7 +19287,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16404,7 +19309,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16413,7 +19320,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16429,7 +19342,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16437,7 +19352,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16453,7 +19374,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16463,7 +19386,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16479,7 +19408,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16488,7 +19419,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/careers-suitable')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/careers-suitable')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16504,7 +19441,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16513,7 +19452,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16529,7 +19474,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16538,7 +19485,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                       >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16554,7 +19507,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16564,7 +19519,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16580,7 +19541,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16589,7 +19552,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16605,7 +19574,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16619,7 +19590,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age > 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{ url('/report/advanced-brain-report') }}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{ url('/report/advanced-brain-report') }}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16635,7 +19612,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16644,7 +19623,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16660,7 +19645,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16669,7 +19656,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16685,7 +19678,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16693,7 +19688,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16709,7 +19710,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16719,7 +19722,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                       >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16735,7 +19744,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16744,7 +19755,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                               href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16760,7 +19777,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16769,7 +19788,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/job-and-work')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/job-and-work')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16785,7 +19810,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16794,7 +19821,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16810,7 +19843,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16820,7 +19855,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16836,7 +19877,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16845,7 +19888,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16861,7 +19910,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16880,7 +19931,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16896,7 +19953,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16905,7 +19964,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16921,7 +19986,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16930,7 +19997,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16946,7 +20019,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16954,7 +20029,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16970,7 +20051,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -16980,7 +20063,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -16996,7 +20085,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17005,7 +20096,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17021,7 +20118,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17030,7 +20129,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17046,7 +20151,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17055,7 +20162,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17071,7 +20184,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17081,7 +20196,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17097,7 +20218,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17106,7 +20229,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17122,7 +20251,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17136,7 +20267,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 15 && $age <= 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17152,7 +20289,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17161,7 +20300,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17177,7 +20322,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17186,7 +20333,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17202,7 +20355,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17210,7 +20365,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17226,7 +20387,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17236,7 +20399,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17252,7 +20421,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17261,7 +20432,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/careers-suitable')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/careers-suitable')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17277,7 +20454,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17286,7 +20465,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17302,7 +20487,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17311,7 +20498,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17327,7 +20520,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17337,7 +20532,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                       >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17353,7 +20554,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17362,7 +20565,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17378,7 +20587,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17392,7 +20603,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age > 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17408,7 +20625,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17417,7 +20636,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17433,7 +20658,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17442,7 +20669,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17458,7 +20691,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17466,7 +20701,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17482,7 +20723,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17492,7 +20735,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17508,7 +20757,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17517,7 +20768,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17533,7 +20790,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17542,7 +20801,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/job-and-work')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/job-and-work')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17558,7 +20823,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17567,7 +20834,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17583,7 +20856,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17593,7 +20868,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17609,7 +20890,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17619,7 +20902,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17635,7 +20924,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17652,7 +20943,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17668,7 +20965,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17677,7 +20976,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17693,7 +20998,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17702,7 +21009,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                              href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17718,7 +21031,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17726,7 +21041,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17742,7 +21063,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17752,7 +21075,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17768,7 +21097,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17777,7 +21108,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17793,7 +21130,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17802,7 +21141,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17818,7 +21163,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17827,7 +21174,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17843,7 +21196,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17853,7 +21208,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17869,7 +21230,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17879,7 +21242,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17895,7 +21264,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17908,7 +21279,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 15 && $age <= 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                       >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17924,7 +21301,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17933,7 +21312,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17949,7 +21334,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17958,7 +21345,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17974,7 +21367,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -17982,7 +21377,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -17998,7 +21399,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18008,7 +21411,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18024,7 +21433,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18033,7 +21444,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/careers-suitable')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/careers-suitable')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18049,7 +21466,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18058,7 +21477,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18074,7 +21499,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18083,7 +21510,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18099,7 +21532,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18109,7 +21544,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18125,7 +21566,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18134,7 +21577,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18150,7 +21599,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18164,7 +21615,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age > 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18180,7 +21637,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18189,7 +21648,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18205,7 +21670,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18214,7 +21681,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18230,7 +21703,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18238,7 +21713,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18254,7 +21735,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18264,7 +21747,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18280,7 +21769,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18289,7 +21780,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18305,7 +21802,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18314,7 +21813,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/job-and-work')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/job-and-work')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18330,7 +21835,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18339,7 +21846,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                            href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18355,7 +21868,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18365,7 +21880,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18381,7 +21902,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18391,7 +21914,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                       >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18407,7 +21936,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18425,7 +21956,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18441,7 +21978,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18450,7 +21989,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18466,7 +22011,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18475,7 +22022,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18491,7 +22044,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18499,7 +22054,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18515,7 +22076,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18525,7 +22088,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18541,7 +22110,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18550,7 +22121,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18566,7 +22143,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18575,7 +22154,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18591,7 +22176,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18600,7 +22187,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18616,7 +22209,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18626,7 +22221,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18642,7 +22243,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18652,7 +22255,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18668,7 +22277,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18681,7 +22292,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 15 && $age <= 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18697,7 +22314,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18706,7 +22325,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18722,7 +22347,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18731,7 +22358,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18747,7 +22380,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18755,7 +22390,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18771,7 +22412,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18781,7 +22424,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18797,7 +22446,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18806,7 +22457,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/careers-suitable')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/careers-suitable')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18822,7 +22479,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18831,7 +22490,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18847,7 +22512,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18856,7 +22523,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                             href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18872,7 +22545,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18882,7 +22557,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                            href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18898,7 +22579,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18907,7 +22590,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                            href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18923,7 +22612,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18937,7 +22628,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age > 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                           href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18953,7 +22650,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18962,7 +22661,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -18978,7 +22683,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -18987,7 +22694,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                            href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19003,7 +22716,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19011,7 +22726,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19027,7 +22748,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19037,7 +22760,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                            href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19053,7 +22782,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19062,7 +22793,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                            href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19078,7 +22815,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19087,7 +22826,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/job-and-work')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                            href="{{url('report/job-and-work')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19103,7 +22848,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19112,7 +22859,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                            href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19128,7 +22881,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19138,7 +22893,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19154,7 +22915,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19164,7 +22927,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                            href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19180,7 +22949,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19200,7 +22971,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                            href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19216,7 +22993,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19225,7 +23004,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19241,7 +23026,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19250,7 +23037,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                            href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19266,7 +23059,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19274,7 +23069,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                            href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19290,7 +23091,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19300,7 +23103,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                            href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19316,7 +23125,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19325,7 +23136,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19341,7 +23158,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19350,7 +23169,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                            href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19366,7 +23191,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19375,7 +23202,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19391,7 +23224,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19401,7 +23236,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                            href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19417,7 +23258,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19427,7 +23270,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                           href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19443,7 +23292,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19456,7 +23307,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 15 && $age <= 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                           href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19472,7 +23329,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19481,7 +23340,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19497,7 +23362,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19506,7 +23373,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                           href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19522,7 +23395,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19530,7 +23405,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                           href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19546,7 +23427,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19556,7 +23439,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                           href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19572,7 +23461,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19581,7 +23472,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/careers-suitable')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                           href="{{url('report/careers-suitable')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19597,7 +23494,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19606,7 +23505,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                           href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19622,7 +23527,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19631,7 +23538,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                           href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19647,7 +23560,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19657,7 +23572,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                           href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19673,7 +23594,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19682,7 +23605,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                           href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19698,7 +23627,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19712,7 +23643,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age > 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                          href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19728,7 +23665,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19737,7 +23676,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19753,7 +23698,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19762,7 +23709,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19778,7 +23731,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19786,7 +23741,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19802,7 +23763,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19812,7 +23775,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19828,7 +23797,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19837,7 +23808,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19853,7 +23830,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19862,7 +23841,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/job-and-work')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/job-and-work')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19878,7 +23863,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19887,7 +23874,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19903,7 +23896,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19913,7 +23908,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19929,7 +23930,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19939,7 +23942,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                       >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19955,7 +23964,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19974,7 +23985,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 12 && $age <= 14): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -19990,7 +24007,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -19999,7 +24018,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20015,7 +24040,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20024,7 +24051,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20040,7 +24073,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20048,7 +24083,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20064,7 +24105,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20074,7 +24117,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20090,7 +24139,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20099,7 +24150,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20115,7 +24172,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20124,7 +24183,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20140,7 +24205,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20149,7 +24216,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20165,7 +24238,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20175,7 +24250,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20191,7 +24272,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20201,7 +24284,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20217,7 +24306,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20230,7 +24321,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age >= 15 && $age <= 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20246,7 +24343,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20255,7 +24354,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20271,7 +24376,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20280,7 +24387,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20296,7 +24409,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20304,7 +24419,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20320,7 +24441,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20330,7 +24453,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                       >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20346,7 +24475,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20355,7 +24486,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/careers-suitable')}}">
+                        <a 
+                         @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/careers-suitable')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20371,7 +24508,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20380,7 +24519,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/subjects-preferred-for-matching-career-options')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20396,7 +24541,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20405,7 +24552,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/extracurricular-activities')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/extracurricular-activities')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20421,7 +24574,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20431,7 +24586,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20447,7 +24608,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20456,7 +24619,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20472,7 +24641,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20486,7 +24657,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age > 18): ?>
                 <div class="row mb-4">
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Advanced-Brain-Report')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Advanced-Brain-Report')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20502,7 +24679,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20511,7 +24690,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20527,7 +24712,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20536,7 +24723,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div> -->
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/preferred-studying-and-learning-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                       >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20552,7 +24745,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20560,7 +24755,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20576,7 +24777,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20586,7 +24789,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/communication-and-behaviour')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/communication-and-behaviour')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20602,7 +24811,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20611,7 +24822,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/diet-and-nutrition')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/diet-and-nutrition')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20627,7 +24844,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20636,7 +24855,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/job-and-work')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                 href="{{url('report/job-and-work')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20652,7 +24877,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20661,7 +24888,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/relationship-styles')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/relationship-styles')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20677,7 +24910,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20687,7 +24922,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                  href=""
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20703,7 +24944,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -20713,7 +24956,13 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
-                        <a href="{{url('report/Flow-and-grow-basics')}}">
+                        <a 
+                        @if($user_package == 'basic' || $user_package == 'pro')
+                                href="{{url('report/Flow-and-grow-basics')}}"
+                                @else
+                                    onclick="showUpgradePopup()"
+                                @endif
+                        >
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -20729,7 +24978,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'basic' && $user_package !== 'pro')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -21331,7 +25582,7 @@ setTimeout(() => {
     </div>
   </div>
 </div>
-<script>
+{{-- <script>
     document.addEventListener("DOMContentLoaded", function() {
         const videoThumbs = document.querySelectorAll('.video-thumb');
         const modalVideo = document.getElementById('modalVideo');
@@ -21343,6 +25594,37 @@ setTimeout(() => {
                 modalVideo.querySelector('source').src = videoSrc;
                 modalVideo.load();
                 videoModal.show();
+            });
+        });
+
+        // Stop video when modal is closed
+        document.getElementById('videoModal').addEventListener('hidden.bs.modal', () => {
+            modalVideo.pause();
+            modalVideo.currentTime = 0;
+        });
+    });
+</script> --}}
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const videoThumbs = document.querySelectorAll('.video-thumb');
+        const modalVideo = document.getElementById('modalVideo');
+        const videoModal = new bootstrap.Modal(document.getElementById('videoModal'));
+
+        // pass the user package value from backend to JS
+        const userPackage = "{{ $user_package }}";
+
+        videoThumbs.forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                if (userPackage === 'basic' || userPackage === 'pro') {
+                    // show the video modal
+                    const videoSrc = thumb.dataset.video;
+                    modalVideo.querySelector('source').src = videoSrc;
+                    modalVideo.load();
+                    videoModal.show();
+                } else {
+                    // show upgrade popup
+                    showUpgradePopup();
+                }
             });
         });
 
