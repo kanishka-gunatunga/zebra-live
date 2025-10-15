@@ -9799,7 +9799,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
             {{-- section 6 --}}
             <div class="row align-items-center" >
                 
-                @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
+    @if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan')
     <h6 class="dashbaord-section-title px-0" style="margin-bottom: 24px !important">Your Brain Dominance and Thinking Preferences </h6>
     <p>Please select areas to know about more</p>
     <div class="d-flex flex-wrap mb-3">
@@ -9839,11 +9839,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
         <!-- <a href="{{url('download-report')}}"><button class="download-report-btn mt-4">Download Report </button></a> -->
     </div>
 @else
+ <h6 class="dashbaord-section-title px-0" style="margin-bottom: 24px !important">Your Brain Dominance and Thinking Preferences </h6>
     <div class="locked-section text-center p-4" style="border: 1px solid #ccc; border-radius: 8px;">
-        <p class="mb-2">This section is locked for your current package.</p>
-        <span class="lock-icon" style="font-size: 24px;">🔒</span>
-        <p class="mt-2">Upgrade your package to access this content.</p>
-        <a href="{{ url('upgrade-package') }}" class="btn btn-primary mt-2">Upgrade Now</a>
+
+        <i class="fa-solid fa-lock" style="font-size:20px;padding: 10px;border-radius: 50%;background: #000;color: #fff;"></i>
+        <p class="mt-2 mb-4 text-center tab-content-subtitle">Upgrade your package to access this content.</p>
+        <a href="{{ url('billing') }}" class="yellow-send-btn mt-2">Upgrade Now</a>
     </div>
 @endif
 

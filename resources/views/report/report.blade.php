@@ -114,7 +114,7 @@ ul {
 }
 
 .qp1 {
-    color: #8c8c8c;
+    color: #000;
     font-weight: 400;
     font-size: 16px;
 
@@ -160,7 +160,7 @@ ul {
 }
 </style>
 <section id="no-image-section">
-{{-- <section class="py-5">
+{{-- <section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Take the first step toward understanding your brain better with us!</h3>
         <p class="p1 ">Self Discovery to Holistic Growth & Development harnesses the principles of Neuro development and
@@ -324,7 +324,7 @@ ul {
 
 <?php if ($brain_profile_id == 2): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Read More : Advanced Brain Report</h3><br>
         <h3 class="heading1 text-purple">Your Cognitive Profile: The Systematic Organizer</h3><br>
@@ -480,7 +480,7 @@ ul {
 
 <?php if ($brain_profile_id == 1): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Job and Work</h3>
         <p class="p1 ">For you with an Analytical brain, your approach to job and work is typically characterized by a
@@ -660,7 +660,7 @@ ul {
 </section>
 <?php elseif ($brain_profile_id == 2): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Job and Work</h3>
         <p class="p1 ">As a practical thinker, your brain is wired for systematic, structured approaches to tasks and
@@ -812,7 +812,7 @@ ul {
 </section>
 
 <?php elseif ($brain_profile_id == 3): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Job and Work</h3>
         <p class="p1 ">As a Empathetic Connector, Relational Harmonizer, or Compassionate Thinker, you excel in careers
@@ -1154,7 +1154,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 4): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Job and Work</h3>
         <p class="p1 ">As an Innovative Maverick, Creative Visionary, or Non-Conformist Thinker, you are drawn to
@@ -1438,7 +1438,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 5): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Job and Work</h3>
         <p class="p1 ">As a Balanced Logical Thinker or Dual Analytical-Practical, you are drawn to careers that allow
@@ -1725,7 +1725,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 6): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Job and Work</h3>
         <p class="p1 ">As a Relational Creative or Creative Connector, you are drawn to careers that emphasize
@@ -1994,7 +1994,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 7): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Job and Work</h3>
         <p class="p1 ">As a Innovative Analyst or Creative Problem-Solver, you are drawn to careers that emphasize
@@ -2283,7 +2283,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 8): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Job and Work</h3>
         <p class="p1 ">As a Practical Empath or Grounded Relational Thinker, you are drawn to careers that emphasize
@@ -2556,7 +2556,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 9): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Job and Work</h3>
         <p class="p1 ">As a Analytical Connector or Relational Analyst, you are drawn to careers that emphasize
@@ -2791,7 +2791,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 10): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Job and Work</h3>
         <p class="p1 ">As a Practical Innovator or Grounded Creative, you are drawn to careers that emphasize practical
@@ -2986,7 +2986,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 11): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Job and Work</h3>
         <p class="p1 ">As a Grounded Thinker or Structured Planner, you are drawn to careers that emphasize
@@ -3241,7 +3241,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 12): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Job and Work</h3>
         <p class="p1 ">As a Abstract Idealist or Relational Planner, your career preferences are likely to focus on
@@ -3495,7 +3495,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 13): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Job and Work</h3>
         <p class="p1 ">As a Visionary Dreamer or Conceptual Creative, your career preferences are likely to focus on
@@ -3747,7 +3747,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 14): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Job and Work</h3>
         <p class="p1 ">As a Independent Problem-Solver or Analytical Innovator, your career preferences are likely to
@@ -4000,7 +4000,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 15): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Job and Work</h3>
         <p class="p1 ">As a Quadruple Pie individual (Harmonized Thinker or Balanced Integrator), your career
@@ -4268,7 +4268,7 @@ ul {
 <?php elseif ($report_type == 'Flow-and-grow-basics'): ?>
 
 <?php if ($brain_profile_id == 1): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Flow & grow basics
         </h3>
@@ -4279,7 +4279,8 @@ ul {
 
               <div class="row mt-4 text-center" >
                     <div class="col-md-6 video-thumb mb-3 m-auto" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
-                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;">
+                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;" class="video-background">
+                        
                     </div>
                 </div>
     </div>
@@ -4420,7 +4421,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 2): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Flow & grow basics
         </h3>
@@ -4430,7 +4431,7 @@ ul {
         </p>
        <div class="row mt-4 text-center" >
                     <div class="col-md-6 video-thumb mb-3 m-auto" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
-                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;">
+                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;" class="video-background">
                     </div>
                 </div>
     </div>
@@ -4571,7 +4572,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 3): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Flow & grow basics
         </h3>
@@ -4581,7 +4582,7 @@ ul {
         </p>
        <div class="row mt-4 text-center" >
                     <div class="col-md-6 video-thumb mb-3 m-auto" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
-                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;">
+                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;" class="video-background">
                     </div>
                 </div>
     </div>
@@ -4761,7 +4762,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 4): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Flow & grow basics
         </h3>
@@ -4771,7 +4772,7 @@ ul {
         </p>
        <div class="row mt-4 text-center" >
                     <div class="col-md-6 video-thumb mb-3 m-auto" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
-                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;">
+                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;" class="video-background">
                     </div>
                 </div>
     </div>
@@ -4951,7 +4952,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 5): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Flow & grow basics
         </h3>
@@ -4960,7 +4961,7 @@ ul {
         </p>
        <div class="row mt-4 text-center" >
                     <div class="col-md-6 video-thumb mb-3 m-auto" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
-                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;">
+                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;" class="video-background">
                     </div>
                 </div>
     </div>
@@ -5159,7 +5160,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 6): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Flow & grow basics
         </h3>
@@ -5168,7 +5169,7 @@ ul {
         </p>
        <div class="row mt-4 text-center" >
                     <div class="col-md-6 video-thumb mb-3 m-auto" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
-                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;">
+                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;" class="video-background">
                     </div>
                 </div>
     </div>
@@ -5369,7 +5370,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 7): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Flow & grow basics
         </h3>
@@ -5380,7 +5381,7 @@ ul {
         </p>
        <div class="row mt-4 text-center" >
                     <div class="col-md-6 video-thumb mb-3 m-auto" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
-                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;">
+                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;" class="video-background">
                     </div>
                 </div>
     </div>
@@ -5581,7 +5582,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 8): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Flow & grow basics
         </h3>
@@ -5592,7 +5593,7 @@ ul {
         </p>
        <div class="row mt-4 text-center" >
                     <div class="col-md-6 video-thumb mb-3 m-auto" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
-                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;">
+                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;" class="video-background">
                     </div>
                 </div>
     </div>
@@ -5794,7 +5795,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 9): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Flow & grow basics
         </h3>
@@ -5805,7 +5806,7 @@ ul {
         </p>
        <div class="row mt-4 text-center" >
                     <div class="col-md-6 video-thumb mb-3 m-auto" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
-                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;">
+                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;" class="video-background">
                     </div>
                 </div>
     </div>
@@ -6008,7 +6009,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 10): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Flow & grow basics
         </h3>
@@ -6017,7 +6018,7 @@ ul {
         </p>
        <div class="row mt-4 text-center" >
                     <div class="col-md-6 video-thumb mb-3 m-auto" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
-                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;">
+                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;" class="video-background">
                     </div>
                 </div>
     </div>
@@ -6186,7 +6187,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 11): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Flow & grow basics
         </h3>
@@ -6197,7 +6198,7 @@ ul {
         </p>
        <div class="row mt-4 text-center" >
                     <div class="col-md-6 video-thumb mb-3 m-auto" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
-                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;">
+                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;" class="video-background">
                     </div>
                 </div>
     </div>
@@ -6419,7 +6420,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 12): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Flow & grow basics
         </h3>
@@ -6428,7 +6429,7 @@ ul {
             imaginative thinking and collaboration. Here’s how you can cultivate flow and growth effectively:</p>
            <div class="row mt-4 text-center" >
                     <div class="col-md-6 video-thumb mb-3 m-auto" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
-                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;">
+                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;" class="video-background">
                     </div>
                 </div>
     </div>
@@ -6649,7 +6650,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 13): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Flow & grow basics
         </h3>
@@ -6658,7 +6659,7 @@ ul {
             efforts. Here’s how you can cultivate flow and growth effectively:</p>
            <div class="row mt-4 text-center" >
                     <div class="col-md-6 video-thumb mb-3 m-auto" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
-                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;">
+                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;" class="video-background">
                     </div>
                 </div>
     </div>
@@ -6879,7 +6880,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 14): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Flow & grow basics
         </h3>
@@ -6890,7 +6891,7 @@ ul {
         </p>
        <div class="row mt-4 text-center" >
                     <div class="col-md-6 video-thumb mb-3 m-auto" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
-                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;">
+                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;" class="video-background">
                     </div>
                 </div>
     </div>
@@ -7109,7 +7110,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 15): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Flow & grow basics
         </h3>
@@ -7120,7 +7121,7 @@ ul {
         </p>
        <div class="row mt-4 text-center" >
                     <div class="col-md-6 video-thumb mb-3 m-auto" style="cursor: pointer;" data-video="{{ asset('video_tips/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4') }}">
-                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;">
+                        <img src="{{ asset('video_tips/video-poster.jpg') }}" style="width: 100%;object-fit: cover;" class="video-background">
                     </div>
                 </div>
     </div>
@@ -7347,7 +7348,7 @@ ul {
 
 <!-- Extracurricular activities -->
 <?php if ($brain_profile_id == 1): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Sports and other extracurricular activities naturally preferred</h3>
         <p class="p1 ">Given your Analytical Brain and logical, structured approach to problem-solving, you are likely
@@ -7453,7 +7454,7 @@ ul {
 </section>
 
 <?php elseif ($brain_profile_id == 2): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Extracurricular interests</h3>
         <p class="p1 ">As a practical thinker, your extracurricular interests are likely to align with activities that
@@ -7740,7 +7741,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 3): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Extracurricular interests</h3>
         <p class="p1 ">As a Empathetic Connector, Relational Harmonizer, or Compassionate Thinker, your extracurricular
@@ -8030,7 +8031,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 4): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Extracurricular interests</h3>
         <p class="p1 ">As an Innovative Maverick, Creative Visionary, or Non-Conformist Thinker, your extracurricular
@@ -8320,7 +8321,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 5): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Extracurricular interests</h3>
         <p class="p1 ">As a Balanced Logical Thinker or Dual Analytical-Practical, your extracurricular interests are
@@ -8523,7 +8524,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 6): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Extracurricular interests</h3>
         <p class="p1 ">As a Relational Creative or Creative Connector, your extracurricular interests are likely to
@@ -8812,7 +8813,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 7): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Extracurricular interests</h3>
         <p class="p1 ">As an Innovative Analyst or Creative Problem-Solver, your extracurricular interests are likely to
@@ -8946,7 +8947,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 8): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Extracurricular interests</h3>
         <p class="p1 ">As a Practical Empath or Grounded Relational Thinker, your extracurricular interests are likely
@@ -9235,7 +9236,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 9): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Extracurricular interests</h3>
         <p class="p1 ">As an Analytical Connector or Relational Analyst, your extracurricular interests are likely to
@@ -9420,7 +9421,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 10): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Extracurricular interests</h3>
         <p class="p1 ">As a Practical Innovator or Grounded Creative, your extracurricular interests are likely to focus
@@ -9660,7 +9661,7 @@ ul {
 </section>
 
 <?php elseif ($brain_profile_id == 11): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Extracurricular interests</h3>
         <p class="p1 ">As a Grounded Thinker or Structured Planner, your extracurricular interests are likely to focus
@@ -9846,7 +9847,7 @@ ul {
 </section>
 
 <?php elseif ($brain_profile_id == 12): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Extracurricular interests</h3>
         <p class="p1 ">As a Abstract Idealist or Relational Planner, your extracurricular interests are likely to focus
@@ -10051,7 +10052,7 @@ ul {
 </section>
 
 <?php elseif ($brain_profile_id == 13): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Extracurricular interests</h3>
         <p class="p1 ">As a Visionary Dreamer or Conceptual Creative, your extracurricular interests are likely to focus
@@ -10256,7 +10257,7 @@ ul {
 </section>
 
 <?php elseif ($brain_profile_id == 14): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Extracurricular interests</h3>
         <p class="p1 ">As a Independent Problem-Solver or Analytical Innovator, your extracurricular interests are
@@ -10461,7 +10462,7 @@ ul {
 </section>
 
 <?php elseif ($brain_profile_id == 15): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Extracurricular interests</h3>
         <p class="p1 ">As a Quadruple Pie individual (Harmonized Thinker or Balanced Integrator), your extracurricular
@@ -10682,7 +10683,7 @@ ul {
 
 
 <?php if ($brain_profile_id == 1): ?>
-<section class="py-5">
+<section class="">
 
     <div class="container mt-4">
         <div class="tab-section mx-auto col-md-8 col-lg-8 mb-4">
@@ -10694,7 +10695,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 2): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Inclination for subjects naturally
         </h3>
@@ -10931,7 +10932,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 3): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Inclination for subjects naturally
         </h3>
@@ -11245,7 +11246,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 4): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Inclination for subjects naturally
         </h3>
@@ -11558,7 +11559,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 5): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Inclination for subjects naturally
         </h3>
@@ -11873,7 +11874,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 6): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Inclination for subjects naturally
         </h3>
@@ -12187,7 +12188,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 7): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Inclination for subjects naturally
         </h3>
@@ -12504,7 +12505,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 8): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Inclination for subjects naturally
         </h3>
@@ -12822,7 +12823,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 9): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Inclination for subjects naturally
         </h3>
@@ -13143,7 +13144,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 10): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Inclination for subjects naturally
         </h3>
@@ -13451,7 +13452,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 11): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Inclination for subjects naturally
         </h3>
@@ -13777,7 +13778,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 12): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Inclination for subjects naturally
         </h3>
@@ -14100,7 +14101,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 13): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Inclination for subjects naturally
         </h3>
@@ -14408,7 +14409,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 14): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Inclination for subjects naturally
         </h3>
@@ -14644,7 +14645,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 15): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Inclination for subjects naturally
         </h3>
@@ -14891,7 +14892,7 @@ ul {
 
 <?php elseif ($report_type == 'diet-and-nutrition'): ?>
 <?php if ($brain_profile_id == 1): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Diet & Nutrition
         </h3>
@@ -15057,7 +15058,7 @@ ul {
 
 
 <?php elseif ($brain_profile_id == 2): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Diet & Nutrition
         </h3>
@@ -15220,7 +15221,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 3): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Diet & Nutrition
         </h3>
@@ -15383,7 +15384,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 4): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Diet & Nutrition
         </h3>
@@ -15569,7 +15570,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 5): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Diet & Nutrition
         </h3>
@@ -15738,7 +15739,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 6): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Diet & Nutrition
         </h3>
@@ -15929,7 +15930,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 7): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Diet & Nutrition
         </h3>
@@ -16113,7 +16114,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 8): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Diet & Nutrition
         </h3>
@@ -16261,7 +16262,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 9): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Diet & Nutrition
         </h3>
@@ -16431,7 +16432,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 10): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Diet & Nutrition
         </h3>
@@ -16600,7 +16601,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 11): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Diet & Nutrition
         </h3>
@@ -16769,7 +16770,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 12): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Diet & Nutrition
         </h3>
@@ -16937,7 +16938,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 13): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Diet & Nutrition
         </h3>
@@ -17106,7 +17107,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 14): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Diet & Nutrition
         </h3>
@@ -17276,7 +17277,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 15): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Diet & Nutrition
         </h3>
@@ -17461,7 +17462,7 @@ ul {
 
 
     <?php if ($brain_profile_id == 1): ?>
-    <section class="py-5">
+    <section class="">
         <div class="container text-center pt-5 pb-1">
             <h3 class="heading1 text-purple">Communication-and-behaviour</h3>
             <p class="p1 ">As someone with an Analytical Brain and a candid communication style, your approach to
@@ -17663,7 +17664,7 @@ ul {
     </section>
     <?php elseif ($brain_profile_id == 2): ?>
 
-    <section class="py-5">
+    <section class="">
         <div class="container text-center pt-5 pb-1">
             <h3 class="heading1 text-purple">Communication-and-behaviour</h3>
             {{-- <p class="p1 ">Self Discovery to  Holistic Growth & Development harnesses the principles of Neuro development and Neuroplasticity.</p> --}}
@@ -17915,7 +17916,7 @@ ul {
 
     <?php elseif ($brain_profile_id == 3): ?>
 
-    <section class="py-5">
+    <section class="">
         <div class="container text-center pt-5 pb-1">
             <h3 class="heading1 text-purple">Communication-and-behaviour</h3>
             <p class="p1 ">As a Empathetic Connector, Relational Harmonizer, or Compassionate Thinker, your communication
@@ -18180,7 +18181,7 @@ ul {
 
     <?php elseif ($brain_profile_id == 4): ?>
 
-    <section class="py-5">
+    <section class="">
         <div class="container text-center pt-5 pb-1">
             <h3 class="heading1 text-purple">Communication-and-behaviour</h3>
             <p class="p1 ">As a Innovative Maverick, Creative Visionary, or Non-Conformist Thinker, your communication and
@@ -18442,7 +18443,7 @@ ul {
 
     </section>
     <?php elseif ($brain_profile_id == 5): ?>
-        <section class="py-5">
+        <section class="">
             <div class="container text-center pt-5 pb-1">
                 <h3 class="heading1 text-purple">Communication-and-behaviour</h3>
                 <p class="p1 ">As a Balanced Logical Thinker or Dual Analytical-Practical, your communication and behavior
@@ -18695,7 +18696,7 @@ ul {
 
         </section>
     <?php elseif ($brain_profile_id == 6): ?>
-        <section class="py-5">
+        <section class="">
             <div class="container text-center pt-5 pb-1">
                 <h3 class="heading1 text-purple">Communication-and-behaviour</h3>
                 <p class="p1 ">As a Relational Creative or Creative Connector, your communication and behavior styles are
@@ -18964,7 +18965,7 @@ ul {
 
     <?php elseif ($brain_profile_id == 7): ?>
 
-        <section class="py-5">
+        <section class="">
             <div class="container text-center pt-5 pb-1">
                 <h3 class="heading1 text-purple">Communication-and-behaviour</h3>
                 <p class="p1 ">As a Innovative Analyst or Creative Problem-Solver, your communication and behavior styles are
@@ -19174,7 +19175,7 @@ ul {
 
     <?php elseif ($brain_profile_id == 8): ?>
 
-    <section class="py-5">
+    <section class="">
         <div class="container text-center pt-5 pb-1">
             <h3 class="heading1 text-purple">Communication-and-behaviour</h3>
             <p class="p1 ">As a Practical Empath or Grounded Relational Thinker, your communication and behavior styles are
@@ -19439,7 +19440,7 @@ ul {
     </section>
 
     <?php elseif ($brain_profile_id == 9): ?>
-    <section class="py-5">
+    <section class="">
         <div class="container text-center pt-5 pb-1">
             <h3 class="heading1 text-purple">Communication-and-behaviour</h3>
             <p class="p1 ">As an Analytical Connector or Relational Analyst, your communication and behavior styles are
@@ -19708,7 +19709,7 @@ ul {
     </section>
     <!-- Code for brain_profile_id 9 -->
     <?php elseif ($brain_profile_id == 10): ?>
-    <section class="py-5">
+    <section class="">
         <div class="container text-center pt-5 pb-1">
             <h3 class="heading1 text-purple">Communication-and-behaviour</h3>
             <p class="p1 ">As a Practical Innovator or Grounded Creative, your communication and behavior styles are
@@ -19977,7 +19978,7 @@ ul {
 
     </section>
     <?php elseif ($brain_profile_id == 11): ?>
-    <section class="py-5">
+    <section class="">
         <div class="container text-center pt-5 pb-1">
             <h3 class="heading1 text-purple">Communication-and-behaviour</h3>
             <p class="p1 ">As a Grounded Thinker or Structured Planner, your communication and behavior styles are
@@ -20252,7 +20253,7 @@ ul {
     <?php elseif ($brain_profile_id == 12): ?>
 
 
-    <section class="py-5">
+    <section class="">
         <div class="container text-center pt-5 pb-1">
             <h3 class="heading1 text-purple">Communication-and-behaviour</h3>
             <p class="p1 ">As a Abstract Idealist or Relational Planner, your communication and behavior styles are
@@ -20528,7 +20529,7 @@ ul {
     <?php elseif ($brain_profile_id == 13): ?>
 
 
-    <section class="py-5">
+    <section class="">
         <div class="container text-center pt-5 pb-1">
             <h3 class="heading1 text-purple">Communication-and-behaviour</h3>
             <p class="p1 ">As a Visionary Dreamer or Conceptual Creative, your communication and behavior styles are
@@ -20801,7 +20802,7 @@ ul {
 
     </section>
     <?php elseif ($brain_profile_id == 14): ?>
-    <section class="py-5">
+    <section class="">
         <div class="container text-center pt-5 pb-1">
             <h3 class="heading1 text-purple">Communication-and-behaviour</h3>
             <p class="p1 ">As a Independent Problem-Solver or Analytical Innovator, your communication and behavior styles
@@ -21077,7 +21078,7 @@ ul {
 
     </section>
     <?php elseif ($brain_profile_id == 15): ?>
-    <section class="py-5">
+    <section class="">
         <div class="container text-center pt-5 pb-1">
             <h3 class="heading1 text-purple">Communication-and-behaviour</h3>
             <p class="p1 ">As a Quadruple Pie individual (Harmonized Thinker or Balanced Integrator), your communication and
@@ -21370,7 +21371,7 @@ ul {
 
 <!-- preferred-studying-and-learning-styles -->
 <?php if ($brain_profile_id == 1): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Preferred studying and learning styles</h3>
         {{-- <p class="p1 ">Self Discovery to  Holistic Growth & Development harnesses the principles of Neuro development and Neuroplasticity.</p> --}}
@@ -21518,7 +21519,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 2): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Preferred studying and learning styles</h3>
         <p class="p1 ">As someone with a <strong>Practical Thinker</strong> brain dominance, your learning style is
@@ -21693,7 +21694,7 @@ ul {
 </section>
 
 <?php elseif ($brain_profile_id == 3): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Preferred studying and learning styles</h3>
         {{-- <p class="p1 ">As a Empathetic Connector, Relational Harmonizer, or Compassionate Thinker, your learning style is centered around emotional connection, collaboration, and understanding the broader social or relational context of what you're studying. You excel when learning involves communication, group interactions, and a focus on human experiences.
@@ -21858,7 +21859,7 @@ ul {
 </section>
 <?php elseif ($brain_profile_id == 4): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Preferred studying and learning styles</h3>
         <p class="p1 ">As an Innovative Maverick, Creative Visionary, or Non-Conformist Thinker, your studying and
@@ -22024,7 +22025,7 @@ ul {
 
 <?php elseif ($brain_profile_id == 5): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Preferred studying and learning styles</h3>
         <p class="p1 ">As a Balanced Logical Thinker or Dual Analytical-Practical, your studying and learning styles are
@@ -22193,7 +22194,7 @@ ul {
 
 <?php elseif ($brain_profile_id == 6): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Preferred studying and learning styles</h3>
         <p class="p1 ">As a Relational Creative or Creative Connector, your studying and learning styles are
@@ -22360,7 +22361,7 @@ ul {
 </section>
 
 <?php elseif ($brain_profile_id == 7): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Preferred studying and learning styles</h3>
         <p class="p1 ">As a Innovative Analyst or Creative Problem-Solver, your studying and learning styles are
@@ -22507,7 +22508,7 @@ ul {
 </section>
 <?php elseif ($brain_profile_id == 8): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Preferred studying and learning styles</h3>
         <p class="p1 ">As a Practical Empath or Grounded Relational Thinker, your studying and learning styles are
@@ -22677,7 +22678,7 @@ ul {
 </section>
 <?php elseif ($brain_profile_id == 9): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Preferred studying and learning styles</h3>
         <p class="p1 ">As an Analytical Connector or Relational Analyst, your studying and learning styles are
@@ -22846,7 +22847,7 @@ ul {
 
 <?php elseif ($brain_profile_id == 10): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Preferred studying and learning styles</h3>
         <p class="p1 ">As a Practical Innovator or Grounded Creative, your studying and learning styles are
@@ -22995,7 +22996,7 @@ ul {
 </section>
 
 <?php elseif ($brain_profile_id == 11): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Preferred studying and learning styles</h3>
         <p class="p1 ">As a Grounded Thinker or Structured Planner, your learning and studying styles are characterized
@@ -23163,7 +23164,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 12): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Preferred studying and learning styles</h3>
         <p class="p1 ">As a Abstract Idealist or Relational Planner, your studying and learning styles are characterized
@@ -23311,7 +23312,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 13): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Preferred studying and learning styles</h3>
         <p class="p1 ">As a Visionary Dreamer or Conceptual Creative, your studying and learning styles are
@@ -23458,7 +23459,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 14): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Preferred studying and learning styles</h3>
         <p class="p1 ">As a Independent Problem-Solver or Analytical Innovator, your studying and learning styles are
@@ -23595,7 +23596,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 15): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Preferred studying and learning styles</h3>
         <p class="p1 ">As a Quadruple Pie individual (Harmonized Thinker or Balanced Integrator), your studying and
@@ -23759,7 +23760,7 @@ ul {
 <?php elseif ($report_type == 'relationship-styles'): ?>
 
 <?php if ($brain_profile_id == 1): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Relationship styles
         </h3>
@@ -23914,7 +23915,7 @@ ul {
 
 <?php elseif ($brain_profile_id == 2): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Relationship styles
         </h3>
@@ -24081,7 +24082,7 @@ ul {
 </section>
 
 <?php elseif ($brain_profile_id == 3): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Relationship styles
         </h3>
@@ -24313,7 +24314,7 @@ ul {
 </section>
 <?php elseif ($brain_profile_id == 4): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Relationship styles
         </h3>
@@ -24551,7 +24552,7 @@ ul {
 
 </section>
 <?php elseif ($brain_profile_id == 5): ?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Relationship styles
         </h3>
@@ -24766,7 +24767,7 @@ ul {
 </section>
 <?php elseif ($brain_profile_id == 6): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Relationship styles
         </h3>
@@ -24997,7 +24998,7 @@ ul {
 </section>
 <?php elseif ($brain_profile_id == 7): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Relationship styles
         </h3>
@@ -25191,7 +25192,7 @@ ul {
 </section>
 <?php elseif ($brain_profile_id == 8): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Relationship styles
         </h3>
@@ -25419,7 +25420,7 @@ ul {
 </section>
 <?php elseif ($brain_profile_id == 9): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Relationship styles
         </h3>
@@ -25648,7 +25649,7 @@ ul {
 <?php elseif ($brain_profile_id == 10): ?>
 
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Relationship styles
         </h3>
@@ -25817,7 +25818,7 @@ ul {
 </section>
 <?php elseif ($brain_profile_id == 11): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Relationship styles
         </h3>
@@ -26047,7 +26048,7 @@ ul {
 </section>
 <?php elseif ($brain_profile_id == 12): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Relationship styles
         </h3>
@@ -26273,7 +26274,7 @@ ul {
 </section>
 <?php elseif ($brain_profile_id == 13): ?>
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Relationship styles
         </h3>
@@ -26500,7 +26501,7 @@ ul {
 <?php elseif ($brain_profile_id == 14): ?>
 
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Relationship styles
         </h3>
@@ -26727,7 +26728,7 @@ ul {
 <?php elseif ($brain_profile_id == 15): ?>
 
 
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Relationship styles
         </h3>
@@ -27171,7 +27172,7 @@ ul {
 
 <?php elseif($report_type == 'subjects-preferred-for-matching-career-options'):?>
 <?php if($brain_profile_id == 1):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Subjects preferred for matching career options.(Future looks)</h3>
         <p class="p1 ">For an Analytical Brain, the preferred subjects focus on fostering logic, analysis, and precision
@@ -27411,7 +27412,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 2):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Subjects preferred for matching career options.(Future looks)</h3>
         <p class="p1 ">For an Analytical Brain, the preferred subjects focus on fostering logic, analysis, and precision
@@ -27748,7 +27749,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 3):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Subjects preferred for matching career options.</h3>
         <p class="p1 ">As a Empathetic Connector, Relational Harmonizer, or Compassionate Thinker, your natural
@@ -28066,7 +28067,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 4):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Subjects preferred for matching career options.</h3>
         <p class="p1 ">As a Innovative Maverick, Creative Visionary, or Non-Conformist Thinker, your natural
@@ -28383,7 +28384,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 5):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Subjects preferred for matching career options.</h3>
         <p class="p1 ">As a Innovative Maverick, Creative Visionary, or Non-Conformist Thinker, your natural
@@ -28700,7 +28701,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 6):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Subjects preferred for matching career options.</h3>
         <p class="p1 ">As a Innovative Maverick, Creative Visionary, or Non-Conformist Thinker, your natural
@@ -29017,7 +29018,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 7):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">As an Innovative Analyst or Creative Problem-Solver, your natural inclinations
             lean subjects that promote analytical thinking, creative exploration, and problem-solving. You thrive in
@@ -29332,7 +29333,7 @@ ul {
     </div>
 </section>
 <?php elseif($brain_profile_id == 8):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">As a Practical Empath or Grounded Relational Thinker, your natural inclinations
             lean toward subjects that promote empathy, practical application, and relational engagement. You thrive in
@@ -29648,7 +29649,7 @@ ul {
     </div>
 </section>
 <?php elseif($brain_profile_id == 9):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">As an Analytical Connector or Relational Analyst, your natural inclinations
             lean toward subjects that promote analytical thinking, problem-solving, and relational engagement. You
@@ -29944,7 +29945,7 @@ ul {
     </div>
 </section>
 <?php elseif($brain_profile_id == 10):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">As a Practical Innovator or Grounded Creative, your natural inclinations lean
             toward subjects that emphasize practical application, creativity, and innovative thinking. You thrive in
@@ -30125,7 +30126,7 @@ ul {
     </div>
 </section>
 <?php elseif($brain_profile_id == 11):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">As a Grounded Thinker or Structured Planner, your natural inclinations lean
             toward subjects that emphasize organization, practicality, and logical reasoning. You thrive in environments
@@ -30439,7 +30440,7 @@ ul {
     </div>
 </section>
 <?php elseif($brain_profile_id == 12):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">As a Abstract Idealist or Relational Planner, your natural inclinations lean
             toward subjects that emphasize creativity, exploration, and relational engagement. You thrive in
@@ -30754,7 +30755,7 @@ ul {
     </div>
 </section>
 <?php elseif($brain_profile_id == 13):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">As a Visionary Dreamer or Conceptual Creative, your natural inclinations lean
             toward subjects that emphasize creativity, exploration, and abstract thinking. You thrive in environments
@@ -31050,7 +31051,7 @@ ul {
     </div>
 </section>
 <?php elseif($brain_profile_id == 14):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">As a Independent Problem-Solver or Analytical Innovator, your natural
             inclinations lean toward subjects that emphasize analytical thinking, problem-solving, and logical
@@ -31308,7 +31309,7 @@ ul {
     </div>
 </section>
 <?php elseif($brain_profile_id == 15):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">As a Quadruple Pie individual (Harmonized Thinker or Balanced Integrator), your
             natural inclinations lean toward subjects that emphasize analytical thinking, creativity, and relational
@@ -31532,7 +31533,7 @@ ul {
 
 <?php elseif($report_type == 'careers-suitable'):?>
 <?php if($brain_profile_id == 1):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Careers suitable</h3>
         <p class="p1 ">For an analytical/candid brain (characterized by analytical, logical, and detail-oriented
@@ -31947,7 +31948,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 2):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Careers suitable</h3>
         <p class="p1 ">Based on your brain type, you excel in careers that require logical thinking, precision,
@@ -32265,7 +32266,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 3):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Careers suitable</h3>
         <p class="p1 ">As a Empathetic Connector, Relational Harmonizer, or Compassionate Thinker, you are well-suited
@@ -32603,7 +32604,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 4):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Careers suitable</h3>
         <p class="p1 ">As a Innovative Maverick, Creative Visionary, or Non-Conformist Thinker, you are drawn to careers
@@ -32941,7 +32942,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 5):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Careers suitable</h3>
         <p class="p1 ">As a Balanced Logical Thinker or Dual Analytical-Practical, you are drawn to careers that
@@ -33279,7 +33280,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 6):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Careers suitable</h3>
         <p class="p1 ">As a Relational Creative or Creative Connector, you are drawn to careers that emphasize
@@ -33617,7 +33618,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 7):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Careers suitable</h3>
         <p class="p1 ">As an Innovative Analyst or Creative Problem-Solver, you are drawn to careers that emphasize
@@ -33955,7 +33956,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 8):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Careers suitable</h3>
         <p class="p1 ">As a Practical Empath or Grounded Relational Thinker, you are drawn to careers that emphasize
@@ -34255,7 +34256,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 9):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Careers suitable</h3>
         <p class="p1 ">As an Analytical Connector or Relational Analyst, you are drawn to careers that emphasize
@@ -34475,7 +34476,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 10):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Careers suitable</h3>
         <p class="p1 ">As a Practical Innovator or Grounded Creative, you are drawn to careers that emphasize practical
@@ -34636,7 +34637,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 11):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Careers suitable</h3>
         <p class="p1 ">As a Grounded Thinker or Structured Planner, you are drawn to careers that emphasize
@@ -34875,7 +34876,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 12):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Careers suitable</h3>
         <p class="p1 ">As a Grounded Thinker or Structured Planner, you are drawn to careers that emphasize
@@ -35114,7 +35115,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 13):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Careers suitable</h3>
         <p class="p1 ">As a Visionary Dreamer or Conceptual Creative, your career preferences are likely to focus on
@@ -35353,7 +35354,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 14):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Careers suitable</h3>
         <p class="p1 ">As a Independent Problem-Solver or Analytical Innovator, your career preferences are likely to
@@ -35592,7 +35593,7 @@ ul {
 
 </section>
 <?php elseif($brain_profile_id == 15):?>
-<section class="py-5">
+<section class="">
     <div class="container text-center pt-5 pb-1">
         <h3 class="heading1 text-purple">Careers suitable</h3>
         <p class="p1 ">​​As a Quadruple Pie individual (Harmonized Thinker or Balanced Integrator), your career
@@ -35902,10 +35903,14 @@ function vvvv() {
 document.addEventListener("DOMContentLoaded", function () {
     const defaultImage = "{{ asset('assets/images/DecodemyBrain new logo-01.png') }}";
     const vertexColors = ['#9ae4e3', '#84d6a5', '#f1935d', '#84d6a5', '#9ae4e3'];
+    
     const images = document.querySelectorAll("#no-image-section img");
 
     images.forEach(img => {
-        img.src = defaultImage;
+        // Skip images with the class 'video-background'
+        if (!img.classList.contains('video-background')) {
+            img.src = defaultImage;
+        }
     });
 
     document.querySelectorAll("#no-image-section .tab-section").forEach(row => {
@@ -35915,4 +35920,5 @@ document.addEventListener("DOMContentLoaded", function () {
         row.style.padding = "10px"; // optional padding
     });
 });
+
 </script>
