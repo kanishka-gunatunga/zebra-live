@@ -981,7 +981,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="col-md-6 col-lg-4 px-0 ps-md-0 pe-md-2">
                                 <div class="report-opertunities-card bg-orange"  
                                 
-                                @if($user_package !== 'basic' || $user_package !== 'pro')
+                                @if($user_package == 'basic' || $user_package == 'pro')
                                    data-bs-toggle="modal" data-bs-target="#ModalFive"
                                 @else
                                     onclick="showUpgradePopup()"
