@@ -310,6 +310,7 @@ header{
 </style>
 
 <body>
+
     <div class="d-lg-flex">
         <!-- Desktop Sidebar -->
         <aside class="d-none d-lg-flex flex-column bg-white" style="width: 258px !important; min-width: 258px; min-height: 100vh; position: sticky; top: 0; border-right: 1px solid #E3E7DD">
@@ -408,8 +409,8 @@ header{
                             </li>
                         </ul>
                     </div>
-                     <img src="{{ asset('assets/images/dummy-profile-pic-300x300.jpg') }}" alt="Logo"
-                            style="height: 30px; width: 30px; border-radius: 100% " class="ms-md-3">
+                     <a href="{{url('profile')}}"><img src="{{ asset('assets/images/dummy-profile-pic-300x300.jpg') }}" alt="Logo"
+                            style="height: 30px; width: 30px; border-radius: 100% " class="ms-md-3"></a>
                     <div class="d-none d-lg-block">
                         <div>{{$customer_name}}</div>
                         <small class="text-muted">{{$customer_email}}</small>

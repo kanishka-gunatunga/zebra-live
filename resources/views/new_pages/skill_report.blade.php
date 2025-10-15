@@ -286,8 +286,9 @@ ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 90vh;
+        height: unset;
         text-align: center;
+        padding-top: 20px;
     }
 
 }

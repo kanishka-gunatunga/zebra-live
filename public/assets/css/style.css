@@ -1482,6 +1482,7 @@ a {
     .height-control {
         min-height: 400px;
     }
+    
 
 }
 
@@ -1500,6 +1501,16 @@ a {
 
 }
 
+@media (min-width: 990px) and (max-width: 1090px) {
+    .learn-more-item-box-img{
+    height: 212px;
+    width: 100%;
+    scale: 1;
+}
+.header-tab-text{
+            margin-left: 0rem !important;
+}
+}
 
 /*
 ul{
