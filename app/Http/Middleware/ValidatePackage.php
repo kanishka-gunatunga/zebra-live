@@ -50,7 +50,7 @@ class ValidatePackage
             // // You can extract actual package info from $data if available
             // // For now, assume API validated successfully
             $wp_user = WPUsers::where('user_id', $userId)->first();
-            $wp_user->package = 'decodemybrain-deep-dive';
+            $wp_user->package = 'free';
             $wp_user->update();
             return $next($request);
         }

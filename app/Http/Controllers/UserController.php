@@ -202,7 +202,7 @@ public function sign_in(Request $request)
                             $wp_user->display_name = session('user_details')['display_name'];
                             $wp_user->date_of_birth = session('user_details')['date_of_birth'];
                             $wp_user->age = $age;
-                            $wp_user->package = 'decodemybrain-deep-dive';
+                            $wp_user->package = 'free';
                             $wp_user->save();
                             
                         }
@@ -388,7 +388,7 @@ public function sign_up(Request $request) {
             $wp_user->display_name = $request->first_name . ' ' . $request->last_name;
             $wp_user->date_of_birth = $request->dob;
             $wp_user->age = $age;
-            $wp_user->package = 'decodemybrain-deep-dive';
+            $wp_user->package = 'free';
             $wp_user->save();
             
             

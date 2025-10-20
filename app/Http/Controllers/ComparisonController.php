@@ -73,9 +73,9 @@ class ComparisonController extends Controller
         ->count();
 
         $maxRequests = 0;
-    if ($user_package == 'decodemybrain-guided-friend-and-family-connect') {
+    if ($user_package == 'decodemybrain-deep-dive') {
         $maxRequests = 1;
-    } elseif ($user_package == 'myneurosense-the-smart-scan') {
+    } elseif ($user_package == 'decodemybrain-guided-friend-and-family-connect') {
         $maxRequests = 2;
     }
 

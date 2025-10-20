@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, li {
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}" aria-current="page" href="{{url('dashboard')}}">Dashboard</a>
                     </li>
-                    <?php if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan'){ ?>
+                    <?php if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect'){ ?>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('careers') ? 'active' : '' }}" aria-current="page" href="{{url('careers')}}">Careers</a>
                     </li>
@@ -196,7 +196,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, li {
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('profile') ? 'active' : '' }}" aria-current="page" href="{{url('profile')}}">Profile</a>
                     </li>
-                    <?php if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan'){ ?>
+                    <?php if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect'){ ?>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('skill-assestment') ? 'active' : '' }}" aria-current="page" href="{{url('skill-assestment')}}">Skill Assestment</a>
                     </li>
@@ -210,7 +210,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, li {
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('billing') ? 'active' : '' }}" aria-current="page" href="{{url('billing')}}" >Billing</a>
                     </li>
-                    <?php if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan'){ ?>
+                    <?php if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect'){ ?>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('parent-community') ? 'active' : '' }}" aria-current="page" href="{{url('parent-community')}}">Parent Community</a>
                     </li>
@@ -429,7 +429,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, li {
                                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}" aria-current="page" href="{{url('dashboard')}}">Dashboard</a>
                     </li>
-                    <?php if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan'){ ?>
+                    <?php if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect'){ ?>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('careers') ? 'active' : '' }}" aria-current="page" href="{{url('careers')}}">Careers</a>
                     </li>
@@ -437,7 +437,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, li {
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('profile') ? 'active' : '' }}" aria-current="page" href="{{url('profile')}}">Profile</a>
                     </li>
-                    <?php if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan'){ ?>
+                    <?php if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect'){ ?>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('skill-assestment') ? 'active' : '' }}" aria-current="page" href="{{url('skill-assestment')}}">Skill Assestment</a>
                     </li>
@@ -451,7 +451,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, li {
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('billing') ? 'active' : '' }}" aria-current="page" href="{{url('billing')}}" >Billing</a>
                     </li>
-                    <?php if($user_package == 'decodemybrain-guided-friend-and-family-connect' || $user_package == 'myneurosense-the-smart-scan'){ ?>
+                    <?php if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect'){ ?>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('parent-community') ? 'active' : '' }}" aria-current="page" href="{{url('parent-community')}}">Parent Community</a>
                     </li>
