@@ -338,7 +338,6 @@ public function sign_in(Request $request)
 //     }
 // }
 
-
 public function sign_up(Request $request) {
     if ($request->isMethod('get')) {
         return view('user/sign_up');
@@ -503,7 +502,7 @@ public function sign_up(Request $request) {
             ];
             
             
-            $token_response = $this->performCurlRequest('https://dev.mylimitlessbrain.com/wp-json/jwt-auth/v1/token', true, $token_payload);
+            $token_response = $this->performCurlRequest('https://decodemybrain.com/wp-json/jwt-auth/v1/token', true, $token_payload);
             
             if ($token_response) {
                 $token =  $token_response['token'];
@@ -572,7 +571,7 @@ public function sign_up(Request $request) {
             ];
             
             
-            $token_response = $this->performCurlRequest('https://dev.mylimitlessbrain.com/wp-json/jwt-auth/v1/token', true, $token_payload);
+            $token_response = $this->performCurlRequest('https://decodemybrain.com/wp-json/jwt-auth/v1/token', true, $token_payload);
             
             if ($token_response) {
                 $token =  $token_response['token'];
@@ -824,6 +823,7 @@ private function performCurlRequest($url, $isPost = false, $payload = [], $token
         $request->session()->forget(['user_details']);
         $request->session()->forget(['auth_cookie']);
         $request->session()->forget(['user_dob']);
+        $request->session()->forget(['user_dob']);
         return redirect('sign-in');
     }
 
@@ -834,8 +834,8 @@ private function performCurlRequest($url, $isPost = false, $payload = [], $token
         // Step 1: Base validation
         $validator = Validator::make($request->all(), [
             'user_id' => 'required|integer',
-            'status'  => 'required|string|in:updated,expired',
-            'package' => 'required_if:status,updated|string|nullable'
+            'status'  => 'nullable|string',
+            'package' => 'string|nullable'
         ]);
 
         if ($validator->fails()) {
@@ -857,12 +857,12 @@ private function performCurlRequest($url, $isPost = false, $payload = [], $token
         }
 
         // Step 3: Update logic
-        if ($request->status === 'updated') {
-            $user->package = $request->package;
-        } else {
-            $user->package = null;
-        }
-
+        // if ($request->status === 'updated') {
+        //     $user->package = $request->package;
+        // } else {
+        //     $user->package = null;
+        // }
+        $user->package = $request->package;
         $user->save();
 
         // Step 4: Response
@@ -882,5 +882,55 @@ private function performCurlRequest($url, $isPost = false, $payload = [], $token
         ], 500);
     }
 }
+public function get_user_details(Request $request)
+{
+    try {
+        // Step 1: Base validation
+        $validator = Validator::make($request->all(), [
+            'user_id' => 'required|integer',
+        ]);
 
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => "fail",
+                'message' => 'Validation errors',
+                'errors' => $validator->errors()
+            ], 422);
+        }
+
+        // Step 2: Fetch user
+        $user = WPUsers::where('user_id', $request->user_id)->first();
+
+        if (!$user) {
+            return response()->json([
+                'status' => 'fail',
+                'message' => 'User not found.'
+            ], 404);
+        }
+
+        // Step 3: Update logic
+        // if ($request->status === 'updated') {
+        //     $user->package = $request->package;
+        // } else {
+        //     $user->package = null;
+        // }
+        // $user->package = $request->package;
+        // $user->save();
+
+        // Step 4: Response
+        return response()->json([
+            'status' => "success",
+            'user' => $user
+        ], 201);
+
+    } catch (\Exception $e) {
+        Log::error('Package update failed: ' . $e->getMessage());
+
+        return response()->json([
+            'status' => 'error',
+            'message' => 'An error occurred while updating the package.',
+            'error' => $e->getMessage(),
+        ], 500);
+    }
+}
 }
