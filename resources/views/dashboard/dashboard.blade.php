@@ -10966,7 +10966,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/business-and-negotiation-style')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -11986,7 +11986,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                href=""
+                                href="{{url('report/business-and-negotiation-style')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -13004,7 +13004,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/business-and-negotiation-style')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -14014,7 +14014,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/business-and-negotiation-style')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -14928,7 +14928,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/business-and-negotiation-style')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -15941,7 +15941,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/business-and-negotiation-style')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -16953,7 +16953,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/business-and-negotiation-style')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -17966,7 +17966,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/business-and-negotiation-style')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -18976,7 +18976,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/business-and-negotiation-style')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -19988,7 +19988,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/business-and-negotiation-style')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -21001,7 +21001,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/business-and-negotiation-style')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -22013,7 +22013,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/business-and-negotiation-style')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -23026,7 +23026,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/business-and-negotiation-style')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -24041,7 +24041,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/business-and-negotiation-style')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -25055,7 +25055,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/business-and-negotiation-style')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif

@@ -35818,6 +35818,18 @@ ul {
     
 </div>
 </div>
+<?php elseif ($report_type == 'business-and-negotiation-style'): ?>
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php else: ?>
 <h5>invalid report type</h5>
 <?php endif; ?>
