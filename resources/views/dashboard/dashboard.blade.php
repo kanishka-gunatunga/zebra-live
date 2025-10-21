@@ -671,7 +671,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     {{-- card 3 --}}
                     <div class="col-12 col-md-4 d-flex justify-content-center mb-3  mb-md-0 px-0 ps-md-2 pe-md-0">
                         <div class="card position-relative header-tab-card">
-                            <a href="{{ url('/pricing') }}">
+                            <a href="{{ url('/billing') }}">
                                 <div class="card-body">
                                     <div class="d-flex">
                                         <div class="col-10 justify-content-center align-items-center">
@@ -1078,7 +1078,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                 </div>
 
-                                <p class="report-normal-text mt-4">
+                                <p class="report-normal-text mt-4 text-center">
                                     Your natural analytical focus may cause you to prefer working independently, and you might not always feel comfortable stepping into leadership roles. Developing your ability to inspire and guide others can elevate your impact, especially in team environments. </p>
                             </div>
                         </div>
@@ -3510,6 +3510,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                         <img src="{{ asset('assets/images/Meter-08.png') }}" height="auto" width="100%">
                                     </div>
                                 </div>
+                                <p class="report-normal-text mt-4 text-center"> No content avialble</p>
                             </div>
                         </div>
                     </div>
@@ -6682,7 +6683,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                 </div>
 
-
+<p class="report-normal-text mt-4 text-center"> No content avialble</p>
                             </div>
                         </div>
                     </div>
@@ -7113,6 +7114,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                         <img src="{{ asset('assets/images/Meter-08.png') }}" height="auto" width="100%">
                                     </div>
                                 </div>
+                                <p class="report-normal-text mt-4 text-center"> No content avialble</p>
                             </div>
                         </div>
                     </div>
@@ -7222,7 +7224,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                         <img src="{{ asset('assets/images/Meter-08.png') }}" height="auto" width="100%">
                                     </div>
                                 </div>
-
+<p class="report-normal-text mt-4 text-center"> No content avialble</p>
                             </div>
                         </div>
                     </div>
@@ -7334,7 +7336,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                         <img src="{{ asset('assets/images/Meter-08.png') }}" height="auto" width="100%">
                                     </div>
                                 </div>
-
+<p class="report-normal-text mt-4 text-center"> No content avialble</p>
                             </div>
                         </div>
                     </div>
@@ -7702,6 +7704,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                         <img src="{{ asset('assets/images/Meter-08.png') }}" height="auto" width="100%">
                                     </div>
                                 </div>
+                                <p class="report-normal-text mt-4 text-center"> No content avialble</p>
                             </div>
                         </div>
                     </div>
@@ -7812,6 +7815,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                         <img src="{{ asset('assets/images/Meter-08.png') }}" height="auto" width="100%">
                                     </div>
                                 </div>
+                                <p class="report-normal-text mt-4 text-center"> No content avialble</p>
                             </div>
                         </div>
                     </div>
@@ -7922,6 +7926,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                         <img src="{{ asset('assets/images/Meter-08.png') }}" height="auto" width="100%">
                                     </div>
                                 </div>
+                                <p class="report-normal-text mt-4 text-center"> No content avialble</p>
                             </div>
                         </div>
                     </div>
@@ -10787,7 +10792,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         <a 
                         
                                 @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                   href=""
+                                   href="{{url('report/parenting-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -11813,7 +11818,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                href=""
+                                href="{{url('report/parenting-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -12832,7 +12837,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/parenting-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -13842,7 +13847,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/parenting-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -14756,7 +14761,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/parenting-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -15769,7 +15774,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/parenting-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -16780,7 +16785,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/parenting-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -17794,7 +17799,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/parenting-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -18804,7 +18809,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/parenting-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -19816,7 +19821,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/parenting-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -20829,7 +20834,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/parenting-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -21841,7 +21846,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/parenting-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -22854,7 +22859,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/parenting-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -23869,7 +23874,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/parenting-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -24883,7 +24888,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                                  href=""
+                                  href="{{url('report/parenting-styles')}}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif

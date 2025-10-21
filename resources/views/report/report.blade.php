@@ -35,7 +35,9 @@ $brain_profile_id = WPUsers::where("user_id", session('user_id'))->value('brain_
 $report_type = $type;
 ?>
 <style>
-
+.side-img-desktop2{
+    width: 350px;
+}
 ul {
         list-style-type: none !important; 
         
@@ -469,11 +471,31 @@ ul {
 
 <?php else: ?>
 <div>
-    <p>No data available in Advanced Brain Report</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <?php endif; ?>
 
+<?php if ($report_type == 'parenting-styles'): ?>
+<div>
 
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
+<?php endif; ?>
 
 <?php elseif ($report_type == 'job-and-work'): ?>
 
@@ -35907,8 +35929,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const images = document.querySelectorAll("#no-image-section img");
 
     images.forEach(img => {
-        // Skip images with the class 'video-background'
-        if (!img.classList.contains('video-background')) {
+        // Skip images with these classes
+        const skipClasses = ['video-background', 'no-default'];
+
+        const shouldSkip = skipClasses.some(cls => img.classList.contains(cls));
+
+        if (!shouldSkip) {
             img.src = defaultImage;
         }
     });
