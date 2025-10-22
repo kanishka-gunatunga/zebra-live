@@ -206,7 +206,7 @@ body {
                     <input type="checkbox" class="form-check-input" id="terms" required>
                     <label style="font-weight: 600" class="form-check-label" for="terms">
                         I agree to the
-                        <a href="{{ url('#') }}" style="color: #F1935D;" class="custom-underline">Terms &
+                        <a href="{{ url('terms-and-conditions') }}" style="color: #F1935D;" class="custom-underline">Terms &
                             Conditions</a>
                     </label>
                 </div>

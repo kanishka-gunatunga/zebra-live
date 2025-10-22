@@ -189,3 +189,7 @@ Route::post('careers/import', [MainController::class, 'importCareers']);
 
 
 Route::match(['get', 'post'],'/complete-profile', [ConsultantTestController::class, 'complete_profile'])->middleware('authCustomer')->middleware('AuthQuestionAnswered');
+
+Route::get('/terms-and-conditions', function () {
+    return view('terms-and-conditions');
+});

@@ -505,7 +505,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
     <div class=" mb-5 mb-lg-0 mb-xl-0">
         <div>
             <h2 class="page-title">Dashboard</h2>
-            <p class="page-description">Overview of all limitless activities.</p>
+            <p class="page-description">DecodeMyBrain - Your complete cognitive overview.</p>
         </div>
 
 

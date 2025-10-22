@@ -50,30 +50,29 @@ class MainController extends Controller
 
         return view('dashboard/packages');
     }
-    public function dashboard(){
-        $events_data = Events::where('status', 'active')->get();
-        $brain_profile_id = WPUsers::where('user_id', session('user_details')['id'])->value('brain_profile_id');
-        $management_tips = VideoTips::where('category', "management")->where('brain_profile_id', $brain_profile_id)->get();
-        $sport_tips = VideoTips::where('category', "sport")->where('brain_profile_id', $brain_profile_id)->get();
-        $creative_tips = VideoTips::where('category', "creative-thinking")->where('brain_profile_id', $brain_profile_id)->get();
-        $self_tips = VideoTips::where('category', "self-learning")->where('brain_profile_id', $brain_profile_id)->get();
-        $events = [];
-        foreach ($events_data as $event) {
-            $start_date_time = $event->date . ' ' . $event->start_time;
-            $end_date_time = $event->date . ' ' . $event->end_time;
+   public function dashboard(){
+        // $events_data = Events::where('status', 'active')->get();
+        // $brain_profile_id = WPUsers::where('user_id', session('user_id'))->value('brain_profile_id');
+        // $management_tips = VideoTips::where('category', "management")->where('brain_profile_id', $brain_profile_id)->get();
+        // $sport_tips = VideoTips::where('category', "sport")->where('brain_profile_id', $brain_profile_id)->get();
+        // $creative_tips = VideoTips::where('category', "creative-thinking")->where('brain_profile_id', $brain_profile_id)->get();
+        // $self_tips = VideoTips::where('category', "self-learning")->where('brain_profile_id', $brain_profile_id)->get();
+        // $events = [];
+        // foreach ($events_data as $event) {
+        //     $start_date_time = $event->date . ' ' . $event->start_time;
+        //     $end_date_time = $event->date . ' ' . $event->end_time;
 
-            $final_start_date = Carbon::createFromFormat('Y-m-d H:i:s', $start_date_time);
-            $final_end_date = Carbon::createFromFormat('Y-m-d H:i:s', $end_date_time);
+        //     $final_start_date = Carbon::createFromFormat('Y-m-d H:i:s', $start_date_time);
+        //     $final_end_date = Carbon::createFromFormat('Y-m-d H:i:s', $end_date_time);
 
-            $events[] = [
-                'title' => $event->name,
-                'start' =>  $final_start_date,
-                'end' => $final_end_date,
-                'url' => url('events/'.$event->slug.'')
-            ];
-        }
-        return view('dashboard/dashboard',['events' => $events,'management_tips' => $management_tips,'sport_tips' => $sport_tips,
-        'creative_tips' => $creative_tips,'self_tips' => $self_tips]);
+        //     $events[] = [
+        //         'title' => $event->name,
+        //         'start' =>  $final_start_date,
+        //         'end' => $final_end_date,
+        //         'url' => url('events/'.$event->slug.'')
+        //     ];
+        // }
+        return view('dashboard/dashboard');
     }
     public function tips(){
         
