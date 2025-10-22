@@ -708,6 +708,7 @@ display: none;
 <?php else: ?>
     <div class="container text-center h-100 d-flex flex-column align-items-center justify-content-center pt-5 pb-1  mx-0">
         <h3 class="heading1 text-purple">Plese answer our questionnaire.</h3>
+        <p class="question-paragraph">Find out more about your personality type and social preferences.</p>
         <button class="buttons text-purple" type="button" onclick="window.location.href='{{ url('introvert-extrovert-question/q1') }}'">Start now</button>
     </div>
 <?php endif; ?>
