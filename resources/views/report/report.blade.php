@@ -153,6 +153,7 @@ ul {
 .img-content-page {
     height: 100px;
     width: 100px;
+    padding: 15px;
 }
 
 .report-list {

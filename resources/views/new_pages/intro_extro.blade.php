@@ -398,7 +398,8 @@ display: none;
             <div class="report-opertunities-card bg-yellow">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/2-Individual sport-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/reflective thinking.png') }}" class="w-100"> --}}
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
                     </div>
                     <div class="col-10">
                         <h2 class="title">Reflective Thinking</h2>
@@ -410,7 +411,8 @@ display: none;
             <div class="report-opertunities-card bg-blue">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/3-Strategic team sport-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/3-Strategic team sport-01.png') }}" class="w-100"> --}}
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
                     </div>
                     <div class="col-10">
                         <h2 class="title">Enjoys Solitude</h2>
@@ -422,7 +424,8 @@ display: none;
             <div class="report-opertunities-card bg-green">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/4-mind sport-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/listening.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Strong Listening Skills</h2>
@@ -435,7 +438,8 @@ display: none;
             <div class="report-opertunities-card bg-orange">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/5-STEM related-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/communication.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Preference for Deep Conversations</h2>
@@ -448,7 +452,8 @@ display: none;
             <div class="report-opertunities-card bg-yellow">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/2-Individual sport-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/inclinations.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Creative Problem Solving</h2>
@@ -465,7 +470,8 @@ display: none;
                 <div class="report-opertunities-card bg-blue">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/3-Strategic team sport-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/Boost Academics-01.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">High Levels of Concentration</h2>
@@ -478,7 +484,8 @@ display: none;
             <div class="report-opertunities-card bg-green">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/4-mind sport-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/reserved-nature.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Reserved Nature</h2>
@@ -491,7 +498,8 @@ display: none;
             <div class="report-opertunities-card bg-orange">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/5-STEM related-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/5-STEM related-01.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Strong Sense of Independence</h2>
@@ -504,7 +512,8 @@ display: none;
             <div class="report-opertunities-card bg-yellow">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/2-Individual sport-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/2-Individual sport-01.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Observant and Detail-Oriented</h2>
@@ -517,7 +526,8 @@ display: none;
             <div class="report-opertunities-card bg-blue">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/3-Strategic team sport-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/3-Strategic team sport-01.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Lower Need for Social Stimulation</h2>
@@ -549,7 +559,8 @@ display: none;
             <div class="report-opertunities-card bg-yellow">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/2-Individual sport-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/2-Individual sport-01.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Energized by Social Interaction</h2>
@@ -561,7 +572,8 @@ display: none;
             <div class="report-opertunities-card bg-blue">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/3-Strategic team sport-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/3-Strategic team sport-01.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Outgoing and Friendly</h2>
@@ -574,7 +586,8 @@ display: none;
             <div class="report-opertunities-card bg-green">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/4-mind sport-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/4-mind sport-01.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Skilled Communicators</h2>
@@ -587,7 +600,8 @@ display: none;
             <div class="report-opertunities-card bg-orange">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/5-STEM related-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/5-STEM related-01.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Preference for Group Activities</h2>
@@ -600,7 +614,8 @@ display: none;
             <div class="report-opertunities-card bg-yellow">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/2-Individual sport-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/2-Individual sport-01.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Quick Decision-Making</h2>
@@ -618,7 +633,8 @@ display: none;
                   <div class="report-opertunities-card bg-blue">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/3-Strategic team sport-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/3-Strategic team sport-01.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Adventurous Spirit</h2>
@@ -631,7 +647,8 @@ display: none;
             <div class="report-opertunities-card bg-green">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/4-mind sport-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/4-mind sport-01.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Comfortable in the Spotlight</h2>
@@ -644,7 +661,8 @@ display: none;
             <div class="report-opertunities-card bg-orange">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/5-STEM related-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/5-STEM related-01.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Strong Networkers</h2>
@@ -657,7 +675,8 @@ display: none;
             <div class="report-opertunities-card bg-yellow">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/2-Individual sport-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/2-Individual sport-01.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Verbal Thinkers</h2>
@@ -670,7 +689,8 @@ display: none;
             <div class="report-opertunities-card bg-blue">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="{{ asset('assets/images/3-Strategic team sport-01.png') }}" class="w-100">
+                        <img src="{{ asset('assets/images/DecodemyBrain new logo-01.png') }}" class="w-100">
+                        {{-- <img src="{{ asset('assets/images/3-Strategic team sport-01.png') }}" class="w-100"> --}}
                     </div>
                     <div class="col-10">
                         <h2 class="title">Optimistic Outlook</h2>

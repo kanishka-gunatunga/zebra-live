@@ -10085,10 +10085,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10121,7 +10121,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10155,7 +10155,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10188,7 +10188,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/inclinations.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10221,7 +10221,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10254,7 +10254,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/early hints careers.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10285,10 +10285,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10321,7 +10321,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10423,10 +10423,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10459,7 +10459,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10493,7 +10493,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10556,10 +10556,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10592,7 +10592,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10626,7 +10626,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10659,7 +10659,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10764,10 +10764,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                 @endif
                         
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10802,7 +10802,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Parenting-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10836,7 +10836,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10870,7 +10870,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10904,7 +10904,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/job and work.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -10940,7 +10940,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11010,7 +11010,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11120,10 +11120,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                 @endif
                         
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11155,7 +11155,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11189,7 +11189,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11222,7 +11222,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/inclinations.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11255,7 +11255,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11288,7 +11288,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/early hints careers.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11319,10 +11319,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11355,7 +11355,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11455,10 +11455,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11490,7 +11490,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11524,7 +11524,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11587,10 +11587,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11623,7 +11623,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11657,7 +11657,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11690,7 +11690,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11791,10 +11791,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11826,7 +11826,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Parenting-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11861,7 +11861,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11894,7 +11894,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11927,7 +11927,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/job and work.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -11960,7 +11960,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12028,7 +12028,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12136,10 +12136,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12171,7 +12171,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12205,7 +12205,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12238,7 +12238,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/inclinations.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12271,7 +12271,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12304,7 +12304,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/early hints careers.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12335,10 +12335,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12370,7 +12370,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12471,10 +12471,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12506,7 +12506,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12541,7 +12541,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12604,10 +12604,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12641,7 +12641,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12676,7 +12676,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12709,7 +12709,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12810,10 +12810,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                        >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12845,7 +12845,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Parenting-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12879,7 +12879,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12912,7 +12912,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12945,7 +12945,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/job and work.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -12978,7 +12978,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13045,7 +13045,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13149,10 +13149,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13184,7 +13184,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13218,7 +13218,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13251,7 +13251,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/inclinations.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13284,7 +13284,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13317,7 +13317,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/early hints careers.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13348,10 +13348,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13383,7 +13383,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13484,10 +13484,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13519,7 +13519,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13553,7 +13553,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13616,10 +13616,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13652,7 +13652,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13686,7 +13686,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13719,7 +13719,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13820,10 +13820,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13855,7 +13855,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Parenting-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13889,7 +13889,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13922,7 +13922,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13955,7 +13955,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/job and work.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -13988,7 +13988,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14054,7 +14054,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14159,10 +14159,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14194,7 +14194,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14228,7 +14228,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14261,7 +14261,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/inclinations.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14294,7 +14294,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14327,7 +14327,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/early hints careers.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14358,10 +14358,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14395,7 +14395,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14495,10 +14495,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14530,7 +14530,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14564,7 +14564,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14627,10 +14627,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14663,7 +14663,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14697,7 +14697,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14730,7 +14730,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14769,7 +14769,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Parenting-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14803,7 +14803,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14836,7 +14836,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14869,7 +14869,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/job and work.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14902,7 +14902,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -14969,7 +14969,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15075,10 +15075,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15110,7 +15110,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15144,7 +15144,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15177,7 +15177,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/inclinations.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15210,7 +15210,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15243,7 +15243,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/early hints careers.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15274,10 +15274,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15310,7 +15310,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15411,10 +15411,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15446,7 +15446,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15480,7 +15480,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15543,10 +15543,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15579,7 +15579,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15613,7 +15613,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15646,7 +15646,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15747,10 +15747,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15782,7 +15782,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Parenting-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15816,7 +15816,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15849,7 +15849,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15882,7 +15882,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/job and work.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15915,7 +15915,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -15983,7 +15983,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16087,10 +16087,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16122,7 +16122,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16156,7 +16156,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16189,7 +16189,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/inclinations.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16222,7 +16222,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16255,7 +16255,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/early hints careers.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16286,10 +16286,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16322,7 +16322,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16422,10 +16422,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16457,7 +16457,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16491,7 +16491,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16554,10 +16554,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16590,7 +16590,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16624,7 +16624,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16657,7 +16657,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16758,10 +16758,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16793,7 +16793,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Parenting-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16827,7 +16827,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16861,7 +16861,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16894,7 +16894,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/job and work.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16927,7 +16927,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -16994,7 +16994,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17100,10 +17100,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17135,7 +17135,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17169,7 +17169,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17202,7 +17202,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/inclinations.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17235,7 +17235,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17268,7 +17268,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/early hints careers.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17299,10 +17299,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17336,7 +17336,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17436,10 +17436,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17471,7 +17471,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17505,7 +17505,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17568,10 +17568,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17604,7 +17604,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17638,7 +17638,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17671,7 +17671,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17772,10 +17772,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17807,7 +17807,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Parenting-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17841,7 +17841,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17874,7 +17874,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17907,7 +17907,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/job and work.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -17940,7 +17940,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18007,7 +18007,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18111,10 +18111,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18146,7 +18146,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18180,7 +18180,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18213,7 +18213,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/inclinations.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18246,7 +18246,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18279,7 +18279,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/early hints careers.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18310,10 +18310,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18345,7 +18345,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18446,10 +18446,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18481,7 +18481,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18515,7 +18515,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18578,10 +18578,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18614,7 +18614,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18648,7 +18648,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18681,7 +18681,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18782,10 +18782,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18817,7 +18817,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Parenting-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18851,7 +18851,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18884,7 +18884,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18917,7 +18917,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/job and work.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -18950,7 +18950,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19017,7 +19017,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19122,10 +19122,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19157,7 +19157,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19191,7 +19191,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19224,7 +19224,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/inclinations.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19257,7 +19257,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19290,7 +19290,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/early hints careers.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19321,10 +19321,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19357,7 +19357,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19458,10 +19458,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19493,7 +19493,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19527,7 +19527,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19590,10 +19590,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19626,7 +19626,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19660,7 +19660,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19693,7 +19693,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19794,10 +19794,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19829,7 +19829,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Parenting-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19863,7 +19863,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19896,7 +19896,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19929,7 +19929,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/job and work.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -19962,7 +19962,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20029,7 +20029,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20135,10 +20135,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20170,7 +20170,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20204,7 +20204,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20237,7 +20237,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/inclinations.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20270,7 +20270,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20303,7 +20303,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/early hints careers.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20334,10 +20334,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20370,7 +20370,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20471,10 +20471,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20506,7 +20506,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20540,7 +20540,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20603,10 +20603,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20639,7 +20639,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20673,7 +20673,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20706,7 +20706,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20807,10 +20807,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20842,7 +20842,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Parenting-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20876,7 +20876,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20909,7 +20909,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20942,7 +20942,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/job and work.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -20975,7 +20975,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21043,7 +21043,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21147,10 +21147,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21182,7 +21182,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21216,7 +21216,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21249,7 +21249,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/inclinations.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21282,7 +21282,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21315,7 +21315,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/early hints careers.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21346,10 +21346,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21383,7 +21383,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21483,10 +21483,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21518,7 +21518,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21552,7 +21552,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21615,10 +21615,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21651,7 +21651,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21685,7 +21685,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21718,7 +21718,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21819,10 +21819,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21854,7 +21854,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Parenting-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21888,7 +21888,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21921,7 +21921,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21954,7 +21954,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/job and work.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -21987,7 +21987,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22055,7 +22055,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22160,10 +22160,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22195,7 +22195,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22229,7 +22229,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22262,7 +22262,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/inclinations.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22295,7 +22295,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22328,7 +22328,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/early hints careers.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22359,10 +22359,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22396,7 +22396,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22496,10 +22496,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22531,7 +22531,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22565,7 +22565,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22628,10 +22628,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22664,7 +22664,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22698,7 +22698,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22731,7 +22731,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22832,10 +22832,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22867,7 +22867,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Parenting-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22901,7 +22901,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22934,7 +22934,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -22967,7 +22967,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/job and work.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23000,7 +23000,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23068,7 +23068,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23175,10 +23175,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23210,7 +23210,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23244,7 +23244,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23277,7 +23277,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/inclinations.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23310,7 +23310,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23343,7 +23343,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/early hints careers.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23374,10 +23374,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23411,7 +23411,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23511,10 +23511,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23546,7 +23546,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23580,7 +23580,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23643,10 +23643,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23679,7 +23679,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23713,7 +23713,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23746,7 +23746,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23847,10 +23847,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23882,7 +23882,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Parenting-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23916,7 +23916,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23949,7 +23949,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -23982,7 +23982,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/job and work.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24015,7 +24015,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24083,7 +24083,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24189,10 +24189,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24224,7 +24224,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24258,7 +24258,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24291,7 +24291,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/inclinations.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24324,7 +24324,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24357,7 +24357,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/early hints careers.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24388,10 +24388,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24425,7 +24425,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24525,10 +24525,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24560,7 +24560,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24594,7 +24594,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24657,10 +24657,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Clarity on Career Path-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24693,7 +24693,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24727,7 +24727,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-5.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24760,7 +24760,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24861,10 +24861,10 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                        >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Boost Academics-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24896,7 +24896,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Parenting-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24930,7 +24930,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-2.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/communication.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24963,7 +24963,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-3.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Diet Nutrition-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -24996,7 +24996,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/job and work.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -25029,7 +25029,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Relationships-01.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
@@ -25097,7 +25097,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-4.png') }}" alt="">
+                                        <img class="learn-more-item-box-img" src="{{ asset('assets/images/Flow & Grow.png') }}" alt="">
 
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
