@@ -15,6 +15,7 @@
 @include('report.Advanced-Brain-Report-modals')
 @include('report.communication-and-behaviour-modals')
 @include('report.subjects-preferred-for-matching-career-options-modals')
+@include('report.diet-and-nutrition')
 <?php
 use App\Models\WPUsers;
 use App\Models\BrainScores;
@@ -289,35 +290,196 @@ ul {
 </div>
 
 <?php elseif ($brain_profile_id == 2): ?>
-<!-- Code for brain_profile_id 2 -->
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php elseif ($brain_profile_id == 3): ?>
 <!-- Code for brain_profile_id 3 -->
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php elseif ($brain_profile_id == 4): ?>
 <!-- Code for brain_profile_id 4 -->
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php elseif ($brain_profile_id == 5): ?>
 <!-- Code for brain_profile_id 5 -->
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php elseif ($brain_profile_id == 6): ?>
 <!-- Code for brain_profile_id 6 -->
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php elseif ($brain_profile_id == 7): ?>
 <!-- Code for brain_profile_id 7 -->
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php elseif ($brain_profile_id == 8): ?>
 <!-- Code for brain_profile_id 8 -->
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php elseif ($brain_profile_id == 9): ?>
 <!-- Code for brain_profile_id 9 -->
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php elseif ($brain_profile_id == 10): ?>
 <!-- Code for brain_profile_id 10 -->
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php elseif ($brain_profile_id == 11): ?>
 <!-- Code for brain_profile_id 11 -->
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php elseif ($brain_profile_id == 12): ?>
 <!-- Code for brain_profile_id 12 -->
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php elseif ($brain_profile_id == 13): ?>
 <!-- Code for brain_profile_id 13 -->
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php elseif ($brain_profile_id == 14): ?>
 <!-- Code for brain_profile_id 14 -->
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php elseif ($brain_profile_id == 15): ?>
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php else: ?>
 <div>
-    <p>No data available on basic brain report</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <?php endif; ?>
 
@@ -4269,7 +4431,15 @@ ul {
 </section>
 <?php else: ?>
 <div>
-    <p>No data available in job and work</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <?php endif; ?>
 
@@ -7349,7 +7519,15 @@ ul {
 </section>
 <?php else: ?>
 <div>
-    <p>No data available flow and grow basics</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <?php endif; ?>
 
@@ -10679,7 +10857,15 @@ ul {
 
 <?php else: ?>
 <div>
-    <p>No data available extra curricular activities 1</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <?php endif; ?>
 
@@ -10694,13 +10880,17 @@ ul {
 <?php if ($brain_profile_id == 1): ?>
 <section class="">
 
-    <div class="container mt-4">
-        <div class="tab-section mx-auto col-md-8 col-lg-8 mb-4">
-            <div class="row align-items-center text-md-start text-center">
-                <h5>No data available Inclination</h5>
-            </div>
-        </div>
-    </div>
+    <div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 
 </section>
 <?php elseif ($brain_profile_id == 2): ?>
@@ -14889,12 +15079,16 @@ ul {
 
 </section>
 <?php else : ?>
-<div class="tab-section mx-auto col-md-8 col-lg-8 mb-4">
-    <div class="row align-items-center text-md-start text-center">
-        <div>
-            <h5>No data available Inclination</h5>
-        </div>
-    </div>
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <?php endif; ?>
 
@@ -17457,12 +17651,16 @@ ul {
 
 </section>
 <?php else : ?>
-<div class="tab-section mx-auto col-md-8 col-lg-8 mb-4">
-    <div class="row align-items-center text-md-start text-center">
-        <div>
-            <h5>No data available diet and nutrition</h5>
-        </div>
-    </div>
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <?php endif; ?>
 
@@ -21366,13 +21564,17 @@ ul {
 
     </section>
     <?php else : ?>
-    <div class="tab-section mx-auto col-md-8 col-lg-8 mb-4">
-        <div class="row align-items-center text-md-start text-center">
-            <div>
-                <h5>No data available communication and behaviour</h5>
-            </div>
-        </div>
-    </div>
+    <div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
     <?php endif; ?>
 
 
@@ -23762,7 +23964,15 @@ ul {
 </section>
 <?php else: ?>
 <div>
-    <p>No data available preferred-studying-and-learning-styles</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <?php endif; ?>
 
@@ -26963,7 +27173,15 @@ ul {
 </section>
 <?php else: ?>
 <div>
-    <p>No data available relationship styles</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <?php endif; ?>
 
@@ -27110,61 +27328,157 @@ ul {
 </div>
 <?php elseif ($brain_profile_id == 3): ?>
 <div>
-    <p>no data available advanced brain report</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <?php elseif ($brain_profile_id == 4): ?>
 <div>
-    <p>No data available</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <!-- Code for brain_profile_id 4 -->
 <?php elseif ($brain_profile_id == 5): ?>
 <div>
-    <p>no data available</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <!-- Code for brain_profile_id 5 -->
 <?php elseif ($brain_profile_id == 6): ?>
 <div>
-    <p>no data available</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <!-- Code for brain_profile_id 6 -->
 <?php elseif ($brain_profile_id == 7): ?>
 <div>
-    <p>no data available</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <!-- Code for brain_profile_id 7 -->
 <?php elseif ($brain_profile_id == 8): ?>
 <div>
-    <p>no data available</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <!-- Code for brain_profile_id 8 -->
 <?php elseif ($brain_profile_id == 9): ?>
 <div>
-    <p>no data available</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <!-- Code for brain_profile_id 9 -->
 <?php elseif ($brain_profile_id == 10): ?>
 <div>
-    <p>no data available advanced brain report 10</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <!-- Code for brain_profile_id 10 -->
 <?php elseif ($brain_profile_id == 11): ?>
 <div>
-    <p>no data available</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <!-- Code for brain_profile_id 11 -->
 <?php elseif ($brain_profile_id == 12): ?>
 <div>
-    <p>no data available</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <!-- Code for brain_profile_id 12 -->
 <?php elseif ($brain_profile_id == 13): ?>
 <div>
-    <p>no data available</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <!-- Code for brain_profile_id 13 -->
 <?php elseif ($brain_profile_id == 14): ?>
 <div>
-    <p>no data available</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 
 <!-- Code for brain_profile_id 14 -->
@@ -27172,11 +27486,29 @@ ul {
 
 
 <div>
-    <p>no data available</p>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
 </div>
 <!-- Code for brain_profile_id 15 -->
 <?php else: ?>
-<h6>no data available</h6>
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
 <?php endif; ?>
 
 <?php elseif($report_type == 'subjects-preferred-for-matching-career-options'):?>
@@ -35819,6 +36151,18 @@ ul {
 </div>
 </div>
 <?php elseif ($report_type == 'business-and-negotiation-style'): ?>
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">Sorry, there's no data to show at this time.</h3>
+    <button class="download-report-btn" type="button" onclick="window.location.href='{{ url('dashboard') }}'">Return to Dashbaord</button>
+
+
+    
+</div>
+</div>
+<?php elseif ($report_type == 'early-hints-to-prefered-career-options'): ?>
 <div>
 
      <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
