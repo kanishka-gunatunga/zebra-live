@@ -15,6 +15,7 @@
 @include('report.Advanced-Brain-Report-modals')
 @include('report.communication-and-behaviour-modals')
 @include('report.subjects-preferred-for-matching-career-options-modals')
+@include('report.diet-and-nutrition')
 <?php
 use App\Models\WPUsers;
 use App\Models\BrainScores;
