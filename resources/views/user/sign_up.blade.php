@@ -203,7 +203,7 @@ body {
                     style="border-radius:10px; border-color:rgb(233, 232, 232);" name="password_confirmation">
                     @if($errors->has("password_confirmation")) <p style="color:red;font-size:14px;">{{ $errors->first('password_confirmation') }}</p>@endif
                 <div class="form-check mb-3">
-                    <input type="checkbox" class="form-check-input" id="terms">
+                    <input type="checkbox" class="form-check-input" id="terms" required>
                     <label style="font-weight: 600" class="form-check-label" for="terms">
                         I agree to the
                         <a href="{{ url('#') }}" style="color: #F1935D;" class="custom-underline">Terms &

@@ -98,7 +98,11 @@
         font-size: 15px;
     }
 </style>
+<?php 
 
+    $dob = session('user_dob'); 
+    $age = \Carbon\Carbon::parse($dob)->age; 
+?>
 <section class="">
     <div class="container text-center"  style="margin-top: 80px !important;">
         <h3 class="heading1 text-purple" style="font-weight: 600">Discover Your Brain Type in 40mins</h3>
@@ -120,7 +124,10 @@ understand your preferences and the way you think.</p>
                     <!--<p class="qp1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
                 </div>
             </div>
-
+            <?php
+            if ($age >= 15){
+            ?> 
+                  
             <div class="row align-items-center text-md-start mt-3 text-center">
                 <div class="col-md-3 mb-3 mb-md-0">
                     <img src="{{ asset('assets/images/img224.png') }}" alt="Example Image" class="img-fluid">
@@ -130,6 +137,7 @@ understand your preferences and the way you think.</p>
                     <!--<p class="qp1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
                 </div>
             </div>
+            <?php   } ?>
            <div class="d-flex justify-content-center justify-content-lg-start">
                 <a href="{{url('questions/q1')}}"><button class="home-slider-btn mt-4" style="font-weight: 600">Get started</button></a>
            </div>

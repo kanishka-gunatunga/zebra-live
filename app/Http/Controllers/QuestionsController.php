@@ -100,7 +100,7 @@ public function thankyou() {
         if ($age < 15) {
             return redirect('dashboard')->with('fail', 'You are not required to take this test.');
         }
-        if ($dimAnswer->status === 'complete') {
+        if ($dimAnswer && $dimAnswer->status === 'complete') {
             return redirect('dashboard')->with('fail', 'Can not take this test agin');
         }
 

@@ -384,6 +384,15 @@
             max-width: 600px;
             max-height: 600px;
         }
+        .report-lern-more-btn{
+            border-radius: 32px;
+            font-size: 14px;
+            padding: 5px 10px;
+            width: max-content;
+            background-color: #000;
+            border: none;
+            color: #fff;
+        }
 </style>
 <?php
 use App\Models\WPUsers;
@@ -447,7 +456,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 }
 .learn-more{
     left: auto !important;
-    bottom: -60px !important;
+    bottom: -45px !important;
 }
 @media screen and (max-width: 992px) {
     .mtop{
@@ -9803,7 +9812,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
             {{-- section 6 --}}
             <div class="row align-items-center" >
-                
+    @if($age >= 15)            
     @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
     <h6 class="dashbaord-section-title px-0" style="margin-bottom: 24px !important">Your Brain Dominance and Thinking Preferences </h6>
     <p>Please select areas to know about more</p>
@@ -9851,6 +9860,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
         <p class="mt-2 mb-4 text-center tab-content-subtitle">Upgrade your package to access this content.</p>
         <a href="{{ url('billing') }}" class="yellow-send-btn mt-2">Upgrade Now</a>
     </div>
+@endif
 @endif
 
 
@@ -10027,7 +10037,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                        <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10093,7 +10108,11 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10126,7 +10145,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities naturally preferred</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10160,7 +10184,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10193,7 +10222,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Inclination for subjects naturally</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                        <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10226,7 +10260,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                        <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10259,7 +10298,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Early hints to preferred career options</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10293,7 +10337,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10326,7 +10375,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10365,7 +10419,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                        <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10431,7 +10490,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10464,7 +10528,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behavior</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10498,7 +10567,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10531,7 +10605,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Career suitable</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/careers-suitable')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10564,7 +10643,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10597,7 +10681,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10631,7 +10720,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10664,7 +10758,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow & grow basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10704,7 +10803,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10772,7 +10876,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10807,7 +10916,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Parenting styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/parenting-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10841,7 +10955,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10875,7 +10994,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10909,7 +11033,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Job and work</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/job-and-work')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10945,7 +11074,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10982,7 +11116,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Business and negotiation style</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/business-and-negotiation-style')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11015,7 +11154,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11061,7 +11205,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11128,7 +11277,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11160,7 +11314,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities naturally preferred</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11194,7 +11353,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11227,7 +11391,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Inclination for subjects naturally</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11260,7 +11429,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11293,7 +11467,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Early hints to preferred career options</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11327,7 +11506,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11360,7 +11544,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11397,7 +11586,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11463,7 +11657,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                            <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11495,7 +11694,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behavior</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11529,7 +11733,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11562,7 +11771,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Career suitable</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/careers-suitable')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11595,7 +11809,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11628,7 +11847,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11662,7 +11886,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11695,7 +11924,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow & grow basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11733,7 +11967,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11799,7 +12038,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11831,7 +12075,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Parenting styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/parenting-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11866,7 +12115,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11899,7 +12153,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11932,7 +12191,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Job and work</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/job-and-work')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11965,7 +12229,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11999,7 +12268,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Business and negotiation style</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/business-and-negotiation-style')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12033,7 +12307,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12078,7 +12357,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12144,7 +12428,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12176,7 +12465,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities naturally preferred</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12210,7 +12504,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12243,7 +12542,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Inclination for subjects naturally</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12276,7 +12580,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12309,7 +12618,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Early hints to preferred career options</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/early-hints-to-prefered-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12343,7 +12657,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12375,7 +12694,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12413,7 +12737,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12479,7 +12808,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12511,7 +12845,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behavior</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12546,7 +12885,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12579,7 +12923,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Career suitable</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/careers-suitable')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12612,7 +12961,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12646,7 +13000,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12681,7 +13040,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12714,7 +13078,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow & grow basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12752,7 +13121,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12818,7 +13192,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12850,7 +13229,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Parenting styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/parenting-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12884,7 +13268,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12917,7 +13306,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12950,7 +13344,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Job and work</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/job-and-work')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12983,7 +13382,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13017,7 +13421,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Business and negotiation style</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/business-and-negotiation-style')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13050,7 +13459,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13091,7 +13505,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13157,7 +13576,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13189,7 +13613,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities naturally preferred</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13223,7 +13652,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13256,7 +13690,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Inclination for subjects naturally</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13289,7 +13728,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13322,7 +13766,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Early hints to preferred career options</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/early-hints-to-prefered-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13356,7 +13805,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13388,7 +13842,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13426,7 +13885,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13492,7 +13956,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13524,7 +13993,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behavior</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13558,7 +14032,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13591,7 +14070,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Career suitable</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/careers-suitable')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13624,7 +14108,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13657,7 +14146,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13691,7 +14185,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13724,7 +14223,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow & grow basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13762,7 +14266,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13828,7 +14337,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                            <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13860,7 +14374,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Parenting styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/parenting-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13894,7 +14413,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13927,7 +14451,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13960,7 +14489,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Job and work</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/job-and-work')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13993,7 +14527,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14027,7 +14566,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Business and negotiation style</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/business-and-negotiation-style')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14059,7 +14603,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14101,7 +14650,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14167,7 +14721,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14199,7 +14758,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities naturally preferred</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14233,7 +14797,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14266,7 +14835,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Inclination for subjects naturally</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14299,7 +14873,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14332,7 +14911,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Early hints to preferred career options</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/early-hints-to-prefered-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14366,7 +14950,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14400,7 +14989,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14437,7 +15031,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14503,7 +15102,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14535,7 +15139,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behavior</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14569,7 +15178,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14602,7 +15216,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Career suitable</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/careers-suitable')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14635,7 +15254,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14668,7 +15292,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14702,7 +15331,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14735,7 +15369,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow & grow basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14774,7 +15413,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Parenting styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/parenting-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14808,7 +15452,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14841,7 +15490,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14874,7 +15528,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Job and work</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/job-and-work')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14907,7 +15566,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14941,7 +15605,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Business and negotiation style</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/business-and-negotiation-style')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14974,7 +15643,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15017,7 +15691,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15083,7 +15762,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15115,7 +15799,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities naturally preferred</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15149,7 +15838,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15182,7 +15876,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Inclination for subjects naturally</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15215,7 +15914,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15248,7 +15952,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Early hints to preferred career options</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/early-hints-to-prefered-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15282,7 +15991,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15315,7 +16029,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15353,7 +16072,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15419,7 +16143,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15451,7 +16180,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behavior</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15485,7 +16219,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15518,7 +16257,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Career suitable</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/careers-suitable')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15551,7 +16295,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15584,7 +16333,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15618,7 +16372,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15651,7 +16410,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow & grow basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15689,7 +16453,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15755,7 +16524,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15787,7 +16561,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Parenting styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/parenting-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15821,7 +16600,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15854,7 +16638,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15887,7 +16676,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Job and work</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/job-and-work')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15920,7 +16714,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15954,7 +16753,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Business and negotiation style</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/business-and-negotiation-style')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15988,7 +16792,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16029,7 +16838,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16095,7 +16909,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16127,7 +16946,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities naturally preferred</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16161,7 +16985,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16194,7 +17023,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Inclination for subjects naturally</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16227,7 +17061,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16260,7 +17099,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Early hints to preferred career options</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/early-hints-to-prefered-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16294,7 +17138,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16327,7 +17176,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16364,7 +17218,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16430,7 +17289,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16462,7 +17326,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behavior</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16496,7 +17365,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16529,7 +17403,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Career suitable</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/careers-suitable')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16562,7 +17441,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16595,7 +17479,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16629,7 +17518,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16662,7 +17556,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow & grow basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16700,7 +17599,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16766,7 +17670,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16798,7 +17707,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Parenting styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/parenting-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16832,7 +17746,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16866,7 +17785,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16899,7 +17823,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Job and work</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/job-and-work')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16932,7 +17861,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16966,7 +17900,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Business and negotiation style</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/business-and-negotiation-style')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16999,7 +17938,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17041,7 +17985,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17108,7 +18057,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17140,7 +18094,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities naturally preferred</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17174,7 +18133,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17207,7 +18171,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Inclination for subjects naturally</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17240,7 +18209,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17273,7 +18247,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Early hints to preferred career options</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/early-hints-to-prefered-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17307,7 +18286,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17341,7 +18325,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17378,7 +18367,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17444,7 +18438,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17476,7 +18475,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behavior</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17510,7 +18514,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17543,7 +18552,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Career suitable</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/careers-suitable')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17576,7 +18590,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17609,7 +18628,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17643,7 +18667,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17676,7 +18705,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow & grow basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17714,7 +18748,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17780,7 +18819,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17812,7 +18856,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Parenting styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/parenting-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17846,7 +18895,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17879,7 +18933,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17912,7 +18971,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Job and work</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/job-and-work')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17945,7 +19009,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17979,7 +19048,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Business and negotiation style</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/business-and-negotiation-style')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18012,7 +19086,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18053,7 +19132,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18119,7 +19203,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18151,7 +19240,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities naturally preferred</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18185,7 +19279,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18218,7 +19317,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Inclination for subjects naturally</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18251,7 +19355,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18284,7 +19393,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Early hints to preferred career options</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/early-hints-to-prefered-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18318,7 +19432,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18350,7 +19469,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18388,7 +19512,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18454,7 +19583,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18486,7 +19620,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behavior</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18520,7 +19659,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18553,7 +19697,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Career suitable</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/careers-suitable')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18586,7 +19735,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18619,7 +19773,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18653,7 +19812,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18686,7 +19850,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow & grow basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18724,7 +19893,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18790,7 +19964,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                        <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18822,7 +20001,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Parenting styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/parenting-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18856,7 +20040,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                        <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18889,7 +20078,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18922,7 +20116,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Job and work</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/job-and-work')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18955,7 +20154,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18989,7 +20193,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Business and negotiation style</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/business-and-negotiation-style')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19022,7 +20231,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19064,7 +20278,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19130,7 +20349,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19162,7 +20386,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities naturally preferred</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19196,7 +20425,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19229,7 +20463,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Inclination for subjects naturally</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19262,7 +20501,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19295,7 +20539,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Early hints to preferred career options</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/early-hints-to-prefered-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19329,7 +20578,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19362,7 +20616,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19400,7 +20659,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19466,7 +20730,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19498,7 +20767,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behavior</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19532,7 +20806,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19565,7 +20844,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Career suitable</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/careers-suitable')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19598,7 +20882,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19631,7 +20920,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19665,7 +20959,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19698,7 +20997,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow & grow basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19723,7 +21027,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
-                               href="{{ url('/report/advanced-brain-report') }}"
+                               href="{{ url('report/advanced-brain-report') }}"
                                 @else
                                     onclick="showUpgradePopup()"
                                 @endif
@@ -19736,7 +21040,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/advanced-brain-report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19802,7 +21111,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                        <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19834,7 +21148,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Parenting styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/parenting-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19868,7 +21187,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19901,7 +21225,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19934,7 +21263,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Job and work</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/job-and-work')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19967,7 +21301,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20001,7 +21340,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Business and negotiation style</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/business-and-negotiation-style')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20034,7 +21378,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20077,7 +21426,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20143,7 +21497,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20175,7 +21534,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities naturally preferred</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20209,7 +21573,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20242,7 +21611,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Inclination for subjects naturally</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                        <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20275,7 +21649,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20308,7 +21687,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Early hints to preferred career options</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/early-hints-to-prefered-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20342,7 +21726,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20375,7 +21764,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20413,7 +21807,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20479,7 +21878,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20511,7 +21915,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behavior</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20545,7 +21954,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20578,7 +21992,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Career suitable</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/careers-suitable')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20611,7 +22030,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20644,7 +22068,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20678,7 +22107,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20711,7 +22145,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow & grow basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20749,7 +22188,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20815,7 +22259,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20847,7 +22296,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Parenting styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/parenting-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20881,7 +22335,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20914,7 +22373,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20947,7 +22411,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Job and work</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/job-and-work')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20980,7 +22449,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21014,7 +22488,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Business and negotiation style</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/business-and-negotiation-style')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21048,7 +22527,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21089,7 +22573,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21155,7 +22644,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21187,7 +22681,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities naturally preferred</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21221,7 +22720,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21254,7 +22758,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Inclination for subjects naturally</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21287,7 +22796,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21320,7 +22834,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Early hints to preferred career options</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/early-hints-to-prefered-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21354,7 +22873,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21388,7 +22912,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21425,7 +22954,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21491,7 +23025,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                        <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21523,7 +23062,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behavior</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21557,7 +23101,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21590,7 +23139,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Career suitable</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/careers-suitable')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21623,7 +23177,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21656,7 +23215,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21690,7 +23254,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21723,7 +23292,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow & grow basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21761,7 +23335,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21827,7 +23406,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21859,7 +23443,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Parenting styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/parenting-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21893,7 +23482,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21926,7 +23520,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21959,7 +23558,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Job and work</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/job-and-work')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21992,7 +23596,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22026,7 +23635,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Business and negotiation style</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/business-and-negotiation-style')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22060,7 +23674,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22102,7 +23721,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22168,7 +23792,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22200,7 +23829,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities naturally preferred</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22234,7 +23868,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22267,7 +23906,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Inclination for subjects naturally</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22300,7 +23944,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22333,7 +23982,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Early hints to preferred career options</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/early-hints-to-prefered-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22367,7 +24021,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22401,7 +24060,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22438,7 +24102,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22504,7 +24173,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22536,7 +24210,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behavior</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22570,7 +24249,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22603,7 +24287,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Career suitable</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/careers-suitable')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22636,7 +24325,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22669,7 +24363,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22703,7 +24402,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22736,7 +24440,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow & grow basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22774,7 +24483,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22840,7 +24554,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22872,7 +24591,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Parenting styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/parenting-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22906,7 +24630,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22939,7 +24668,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22972,7 +24706,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Job and work</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/job-and-work')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23005,7 +24744,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23039,7 +24783,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Business and negotiation style</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/business-and-negotiation-style')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23073,7 +24822,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23117,7 +24871,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23183,7 +24942,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23215,7 +24979,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities naturally preferred</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23249,7 +25018,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23282,7 +25056,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Inclination for subjects naturally</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23315,7 +25094,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23348,7 +25132,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Early hints to preferred career options</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/early-hints-to-prefered-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23382,7 +25171,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23416,7 +25210,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23453,7 +25252,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                        <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23519,7 +25323,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                        <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23551,7 +25360,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behavior</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23585,7 +25399,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23618,7 +25437,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Career suitable</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/careers-suitable')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23651,7 +25475,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                        <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23684,7 +25513,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23718,7 +25552,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23751,7 +25590,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow & grow basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23789,7 +25633,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23855,7 +25704,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23887,7 +25741,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Parenting styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                        <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/parenting-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23921,7 +25780,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23954,7 +25818,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23987,7 +25856,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Job and work</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/job-and-work')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24020,7 +25894,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24054,7 +25933,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Business and negotiation style</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/business-and-negotiation-style')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24088,7 +25972,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24131,7 +26020,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24197,7 +26091,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a> 
                                     </div>
 
                                 </div>
@@ -24229,7 +26128,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities naturally preferred</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a> 
                                     </div>
 
                                 </div>
@@ -24263,7 +26167,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a> 
                                     </div>
 
                                 </div>
@@ -24296,7 +26205,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Inclination for subjects naturally</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Inclination-for-subjects-naturally')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a> 
                                     </div>
 
                                 </div>
@@ -24329,7 +26243,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a> 
                                     </div>
 
                                 </div>
@@ -24362,7 +26281,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Early hints to preferred career options</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/early-hints-to-prefered-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a> 
                                     </div>
 
                                 </div>
@@ -24396,7 +26320,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a> 
                                     </div>
 
                                 </div>
@@ -24430,7 +26359,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a> 
                                     </div>
 
                                 </div>
@@ -24467,7 +26401,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24533,7 +26472,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24565,7 +26509,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behavior</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24599,7 +26548,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24632,7 +26586,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Career suitable</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/careers-suitable')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24665,7 +26624,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Subjects preferred for matching career options.</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/subjects-preferred-for-matching-career-options')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24698,7 +26662,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Extracurricular activities</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/extracurricular-activities')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24732,7 +26701,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24765,7 +26739,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow & grow basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24803,7 +26782,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Advanced Brain Report</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Advanced-Brain-Report')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24869,7 +26853,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Preferred studying and learning styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/preferred-studying-and-learning-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24901,7 +26890,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Parenting styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/parenting-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24935,7 +26929,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Communication and behaviour</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/communication-and-behaviour')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24968,7 +26967,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Diet and Nutrition</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/diet-and-nutrition')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -25001,7 +27005,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Job and work</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/job-and-work')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -25034,7 +27043,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Relationship styles</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/relationship-styles')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -25068,7 +27082,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Business and negotiation style</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                          <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/business-and-negotiation-style')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -25102,7 +27121,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Flow and Grow Basics</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        <!-- <span class="m-0">Short descriptions</span> -->
+                                         <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Flow-and-grow-basics')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
