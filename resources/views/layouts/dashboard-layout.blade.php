@@ -340,17 +340,17 @@ header{
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('introvert-or-extrovert') ? 'active' : '' }}" aria-current="page" href="{{url('introvert-or-extrovert')}}">Introvert or Extrovert</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link {{ request()->is('events') ? 'active' : '' }}" aria-current="page" href="{{url('events')}}">Our Events</a>
-                    </li>
+                    </li> -->
                     <?php } ?>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('billing') ? 'active' : '' }}" aria-current="page" href="{{url('billing')}}">Billing</a>
                     </li>
                     <?php if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect'){ ?>
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link {{ request()->is('parent-community') ? 'active' : '' }}" aria-current="page" href="https://mylimitlessbrain.com/contact/">Parent Community</a>
-                    </li> -->
+                    </li>
                     <?php } ?>
                     <!--<li class="nav-item">-->
                     <!--    <a class="nav-link {{ request()->is('brain-performance') ? 'active' : '' }}" aria-current="page" href="{{url('brain-performance')}}">Brain Performance</a>-->
@@ -455,17 +455,17 @@ header{
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('introvert-or-extrovert') ? 'active' : '' }}" aria-current="page" href="{{url('introvert-or-extrovert')}}">Introvert or Extrovert</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link {{ request()->is('events') ? 'active' : '' }}" aria-current="page" href="{{url('events')}}">Our Events</a>
-                    </li>
+                    </li> -->
                     <?php } ?>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('billing') ? 'active' : '' }}" aria-current="page" href="{{url('billing')}}">Billing</a>
                     </li>
                     <?php if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect'){ ?>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link {{ request()->is('parent-community') ? 'active' : '' }}" aria-current="page" href="{{url('parent-community')}}">Parent Community</a>
-                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('parent-community') ? 'active' : '' }}" aria-current="page" href="https://mylimitlessbrain.com/contact/">Parent Community</a>
+                    </li>
                     <?php } ?>
                     <!-- <li class="nav-item">
                         <a class="nav-link {{ request()->is('brain-performance') ? 'active' : '' }}" aria-current="page" href="{{url('brain-performance')}}">Brain Performance</a>
