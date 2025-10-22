@@ -153,7 +153,7 @@ body {
         <div class="col-xl-6 right-panel-space d-flex flex-column justify-content-center" style="height: auto;">
             <h2 class="pt-5 pb-3 pb-lg-3 top-padding-large" style="color: #F1935D; font-weight: 600 !important">Your future starts here - Sign up</h2>
             @if(Session::has('fail')) <p style="color:red;font-size:14px;"><?php echo Session::get('fail') ?></p>@endif
-            <form style="padding-left: 10px;"  action=""  method="post" enctype="multipart/form-data">
+           <form style="padding-left: 10px;" action="" method="post" enctype="multipart/form-data" id="signupForm">
             @csrf
                 <div class="row px-0 mx-0">
                     <div class="col-lg-6 px-0 ps-lg-0 pe-lg-1">
@@ -175,7 +175,7 @@ body {
                     <div class="col-lg-6 px-0 ps-lg-0 pe-lg-1">
                         <label for="email" class="pb-2 form-label-signup" style="font-weight: 600">User Name</label>
                         <input type="text" class="form-control signup-form-placeholder" id="email"
-                            placeholder="Email address" required
+                            placeholder="User name" required
                             style="border-radius:10px; border-color:rgb(233, 232, 232);" name="user_name">
                             @if($errors->has("user_name")) <p style="color:red;font-size:14px;">{{ $errors->first('user_name') }}</p>@endif
                     </div>
@@ -203,7 +203,7 @@ body {
                     style="border-radius:10px; border-color:rgb(233, 232, 232);" name="password_confirmation">
                     @if($errors->has("password_confirmation")) <p style="color:red;font-size:14px;">{{ $errors->first('password_confirmation') }}</p>@endif
                 <div class="form-check mb-3">
-                    <input type="checkbox" class="form-check-input" id="terms">
+                    <input type="checkbox" class="form-check-input" id="terms" required>
                     <label style="font-weight: 600" class="form-check-label" for="terms">
                         I agree to the
                         <a href="{{ url('#') }}" style="color: #F1935D;" class="custom-underline">Terms &
@@ -211,9 +211,33 @@ body {
                     </label>
                 </div>
                 <h3 class="small-link text-purple text-start mt-3 mb-2" style="font-weight: 600">Already have a account ? <a href="{{url('sign-in')}}" style="color:#F1935D;">Sign In</a></h3>
-                <button type="submit" class="btn btn-custom" style="border-radius: 20px; font-weight: 600">Create account</button>
+                <button type="submit" class="btn btn-custom" id="submitBtn" style="border-radius: 20px; font-weight: 600">
+        Create account
+    </button>
             </form>
         </div>
     </div>
 </div>
 @include('layouts.footer')
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('signupForm');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', function () {
+        // Make all inputs read-only instead of disabling them
+        const inputs = form.querySelectorAll('input, select, textarea');
+        inputs.forEach(el => {
+            el.readOnly = true; // works for inputs and textareas
+            if (el.tagName === 'SELECT') el.style.pointerEvents = 'none'; // for selects
+        });
+
+        // Update button
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Creating Account...';
+        submitBtn.style.opacity = '0.7';
+    });
+});
+</script>
+
