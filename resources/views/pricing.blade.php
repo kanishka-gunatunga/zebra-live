@@ -46,7 +46,28 @@
         max-width: 100% !important;
     }
 }
+.active-package{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Aptos', sans-serif !important;
+    color: #fff;
+    background: #85D6A5;
+    width: max-content;
+    padding: 10px 15px;
+    border: 1px solid #85D6A5;
+    border-radius: 45px;
+    width: 100%;
+    margin-bottom: 0;
+}
 </style>
+<?php
+use App\Models\WPUsers;
+
+$wp_user = WPUsers::where('user_id', session('user_id'))->first();
+$user_package = $wp_user->package;
+
+?>
 <div>
     <div>
          @if(Session::has('fail')) <p style="color:red;font-size:14px;"><?php echo Session::get('fail') ?></p>@endif
@@ -103,9 +124,11 @@
                 </div>
 
                 <!-- Button Container -->
+                @if($user_package == 'free')
                 <div class=" d-flex justify-content-center button-container-top">
-                    <a href="https://decodemybrain.com/pricing/" target="_blank" class="w-100"><button class="plan-select-button">Select Plan</button></a>
+                   <p class="active-package">Active</p>
                 </div>
+                @endif
             </div>
         </div>
 
@@ -190,10 +213,22 @@
                 </div>
 
                 <!-- Button Container -->
-                <div class=" d-flex justify-content-center button-container-top">
-                    <a href="https://decodemybrain.com/pricing/" target="_blank" class="w-100">
-                        <button class="plan-select-button">Select Plan</button></a>
-                </div>
+               @if(session('sso_link') && in_array($user_package, ['decodemybrain-guided-friend-and-family-connect', 'free']))
+                    <div class="d-flex justify-content-center button-container-top">
+                        <a href="{{ session('sso_link') }}&path=https%3A%2F%2Fdecodemybrain.com%2Fcheckout%2F%3Fclear-cart%3D1%26add-to-cart%3D20724" 
+                        target="_blank" 
+                        class="w-100">
+                            <button class="plan-select-button">Select Plan</button>
+                        </a>
+                    </div>
+                @endif
+
+                @if($user_package === 'decodemybrain-deep-dive')
+                    <div class="d-flex justify-content-center button-container-top">
+                        <p class="active-package">Active</p>
+                    </div>
+                @endif
+
             </div>
         </div>
 
@@ -295,13 +330,23 @@
 
                     </div>
                 </div>
+                 @if(session('sso_link') && in_array($user_package, ['decodemybrain-deep-dive', 'free']))
+                    <div class="d-flex justify-content-center button-container-top">
+                        <a href="{{ session('sso_link') }}&path=https%3A%2F%2Fdecodemybrain.com%2Fcheckout%2F%3Fclear-cart%3D1%26add-to-cart%3D21020" 
+                        target="_blank" 
+                        class="w-100">
+                            <button class="plan-select-button">Select Plan</button>
+                        </a>
+                    </div>
+                @endif
 
+                @if($user_package === 'decodemybrain-guided-friend-and-family-connect')
+                    <div class="d-flex justify-content-center button-container-top">
+                        <p class="active-package">Active</p>
+                    </div>
+                @endif
                 <!-- Button Container -->
-                <div class=" d-flex justify-content-center button-container-top">
-                    <a href="https://decodemybrain.com/pricing/" target="_blank" class="w-100">
-                        <button class="plan-select-button">Select Plan</button>
-                    </a>
-                </div>
+               
             </div>
         </div>
     </div>
