@@ -86,26 +86,12 @@ public function thankyou() {
 
     
     public function question($question) {
-    $wpUser = WPUsers::where('user_id', session('user_id'))->first();
-    $dimAnswer = DimensionalQuestionAnswerMain::where('user_id', session('user_id'))->first();
+    
+    if (WPUsers::where('user_id', session('user_id'))->value('introverted_extroverted') == null || WPUsers::where('user_id', session('user_id'))->value('introverted_extroverted') == '') {
     $dob = session('user_dob'); 
     $age = \Carbon\Carbon::parse($dob)->age;
 
-    if (str_starts_with($question, 'q')) {
-        if (!empty($wpUser->brain_profile_id)) {
-            return redirect('dashboard')->with('fail', 'Can not take this test agin');
-        }
-    }   
-    if (str_starts_with($question, 'd')) {
-        if ($age < 15) {
-            return redirect('dashboard')->with('fail', 'You are not required to take this test.');
-        }
-        if ($dimAnswer->status === 'complete') {
-            return redirect('dashboard')->with('fail', 'Can not take this test agin');
-        }
-
-    } 
-
+    
     $category_from_age = ($age < 18) ? 'child' : 'adult';
 
     
@@ -590,14 +576,23 @@ public function thankyou() {
         }
     }
 }
+else{
+    return redirect('dashboard')->with('fail', 'Can not take this test agin');
+}
 
+}
+
+   
+
+        
+    
+    
+    
 
 
     // LET USER ANSWER QUESTION MULTIPLE TIME
     public function save_answers(Request $request){
-        $dob = session('user_dob'); 
-        $age = \Carbon\Carbon::parse($dob)->age;
-
+        
             if(session('user_id')){
                 if(session('answer_main_id')){
                     $question_no = $request->question_no;
@@ -641,13 +636,7 @@ public function thankyou() {
                                 $BrainResultsController->add_brain_results(session('answer_main_id'));
                                 $request->session()->forget(['answer_main_id']);
                             }
-                                if ($age < 15) {
-                                    return redirect('questions-completed');
-                                }
-                                else{
                                     return redirect('start-dimentaional-questions');
-                                }
-    
                             }
                                 else{
                                     $next_page = $question_no +1;
@@ -713,14 +702,7 @@ public function thankyou() {
                                 $QuestionAnswerMain = QuestionAnswerMain::where('id',session('answer_main_id'))->first();
                                 $QuestionAnswerMain->status = "complete";
                                 $QuestionAnswerMain->update();
-
-                                if ($age < 15) {
-                                    return redirect('questions-completed');
-                                }
-                                else{
-                                    return redirect('start-dimentaional-questions');
-                                }
-    
+                                return redirect('start-dimentaional-questions');
                             }
                             else{
                                 $next_page = $question_no +1;
