@@ -393,7 +393,7 @@ $introvert_extrovert = WPUsers::where('user_id', session('user_id'))->value('int
 @section('content')
     <div>
 
-        <?php if ($introvert_extrovert === 'introvertedd'): ?>
+        <?php if ($introvert_extrovert === 'introverted'): ?>
         <section class="py-0">
 
             <div class="container px-0  mx-0">
@@ -561,7 +561,7 @@ $introvert_extrovert = WPUsers::where('user_id', session('user_id'))->value('int
 
             </div>
         </section>
-        <?php elseif ($introvert_extrovert === 'extrovertedd'): ?>
+        <?php elseif ($introvert_extrovert === 'extroverted'): ?>
 
         <section class="py-0">
 
