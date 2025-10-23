@@ -27211,7 +27211,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     @if(($user_package == 'decodemybrain-guided-friend-and-family-connect') && session('sso_link'))
                         <div class="d-flex flex-column flex-md-row mb-5 px-0">
                             <div class="p-0">
-                                <img src="{{ asset('assets/images/dashboard-new/parent-community.png') }}" 
+                                <img src="{{ asset('assets/images/one-to-one-meeting.jpg') }}" 
                                     alt="One to One Booking" 
                                     class="img-fluid booking-img">
                             </div>
@@ -27229,7 +27229,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                         <div class="d-flex flex-column flex-md-row mb-5 px-0">
                             <div class="p-0">
-                                <img src="{{ asset('assets/images/dashboard-new/become-affiliate.png') }}" 
+                                <img src="{{ asset('assets/images/group-meeting.jpg') }}" 
                                     alt="Group Booking" 
                                     class="img-fluid booking-img">
                             </div>
@@ -27264,7 +27264,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+@if(isset($d_score))
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const ctx = document.getElementById('radarChart').getContext('2d');
@@ -27596,7 +27596,7 @@ setTimeout(() => {
 
 });
 </script>
-
+@endif
 
 
 

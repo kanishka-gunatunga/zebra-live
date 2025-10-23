@@ -122,7 +122,7 @@ margin-right: 10px;
 </style>
 <section class="section-margin-bottom section-margin-top">
     <div class="container questions-container">
-    <h5 class="step-txt">Step 01/02</h5>
+    <h5 class="step-txt">Step 02/02</h5>
         <h3 class="section-title text-purple">Thank you for completeing this quiz </h3>
         <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>-->
 

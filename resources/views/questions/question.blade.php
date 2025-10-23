@@ -162,11 +162,20 @@ p {
 }
 
 }
-
+<?php 
+    $dob = session('user_dob'); 
+    $age = \Carbon\Carbon::parse($dob)->age; 
+?>
 </style>
 <section class="section-margin-bottom section-margin-top">
     <div class="container questions-container">
+        <?php
+        if ($age >= 15){
+        ?> 
         <h5 class="step-txt">Step 01/02</h5>
+        <?php } else{ ?> 
+        <h5 class="step-txt">Step 01</h5>
+        <?php } ?>
         <h3 class="section-title text-purple">Brain Assessment</h3>
         <p style="font-weight: 300 !important;">Select your top four preferences, ranking them from 1 to 4, with 1 as your favorite.</p>
 

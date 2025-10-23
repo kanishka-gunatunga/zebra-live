@@ -128,9 +128,19 @@ margin-right: 10px;
 
 
 </style>
+<?php 
+    $dob = session('user_dob'); 
+    $age = \Carbon\Carbon::parse($dob)->age; 
+?>
 <section class="section-margin-bottom section-margin-top">
     <div class="container questions-container">
+    <?php
+    if ($age >= 15){
+    ?> 
     <h5 class="step-txt">Step 02/02</h5>
+    <?php } else{ ?> 
+    <h5 class="step-txt">Step 01</h5>
+    <?php } ?>
         <h3 class="section-title text-purple" style="font-weight: 600 !important;">Thank you for completing the quiz</h3>
         <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>-->
 
