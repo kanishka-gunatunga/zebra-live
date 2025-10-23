@@ -10049,8 +10049,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'decodemybrain-deep-dive' && $user_package !== 'decodemybrain-guided-friend-and-family-connect')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
