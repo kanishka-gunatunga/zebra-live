@@ -533,7 +533,8 @@ public function careers_inner($id)
 }
 public function billing(){
 
-    return view('pricing');
+    // return view('pricing');
+    return redirect('https://decodemybrain.com/pricing/');
 }
 public function introvert_or_extrovert(){
 

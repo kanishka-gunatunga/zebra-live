@@ -344,8 +344,12 @@ header{
                         <a class="nav-link {{ request()->is('events') ? 'active' : '' }}" aria-current="page" href="{{url('events')}}">Our Events</a>
                     </li> -->
                     <?php } ?>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link {{ request()->is('billing') ? 'active' : '' }}" aria-current="page" href="{{url('billing')}}">Billing</a>
+                    </li> --}}
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="https://decodemybrain.com/pricing/" target="_blank">Billing</a>
                     </li>
                     <?php if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect'){ ?>
                     <li class="nav-item">

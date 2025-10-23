@@ -158,6 +158,11 @@ $introvert_extrovert = WPUsers::where('user_id',session('user_id'))->value('intr
     margin: 0;
 }
 
+.report-opertunities-card .row div img{
+    
+    width: 65% !important;
+}
+
 .bg-orange {
         background: #f1935d;
     }

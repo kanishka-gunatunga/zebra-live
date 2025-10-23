@@ -313,38 +313,58 @@ $introvert_extrovert = WPUsers::where('user_id', session('user_id'))->value('int
         <?php if($brain_profile_id != null) { ?>
         <div class="centered-container">
             <h3>Skill Report</h3>
-            <img src="{{ asset('assets/images/brainnew2.png') }}" alt="Brain Image" class="img-fluid">
+
+            <div class="row w-100">
+                <div class="col-md-4 ">
+                    <img src="{{ asset('assets/images/brain cartoon 2.png') }}" alt="Brain Image"
+                        class="img-fluid pb-md-0 pb-lg-0 pb-xl-0">
+                </div>
+                <div class="col-md-8 d-flex flex-column justify-content-center align-items-center">
+                    <?php if($brain_score != null) { ?>
+                    <div class="row w-100" style="justify-content: center;">
+                        <div class="col-6 col-lg-4 col-xl-3 px-0 pe-1 px-lg-2">
+                            <div class="box-data p-4 bg-yellow" style="background-color:#9ae4e3;border:2px solid black;">
+                                <p class="mb-0" style="color:#000000 !important;"> Analytical Brain</p>
+                                <h3 class="mb-0 aptos-black" style="color:#000000 !important;">
+                                    {{ $brain_score->l1_score }}%
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 col-xl-3 px-0 ps-1 px-lg-2">
+                            <div class="box-data p-4 bg-orange" style="background-color:  #f6c94c;border:2px solid black;">
+                                <p class="mb-0" style="color:#000000 !important;">Creative Brain</p>
+                                <h3 class="mb-0 aptos-black" style="color:#000000 !important;">
+                                    {{ $brain_score->r1_score }}%
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3 w-100" style="justify-content: center;">
+                        <div class="col-6 col-lg-4 col-xl-3 px-0 pe-1 px-lg-2">
+                            <div class="box-data p-4 bg-blue" style="background-color:  #84d6a5;border:2px solid black;">
+                                <p class="mb-0" style="color:#000000 !important;">Practical Brain</p>
+                                <h3 class="mb-0 aptos-black" style="color:#000000 !important;">
+                                    {{ $brain_score->l2_score }}%
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 col-xl-3 px-0 ps-1 px-lg-2">
+                            <div class="box-data p-4 bg-green" style="background-color: #f1935d;border:2px solid black;">
+                                <p class="mb-0" style="color:#000000 !important;">Relational Brain</p>
+                                <h3 class="mb-0 aptos-black" style="color:#000000 !important;">
+                                    {{ $brain_score->r2_score }}%
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <?php } ?>
+                </div>
+            </div>
+
+
+
         </div>
-        <?php if($brain_score != null) { ?>
-        <div class="row w-100" style="justify-content: center;">
-            <div class="col-6 col-lg-4 col-xl-3 px-0 pe-1 px-lg-2">
-                <div class="box-data p-4 bg-yellow" style="background-color:#9ae4e3;border:2px solid black;">
-                    <p class="mb-0" style="color:#000000 !important;"> Analytical Brain</p>
-                    <h3 class="mb-0 aptos-black" style="color:#000000 !important;">{{ $brain_score->l1_score }}%</h3>
-                </div>
-            </div>
-            <div class="col-6 col-lg-4 col-xl-3 px-0 ps-1 px-lg-2">
-                <div class="box-data p-4 bg-orange" style="background-color:  #f6c94c;border:2px solid black;">
-                    <p class="mb-0" style="color:#000000 !important;">Creative Brain</p>
-                    <h3 class="mb-0 aptos-black" style="color:#000000 !important;">{{ $brain_score->r1_score }}%</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-3 w-100" style="justify-content: center;">
-            <div class="col-6 col-lg-4 col-xl-3 px-0 pe-1 px-lg-2">
-                <div class="box-data p-4 bg-blue" style="background-color:  #84d6a5;border:2px solid black;">
-                    <p class="mb-0" style="color:#000000 !important;">Practical Brain</p>
-                    <h3 class="mb-0 aptos-black" style="color:#000000 !important;">{{ $brain_score->l2_score }}%</h3>
-                </div>
-            </div>
-            <div class="col-6 col-lg-4 col-xl-3 px-0 ps-1 px-lg-2">
-                <div class="box-data p-4 bg-green" style="background-color: #f1935d;border:2px solid black;">
-                    <p class="mb-0" style="color:#000000 !important;">Relational Brain</p>
-                    <h3 class="mb-0 aptos-black" style="color:#000000 !important;">{{ $brain_score->r2_score }}%</h3>
-                </div>
-            </div>
-        </div>
-        <?php } ?>
+
 
         <div class="dashboard-page-content pb-5">
             <div class=" p-0 w-100">
@@ -601,7 +621,8 @@ $introvert_extrovert = WPUsers::where('user_id', session('user_id'))->value('int
 
                 <?php elseif ($brain_profile_id == 5): ?>
 
-                <h2 class="report-heading col-lg-6 pt-5">L1L2 Dominant (Dual Analytical-Practical / Structured Analyst)</h2>
+                <h2 class="report-heading col-lg-6 pt-5">L1L2 Dominant (Dual Analytical-Practical / Structured Analyst)
+                </h2>
                 <p class="report-normal-text mt-4">
                     You seamlessly combine analytical precision with practical implementation, making you highly effective
                     in problem-solving. Your ability to think logically and structure your approach ensures both efficiency
@@ -869,11 +890,22 @@ $introvert_extrovert = WPUsers::where('user_id', session('user_id'))->value('int
                 }
 
             }
+
+            .question-img {
+                width: 20rem;
+            }
         </style>
-        <div
-            class="container text-center h-100 d-flex flex-column align-items-center justify-content-center pt-5 pb-1  mx-0">
-            <h3 class="heading1 text-purple">Plese answer our Questionnaire.</h3>
-            <p class="question-paragraph">Evaluate your key abilities and discover your core strengths.</p>
+        <div class="container text-center d-flex flex-column align-items-center justify-content-center">
+            <div>
+                <img src="{{ asset('assets/images/5-Reflective learning-01.png') }}" alt="" class="question-img">
+            </div>
+            <h3 class="heading1 text-purple">Let’s start exploring your unique strengths.</h3>
+            <p class="question-paragraph">Choose the answer that feels most right to you.
+                Rank your choices from 1 to 4, with 1 being your top choice, followed by 2, 3, and 4.
+                Answer honestly and go with the first response that comes to mind.
+                This assessment is not affected by your mood or the time of day, so respond naturally.
+                Remember, there are no good or bad brains—this is simply an assessment to uncover your brain’s unique
+                strengths and preferences.</p>
 
             <button class="buttons text-purple" type="button"
                 onclick="window.location.href='{{ url('skill-test/q1') }}'">Start now</button>
