@@ -297,7 +297,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -311,7 +319,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -325,7 +341,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -339,7 +363,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -353,7 +385,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -367,7 +407,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -381,7 +429,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -395,7 +451,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -409,7 +473,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -423,7 +495,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -437,7 +517,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -451,7 +539,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -465,7 +561,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -478,7 +582,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -491,7 +603,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -654,7 +774,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -4453,7 +4581,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -7542,7 +7678,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -10881,7 +11025,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -10906,7 +11058,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -15106,7 +15266,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -17679,7 +17847,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -21593,7 +21769,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -23993,7 +24177,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -27203,7 +27395,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -27359,7 +27559,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -27372,7 +27580,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -27386,8 +27602,17 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
-
+    
+        <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
+    
 
     
 </div>
@@ -27400,7 +27625,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -27414,7 +27647,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -27428,7 +27669,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -27442,7 +27691,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -27456,7 +27713,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -27470,7 +27735,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -27484,7 +27757,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -27498,7 +27779,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -27512,7 +27801,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -27529,7 +27826,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -27543,7 +27848,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -36185,7 +36498,15 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -36198,7 +36519,16 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     
@@ -36211,7 +36541,36 @@ ul {
          <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
      <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
     </h3>
-    <a href="https://decodemybrain.com/one-one-booking/"><button class="download-report-btn" type="button">Book Now</button></a>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
+
+
+    
+</div>
+</div>
+<?php elseif ($report_type == 'Videos-about-the-brain'): ?>
+<div>
+
+     <div class="container text-center d-flex flex-column align-items-center justify-content-center w-100 pt-5">
+         <img src="{{ asset('assets/images/growth.png') }}" class="side-img-desktop2 no-default">
+     <h3 class="heading1 text-purple">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.
+    </h3>
+    <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn" type="button">Book Now</button>
+        </a>
 
 
     

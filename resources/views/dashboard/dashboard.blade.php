@@ -3519,7 +3519,16 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                         <img src="{{ asset('assets/images/Meter-08.png') }}" height="auto" width="100%">
                                     </div>
                                 </div>
-                                <p class="report-normal-text mt-4 text-center"> No content available</p>
+                                <p class="report-normal-text mt-4 text-center">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.</p>
+<div class="text-center"> <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn text-center" type="button">Book Now</button>
+        </a></div>
                             </div>
                         </div>
                     </div>
@@ -6692,7 +6701,16 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                 </div>
 
-<p class="report-normal-text mt-4 text-center"> No content available</p>
+                                <p class="report-normal-text mt-4 text-center">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.</p>
+<div class="text-center"> <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn text-center" type="button">Book Now</button>
+        </a></div>
                             </div>
                         </div>
                     </div>
@@ -7123,7 +7141,16 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                         <img src="{{ asset('assets/images/Meter-08.png') }}" height="auto" width="100%">
                                     </div>
                                 </div>
-                                <p class="report-normal-text mt-4 text-center"> No content available</p>
+                                <p class="report-normal-text mt-4 text-center">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.</p>
+<div class="text-center"> <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn text-center" type="button">Book Now</button>
+        </a></div>
                             </div>
                         </div>
                     </div>
@@ -7233,7 +7260,16 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                         <img src="{{ asset('assets/images/Meter-08.png') }}" height="auto" width="100%">
                                     </div>
                                 </div>
-<p class="report-normal-text mt-4 text-center"> No content available</p>
+<p class="report-normal-text mt-4 text-center">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.</p>
+<div class="text-center"> <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn text-center" type="button">Book Now</button>
+        </a></div>
                             </div>
                         </div>
                     </div>
@@ -7345,7 +7381,16 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                         <img src="{{ asset('assets/images/Meter-08.png') }}" height="auto" width="100%">
                                     </div>
                                 </div>
-<p class="report-normal-text mt-4 text-center"> No content available</p>
+<p class="report-normal-text mt-4 text-center">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.</p>
+<div class="text-center"> <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn text-center" type="button">Book Now</button>
+        </a></div>
                             </div>
                         </div>
                     </div>
@@ -7713,7 +7758,19 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                         <img src="{{ asset('assets/images/Meter-08.png') }}" height="auto" width="100%">
                                     </div>
                                 </div>
-                                <p class="report-normal-text mt-4 text-center"> No content available</p>
+                                <p class="report-normal-text mt-4 text-center">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.</p>
+                                <div class="text-center"> 
+                                    
+                                    <a 
+                                            @if (session('sso_link')) 
+                                                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+                                            @else 
+                                                href="https://decodemybrain.com/one-one-booking/" 
+                                            @endif
+                                            target="_blank">
+                                                <button class="download-report-btn text-center" type="button">Book Now</button>
+                                        </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -7824,7 +7881,16 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                         <img src="{{ asset('assets/images/Meter-08.png') }}" height="auto" width="100%">
                                     </div>
                                 </div>
-                                <p class="report-normal-text mt-4 text-center"> No content available</p>
+                                <p class="report-normal-text mt-4 text-center">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.</p>
+<div class="text-center"> <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn text-center" type="button">Book Now</button>
+        </a></div>
                             </div>
                         </div>
                     </div>
@@ -7935,7 +8001,16 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                         <img src="{{ asset('assets/images/Meter-08.png') }}" height="auto" width="100%">
                                     </div>
                                 </div>
-                                <p class="report-normal-text mt-4 text-center"> No content available</p>
+                                <p class="report-normal-text mt-4 text-center">To gain deeper insight into your unique brain profile, we invite you to arrange a one-on-one session with one of our consultants, they’ll be delighted to guide and enlighten you further.</p>
+<div class="text-center"> <a 
+            @if (session('sso_link')) 
+                href="{{ session('sso_link') }}&path=https://decodemybrain.com/one-one-booking/" 
+            @else 
+                href="https://decodemybrain.com/one-one-booking/" 
+            @endif
+            target="_blank">
+                <button class="download-report-btn text-center" type="button">Book Now</button>
+        </a></div>
                             </div>
                         </div>
                     </div>
@@ -10059,7 +10134,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -10067,7 +10142,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -10075,7 +10150,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10090,7 +10170,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -10138,7 +10218,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -10442,7 +10522,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -10450,7 +10530,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -10458,7 +10538,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10473,7 +10558,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -10674,7 +10759,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -10826,7 +10911,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -10834,7 +10919,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -10842,7 +10927,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -10857,7 +10947,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -11228,7 +11318,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -11236,7 +11326,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -11244,7 +11334,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11259,7 +11354,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -11307,7 +11402,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -11609,7 +11704,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -11617,7 +11712,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -11625,7 +11720,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -11640,7 +11740,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -11840,7 +11940,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -11990,7 +12090,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -11998,7 +12098,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -12006,7 +12106,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12021,7 +12126,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -12380,7 +12485,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -12388,7 +12493,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -12396,7 +12501,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12411,7 +12521,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -12458,7 +12568,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -12760,7 +12870,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -12768,7 +12878,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -12776,7 +12886,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -12791,7 +12906,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -12993,7 +13108,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -13144,7 +13259,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -13152,7 +13267,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -13160,7 +13275,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13175,7 +13295,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -13528,7 +13648,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -13536,7 +13656,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -13544,7 +13664,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13559,7 +13684,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -13606,7 +13731,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -13908,7 +14033,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -13916,7 +14041,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -13924,7 +14049,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -13939,7 +14069,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -14139,7 +14269,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -14289,7 +14419,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -14297,7 +14427,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -14305,7 +14435,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14320,7 +14455,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -14673,7 +14808,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -14681,7 +14816,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -14689,7 +14824,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -14704,7 +14844,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -14751,7 +14891,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -15054,7 +15194,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                   <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -15062,7 +15202,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -15070,7 +15210,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15085,7 +15230,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -15285,7 +15430,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -15714,7 +15859,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -15722,7 +15867,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -15730,7 +15875,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -15745,7 +15895,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -15792,7 +15942,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -16095,7 +16245,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -16103,7 +16253,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -16111,7 +16261,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16126,7 +16281,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -16326,7 +16481,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -16476,7 +16631,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -16484,7 +16639,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -16492,7 +16647,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16507,7 +16667,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -16861,7 +17021,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -16869,7 +17029,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -16877,7 +17037,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -16892,7 +17057,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -16939,7 +17104,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -17241,7 +17406,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -17249,7 +17414,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -17257,7 +17422,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17272,7 +17442,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -17472,7 +17642,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -17622,7 +17792,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -17630,7 +17800,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -17638,7 +17808,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -17653,7 +17828,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -18008,7 +18183,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -18016,7 +18191,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -18024,7 +18199,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18039,7 +18219,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -18087,7 +18267,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -18390,7 +18570,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -18398,7 +18578,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -18406,7 +18586,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18421,7 +18606,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -18621,7 +18806,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -18771,7 +18956,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -18779,7 +18964,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -18787,7 +18972,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -18802,7 +18992,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -19155,7 +19345,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -19163,7 +19353,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -19171,7 +19361,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19186,7 +19381,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -19233,7 +19428,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -19535,7 +19730,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -19543,7 +19738,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -19551,7 +19746,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19566,7 +19766,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -19766,7 +19966,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -19916,7 +20116,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -19924,7 +20124,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -19932,7 +20132,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -19947,7 +20152,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -20301,7 +20506,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -20309,7 +20514,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -20317,7 +20522,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20332,7 +20542,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -20379,7 +20589,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -20682,7 +20892,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -20690,7 +20900,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -20698,7 +20908,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -20713,7 +20928,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -20913,7 +21128,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                        >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -21063,7 +21278,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -21071,7 +21286,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -21079,7 +21294,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21094,7 +21314,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -21449,7 +21669,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -21457,7 +21677,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -21465,7 +21685,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21480,7 +21705,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -21527,7 +21752,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -21830,7 +22055,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -21838,7 +22063,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -21846,7 +22071,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -21861,7 +22091,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -22061,7 +22291,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -22211,7 +22441,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -22219,7 +22449,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -22227,7 +22457,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22242,7 +22477,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -22596,7 +22831,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -22604,7 +22839,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -22612,7 +22847,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -22627,7 +22867,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -22674,7 +22914,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -22977,7 +23217,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -22985,7 +23225,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -22993,7 +23233,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23008,7 +23253,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -23208,7 +23453,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -23358,7 +23603,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -23366,7 +23611,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -23374,7 +23619,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23389,7 +23639,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -23744,7 +23994,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -23752,7 +24002,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -23760,7 +24010,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -23775,7 +24030,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -23822,7 +24077,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -24125,7 +24380,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -24133,7 +24388,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -24141,7 +24396,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24156,7 +24416,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -24356,7 +24616,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -24506,7 +24766,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -24514,7 +24774,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -24522,7 +24782,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24537,7 +24802,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -24894,7 +25159,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -24902,7 +25167,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -24910,7 +25175,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -24925,7 +25195,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -24972,7 +25242,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -25275,7 +25545,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -25283,7 +25553,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -25291,7 +25561,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -25306,7 +25581,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -25506,7 +25781,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -25656,7 +25931,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -25664,7 +25939,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -25672,7 +25947,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -25687,7 +25967,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -26043,7 +26323,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -26051,7 +26331,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -26059,7 +26339,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -26074,7 +26359,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -26121,7 +26406,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F1935D">
+                           <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -26424,7 +26709,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -26432,7 +26717,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -26440,7 +26725,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -26455,7 +26745,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -26655,7 +26945,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
+                            <div class="learn-more-item-box position-relative" style="background-color: #9AE4E3">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/extra curricular.png') }}" alt="">
@@ -26805,7 +27095,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href=""
@@ -26813,7 +27103,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     onclick="showUpgradePopup()"
                                 @endif
                         >
-                            <div class="learn-more-item-box position-relative" style="background-color: #85D6A5">
+                            <div class="learn-more-item-box position-relative" style="background-color: #F6C94D">
                                 <div class=" d-flex flex-column justify-content-center">
                                     <div class="d-flex flex-column justify-content-center align-items-center">
                                         <img class="learn-more-item-box-img" src="{{ asset('assets/images/dashboard-new/cognitive profile-main image-1.png') }}" alt="">
@@ -26821,7 +27111,12 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                                     </div>
                                     <div class="d-flex flex-column align-items-center learn-more-item-box-text">
                                         <p class="m-0">Videos about the brain</p>
-                                        <span class="m-0">Short descriptions</span>
+                                        
+                                           <a @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
+                                        href="{{url('report/Videos-about-the-brain')}}"
+                                        @else
+                                            onclick="showUpgradePopup()"
+                                        @endif><button class="report-lern-more-btn mt-2">Learn More</button></a>
                                     </div>
 
                                 </div>
@@ -26836,7 +27131,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
