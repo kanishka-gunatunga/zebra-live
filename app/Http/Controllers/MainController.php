@@ -531,11 +531,18 @@ public function careers_inner($id)
     // Pass the retrieved data to the view
     return view('careers.inner_page_2', ['star_rating' => $star_rating]);
 }
-public function billing(){
+public function billing()
+{
+    $pricingUrl = 'https://decodemybrain.com/pricing/';
+    $ssoLink = session('sso_link');
 
-    // return view('pricing');
-    return redirect('https://decodemybrain.com/pricing/');
+    if ($ssoLink) {
+        return redirect($ssoLink . '&path=' . urlencode($pricingUrl));
+    }
+
+    return redirect($pricingUrl);
 }
+
 public function introvert_or_extrovert(){
 
     return view('new_pages.intro_extro');
