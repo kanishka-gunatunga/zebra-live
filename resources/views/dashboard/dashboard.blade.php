@@ -10049,8 +10049,9 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center">
                                     <div class="position-absolute learn-more">
-                                        
-                                        <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @if($user_package !== 'decodemybrain-deep-dive' && $user_package !== 'decodemybrain-guided-friend-and-family-connect')
+                                            <img class="rounded-circle" src="{{ asset('assets/images/lock.png') }}" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -10897,7 +10898,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </a>
 
                     </div>
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         
                                 @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
@@ -10936,7 +10937,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -11097,7 +11098,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/business-and-negotiation-style')}}"
@@ -11136,7 +11137,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -12059,7 +12060,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </a>
 
                     </div>
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                 href="{{url('report/parenting-styles')}}"
@@ -12095,7 +12096,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -12252,7 +12253,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                 href="{{url('report/business-and-negotiation-style')}}"
@@ -12288,7 +12289,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -12602,7 +12603,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                  href="{{url('report/early-hints-to-prefered-career-options')}}"
@@ -12638,7 +12639,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -13213,7 +13214,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </a>
 
                     </div>
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/parenting-styles')}}"
@@ -13249,7 +13250,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -13405,7 +13406,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/business-and-negotiation-style')}}"
@@ -13441,7 +13442,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -13750,7 +13751,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/early-hints-to-prefered-career-options')}}"
@@ -13786,7 +13787,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -14358,7 +14359,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </a>
 
                     </div>
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/parenting-styles')}}"
@@ -14394,7 +14395,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -14550,7 +14551,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/business-and-negotiation-style')}}"
@@ -14586,7 +14587,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
@@ -14895,7 +14896,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/early-hints-to-prefered-career-options')}}"
@@ -14931,7 +14932,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -15397,7 +15398,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                 <?php if ($age > 18): ?>
                 <div class="row mb-4">
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/parenting-styles')}}"
@@ -15433,7 +15434,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -15589,7 +15590,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/business-and-negotiation-style')}}"
@@ -15625,7 +15626,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -15936,7 +15937,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/early-hints-to-prefered-career-options')}}"
@@ -15972,7 +15973,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -16545,7 +16546,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </a>
 
                     </div>
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/parenting-styles')}}"
@@ -16581,7 +16582,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -16737,7 +16738,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/business-and-negotiation-style')}}"
@@ -16773,7 +16774,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -17083,7 +17084,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/early-hints-to-prefered-career-options')}}"
@@ -17119,7 +17120,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -17691,7 +17692,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </a>
 
                     </div>
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/parenting-styles')}}"
@@ -17727,7 +17728,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -17884,7 +17885,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/business-and-negotiation-style')}}"
@@ -17920,7 +17921,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -18231,7 +18232,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/early-hints-to-prefered-career-options')}}"
@@ -18267,7 +18268,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -18840,7 +18841,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </a>
 
                     </div>
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/parenting-styles')}}"
@@ -18876,7 +18877,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -19032,7 +19033,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/business-and-negotiation-style')}}"
@@ -19068,7 +19069,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
 <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -19377,7 +19378,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/early-hints-to-prefered-career-options')}}"
@@ -19413,7 +19414,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -19985,7 +19986,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </a>
 
                     </div>
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/parenting-styles')}}"
@@ -20021,7 +20022,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -20177,7 +20178,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/business-and-negotiation-style')}}"
@@ -20213,7 +20214,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -20523,7 +20524,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/early-hints-to-prefered-career-options')}}"
@@ -20559,7 +20560,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -21132,7 +21133,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </a>
 
                     </div>
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/parenting-styles')}}"
@@ -21168,7 +21169,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -21324,7 +21325,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/business-and-negotiation-style')}}"
@@ -21360,7 +21361,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
@@ -21671,7 +21672,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/early-hints-to-prefered-career-options')}}"
@@ -21707,7 +21708,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -22280,7 +22281,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </a>
 
                     </div>
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/parenting-styles')}}"
@@ -22316,7 +22317,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -22472,7 +22473,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/business-and-negotiation-style')}}"
@@ -22508,7 +22509,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -22818,7 +22819,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/early-hints-to-prefered-career-options')}}"
@@ -22854,7 +22855,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -23427,7 +23428,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </a>
 
                     </div>
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/parenting-styles')}}"
@@ -23463,7 +23464,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -23619,7 +23620,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/business-and-negotiation-style')}}"
@@ -23655,7 +23656,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -23966,7 +23967,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/early-hints-to-prefered-career-options')}}"
@@ -24002,7 +24003,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -24575,7 +24576,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </a>
 
                     </div>
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/parenting-styles')}}"
@@ -24611,7 +24612,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -24767,7 +24768,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/business-and-negotiation-style')}}"
@@ -24803,7 +24804,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -25116,7 +25117,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                  href="{{url('report/early-hints-to-prefered-career-options')}}"
@@ -25152,7 +25153,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -25725,7 +25726,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </a>
 
                     </div>
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/parenting-styles')}}"
@@ -25761,7 +25762,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -25917,7 +25918,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/business-and-negotiation-style')}}"
@@ -25953,7 +25954,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -26265,7 +26266,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
 
                     </div>
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/early-hints-to-prefered-career-options')}}"
@@ -26301,7 +26302,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -26874,7 +26875,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                         </a>
 
                     </div>
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/parenting-styles')}}"
@@ -26910,7 +26911,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div>
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
@@ -27066,7 +27067,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                     </div>
 
 
-                    <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">
                         <a 
                         @if($user_package == 'decodemybrain-deep-dive' || $user_package == 'decodemybrain-guided-friend-and-family-connect')
                                   href="{{url('report/business-and-negotiation-style')}}"
@@ -27102,7 +27103,7 @@ $d_score = UserDimensionalScore::where('user_id',session('user_id'))->first();
                             </div>
                         </a>
 
-                    </div> -->
+                    </div> 
 
 
                     <div class="col-sm-6 col-md-6 col-lg-4 mb-3 ps-0 pe-0 pe-md-2  card-block-dash">

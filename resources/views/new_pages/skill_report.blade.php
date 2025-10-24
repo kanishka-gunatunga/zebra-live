@@ -900,12 +900,11 @@ $introvert_extrovert = WPUsers::where('user_id', session('user_id'))->value('int
                 <img src="{{ asset('assets/images/5-Reflective learning-01.png') }}" alt="" class="question-img">
             </div>
             <h3 class="heading1 text-purple">Let’s start exploring your unique strengths.</h3>
-            <p class="question-paragraph">Choose the answer that feels most right to you.
-                Rank your choices from 1 to 4, with 1 being your top choice, followed by 2, 3, and 4.
-                Answer honestly and go with the first response that comes to mind.
-                This assessment is not affected by your mood or the time of day, so respond naturally.
-                Remember, there are no good or bad brains—this is simply an assessment to uncover your brain’s unique
-                strengths and preferences.</p>
+            <p class="question-paragraph">Choose the answer that feels most right to you.</p>
+            <p class="question-paragraph"> Rank your choices from 1 to 4, with 1 being your top choice, followed by 2, 3, and 4.</p>
+            <p class="question-paragraph"> Answer honestly and go with the first response that comes to mind.</p>
+            <p class="question-paragraph"> This assessment is not affected by your mood or the time of day, so respond naturally.</p>
+            <p class="question-paragraph"> Remember, there are no good or bad brains—this is simply an assessment to uncover your brain’s unique strengths and preferences.</p>
 
             <button class="buttons text-purple" type="button"
                 onclick="window.location.href='{{ url('skill-test/q1') }}'">Start now</button>
